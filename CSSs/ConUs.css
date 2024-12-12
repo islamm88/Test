@@ -1,0 +1,176 @@
+
+section
+{
+    padding: 40px 200px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red ; */
+    & .contact-container{
+        border: 1px solid var(--num1-color);
+        border-radius: 20px;
+        margin: 80px auto 40px auto;
+        background-color : white;
+        box-shadow: -10px 10px 3px var(--num5-color);
+        width: 80%;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 6;
+        /* border: 1px solid red ; */
+        & h1{
+            font-size: 2.8em;
+            font-weight: 800;
+            color: var(--num4-color);
+            margin: 30px 0px 10px 0px;
+            text-shadow: -1px 1px 3px var(--num5-color);
+        }
+        & p{
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        & form {
+            /* border: 1px solid red; */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            & .contact-info {
+                /* border: 1px solid rgb(111, 0, 255); */
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 30px;
+                & .email
+                 {
+                        /* border: 1px solid red; */
+                        margin: 10px 10px;
+                        & .in-email
+                        {   
+                            border: 1px solid var(--num5-color);
+                            border-radius: 5px;
+                            background-color: var(--num1-color);
+                            padding-left: 15px;
+                            height: 30px; 
+                            margin-top: 10px;   
+                            /* border: 1px solid red; */
+                        } 
+                        & .in-email:hover
+                        {
+                            background-color: white;
+                        }
+                    }
+                & .name {
+                            /* border: 1px solid red; */
+                            margin: 10px 10px;
+
+                            & .in-name
+                            {   
+                                border: 1px solid var(--num5-color);
+                                border-radius: 5px;
+                                background-color: var(--num1-color);
+                                padding-left: 15px;
+                                height: 30px; 
+                                margin-top: 10px;   
+                                /* border: 1px solid red; */
+                            } 
+                            & .in-name:hover
+                            {
+                                background-color: white;
+                            }
+                        }
+            }
+
+            & .Cont-button {
+                padding: 0px;
+                }
+
+                & .submit{
+                    color: white;
+                    background-color: var(--num3-color);
+                    width: 530px;
+                    height: 40px;
+                    transition: 0.9s ease;
+                    border-radius: 10px;
+                    border: 1px solid var(--num4-color);
+                    font-size: 1.2em;
+                    
+                }
+                & .submit:hover
+                {
+                    transform: scale(1.05);
+                    background-color: white;
+                    color: var(--num4-color);
+                }
+            }
+        }
+}
+.inf 
+{
+    /* border: 10px solid rgb(71, 62, 62); */
+    width: 90%;
+    border-radius: 20px 20PX 0PX 0PX;
+    height: 300px;
+    margin: -140px auto 0px auto;
+    background-color: var(--num3-color);
+    z-index: 5;
+    display: flex;
+    & .inf-con{
+        width: 100%;
+        margin-top: 120px;
+        /* background-color: #601c60; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & .call-con
+            {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 10px solid red ; */
+            & .calling,
+            & .loc
+                {
+                width: 60px;
+                height: 60px;
+                background-color:var(--num4-color);
+                color: white;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;  
+                }
+            & p
+                {
+                font-size: 0,5em;
+                font-weight: 800;
+                color: white;    
+                }
+            & .p-fir
+                {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            & .p-sec
+                {
+                    font-size: 0,2em;
+                    font-weight: 300;
+                }
+            & .p-las
+                {
+                    margin-bottom: 20px;
+                    font-size: 0,2em;
+                    font-weight: 300;
+                    
+                }
+            }
+    }   
+}
+

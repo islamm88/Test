@@ -1,0 +1,181 @@
+ .baner 
+{
+    
+    padding: 100px 200px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: url(../Imgs/main-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    & .intro {
+        background-color: var(--num1-color);
+        width: 60%;
+        padding: 20px;
+        margin-left: 10px;
+        border-radius: 22px;
+
+
+        & p {
+            padding: 10px 0px;
+            letter-spacing: 1px;
+            word-spacing: 5px;
+            color: var(--num6-color);
+            text-indent: 15px;
+            line-height: 1.5;
+        }
+
+        & h2 {
+            font-size: 2.8em;
+            font-weight: 900;
+            color: var(--num3-color);
+        }
+
+        & h3 {
+            font-size: 2.0em;
+            font-weight: 500;
+            color: var(--num2-color);
+            padding-left: 25px;
+            font-family: "Itim", cursive;
+        }
+
+        & .button-CV {
+                color: var(--num0-color);
+                background-color: var(--num3-color);
+                display: inline-block;
+                padding: 0.3em 1.2em;
+                border-radius: 22px;
+                margin-bottom: 10px;
+                font-weight: 600;
+                font-size: 1.2em;
+                transition: 0.7s ease;
+        
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: var(--num0-color);
+                    color: var(--num3-color);
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+        }
+
+        & .social-icons a .fa-brands{
+            display: inline-block;
+            color: var(--num3-color);
+            font-weight: 500;
+            font-size: 1.8em;
+            padding: 5px;
+            transition: 0.7s ease;
+        }
+
+        & .social-icons a .fa-brands:hover
+        {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        & .social-icons .youtube .fa-brands:hover
+        {
+            color:red;
+        }
+        & .social-icons .github .fa-brands:hover
+        {
+            color:black;
+        }
+        & .social-icons .linkedin .fa-brands:hover
+        {
+            color: #0077b5; 
+        }
+    
+    }
+
+    & .photo
+    {
+        background-color: var(--num1-color);
+        width: 25%;
+        height: 390px;
+        padding: 20px;
+        margin-left: 10px;
+        border-radius: 22px;
+
+        & img
+        {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.departments
+{
+    & .certificates,
+    & .Projects {
+        margin: 50px 0px 200px 200px;
+        border: 1px solid var(--num1-color);
+        width: 50%;
+        max-width: 800px;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 5px 5px 10px var(--num5-color);
+        background-color: var(--num1-color);
+        border-radius: 20px;
+
+
+        & h2,
+        & h2 {
+            margin: 20px;
+            color: var(--num3-color);
+            font-size: 2.0em;
+        }
+
+        & img,
+        & img {
+            display: block;
+            width: 80%;
+            height: 70%;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        & p,
+        & p {
+            margin: 10px 0;
+            font-size: 1em;
+            letter-spacing: 1px;
+            font-weight: 500;
+            color: var(--num5-color);
+            text-align: center;
+        }
+
+        & a,
+        & a {
+            color: var(--num3-color);
+            font-size: 1.4em;
+            transition: 0.7s ease;
+        }
+
+        & a:hover,
+        & a:hover {
+            transform: scale(1.1);
+            color: var(--num2-color);
+            cursor: pointer;
+        }
+    }
+
+    & .Projects {
+        margin-left: 600px;
+    }
+}
+
+
+
+
+

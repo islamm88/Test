@@ -1,0 +1,74 @@
+/* ==================
+      Start header 
+   ================== */
+header{
+    background-color: var(--num1-color);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    justify-content: space-between;
+    padding-inline: 10%;
+
+    & .logo h1 a 
+    {
+        all: unset;
+        color: var(--num3-color);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+
+    & .logo h1 a:hover {
+        cursor: pointer;
+    }
+
+    & nav a
+    {
+        display: inline-block;
+        color: var(--num3-color);
+        font-size: 1.1em;
+        font-weight: 400;
+        margin-inline: 1rem;
+        transition: 0.7s ease;
+    }
+
+    & nav a:hover {
+        color: var(--num2-color);
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+/* =================
+      End header 
+   =================  */
+
+
+   /* ========================
+        media & responsive  
+      ======================== */
+
+/* Extra small devices (phones, portrait) */
+@media (max-width: 576px) {
+    /* Styles for phones */
+}
+
+/* Small devices (phones, landscape) */
+@media (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+    /* Styles for small laptops or larger tablets */
+}
+
+/* Large devices (desktops) */
+@media (max-width: 1200px) {
+    /* Styles for desktops */
+}
+
+/* Extra large devices (large desktops) */
+@media (max-width: 1400px) {
+    /* Styles for large screens */
+}

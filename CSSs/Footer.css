@@ -1,0 +1,64 @@
+footer {
+    margin-top: 50px;
+    background-color: var(--num1-color);
+    width: 100%;
+    padding: 30px 200px;
+
+    & .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & p {
+            margin-bottom: 30px;
+            color: va(--num0-color);
+
+        }
+
+        & .footer-nav a {
+            margin: 0 5px;
+            font-size: 14px;
+            padding: 0px;
+            transition: 0.7s ease;
+        }
+
+        & nav a:hover {
+            color: var(--num2-color);
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        & .footer-social a {
+            margin: 20px 10px 0px;
+            color: var(--num5-color);
+            font-size: 18px;
+            display: inline-block;
+        
+        }
+
+        & .footer-social #youtube:hover
+        {
+            color:red;
+        }
+        & .footer-social #github:hover
+        {
+            color:black;
+        }
+        & .footer-social #linkedin:hover
+        {
+            color: #0077b5;
+        }
+                
+                }
+}
+
+
+
+
+
+
+
+
+

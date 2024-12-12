@@ -1,0 +1,10 @@
+1- create index.html & style.css
+2- link style.css 
+3- title Yuor-Profile
+4- linke font awesome cdnjs
+5- header -> ( logo )
+6- css header & logo
+7- css nav
+=======================
+sction
+

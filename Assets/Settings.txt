@@ -1,0 +1,10 @@
+1- Profile name
+2- photo
+3-Introduction
+4-CV
+5-Linkes  linkedin youtube facebook
+6-Cer  >> departments name  cers for every department 
+7-Projects >> Sammary video manual 
+
+
+
