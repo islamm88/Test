@@ -72,7 +72,8 @@ section {
         & .add-sec-cer ,
         & .add-sec-pro ,
         & .com-but ,
-        & .res-but {
+        & .res-but
+        {
             background-color: var(--num4-color);
             color: var(--num0-color);
             width: 150px;
@@ -96,6 +97,45 @@ section {
             cursor: pointer;
             box-shadow: 5px 5px 10px var(--num5-color);
         }
+
+        & .modify
+        {
+            border: 1px solid var(--num1-color);
+            border-radius: 10px;
+            margin: 15px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            & .cer_sec_res,
+            & .cer_sec_save,
+            & .cer_sec_mod
+            {
+                background-color: var(--num4-color);
+                color: var(--num1-color);
+                width: 30px;
+                padding: 5px;
+                margin: 5px;
+                border: var(--num4-color);
+                border-radius: 50%;
+                transition: 0.7s ease;
+                font-weight: 400;
+                text-align: center;
+            }
+            & .cer_sec_res:hover,
+            & .cer_sec_save:hover,
+            & .cer_sec_mod:hover
+            {
+                transform: scale(1.1);
+                background-color: var(--num1-color);
+                color: var(--num4-color);
+                font-weight: 600;
+                cursor: pointer;
+                box-shadow: 5px 5px 10px var(--num5-color);
+            }
+        }
+
 
     }
 }

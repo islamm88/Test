@@ -82,36 +82,21 @@
             <input class = "res-but" type = "reset" value = "Reset">
         </form>
             <!-- Start Certificats  -->
-            <form action="" method="post" id = "cer_form">
+            <form action="#" method="post" id = "cer_form">
                 <h2>Certificates</h2>
                 <button class = "add-sec-cer" onclick="sec_cer(event)">
                     Add Section <i class="fa-solid fa-square-plus"></i>
                 </button>
-
-                <!-- <div id = "cont cer" class = "cont cer">
-                    <label for="sec-name"><span>*</span>Field Name  :</label>
-                    <input required type="text" name="sec-name" id="pro-name"  maxlength="30" placeholder="Profile Name" size="50">
-                    <button class = "add-cer" onclick="cer()">
-                        Add Certificate <i class="fa-solid fa-square-plus"></i>
-                    </button>
-
-
-                    <div id = "ncer" class = "ncer">
-                        <input class = "cer-img" type="file" name="cer-img" id="cer-img"  maxlength="30">
-                        <label for="">Title :</label>
-                        <input type="text" name="" id="" maxlength="200">
-                        <label for="">Description</label>
-                        <textarea name="" id="" cols="30" rows="5"></textarea>  
-                    </div>
-                    <input class = "com-but" type = "submit" value = "Commit">
-                    <input class = "res-but" type = "reset" value = "Reset"> 
-                </div>   -->
-
-
+               <div class = "modify">         
+                   <button type = "submit" title = "Save" class = "cer_sec_save"  name="cer_sec_save" id="cer_sec_save"><i class="fa-solid fa-floppy-disk"></i></button>
+                   <button type = "reset" title = "reset" class = "cer_sec_res"  name="cer_sec_res" id="cer_sec_res"><i class="fa-solid fa-trash-arrow-up"></i></button>
+                   <button type = "" title = "modify" class = "cer_sec_mod"  name="cer_sec_mod" id="cer_sec_mod"><i class="fa-solid fa-pen-to-square"></i></button>
+               </div>
+             
                 
             </form>
             <!-- Start Projects  -->
-        <form action="">
+        <!-- <form action="">
             <h2>Projects</h2>
             <button class = "add-sec-pro">
                 Add Section <i class="fa-solid fa-square-plus"></i>
@@ -156,7 +141,7 @@
             </div> 
                 <input class = "com-but" type = "submit" value = "Commit">
                 <input class = "res-but" type = "reset" value = "Reset">
-        </form> 
+        </form>  -->
     </Section>
     <footer>
         <div class="footer-content">

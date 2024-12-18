@@ -15,6 +15,7 @@ function sec_cer(event) {
     const lab_sec = document.createElement("label");
     lab_sec.htmlFor = "sec-name";
     lab_sec.innerText = "Field Name:";
+    
 
     // Create section input
     const inp_sec = document.createElement("input");
@@ -50,6 +51,9 @@ function cer(event, sectionId) {
     inp_cer_img.className = "cer-img";
     inp_cer_img.type = "file";
     inp_cer_img.name = "cer-img";
+    inp_cer_img.title= "attach your certificate image";
+    
+
 
     // Create label for certificate title
     const lab_cer = document.createElement("label");
