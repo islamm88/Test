@@ -29,7 +29,9 @@ section {
         flex-direction: column;
 
 
-        & .cont {
+        & .cont ,
+        & .Track_Cer
+        {
             border: 1px solid var(--num1-color);
             border-radius: 10px;
             margin: 15px;
@@ -39,24 +41,27 @@ section {
 
             & label {
                 display: inline-block;
-                width: 10em;
+                width: 8em;
 
                 span {
                     color: red;
                 }
             }
-            
-
         }
 
-        & .url,
-        & .cer , 
-        & .pro ,
-        & .img ,
-        & .att {
+
+        & .url
+        { 
             display: flex;
             flex-direction: column;
             padding: 20px;
+        }
+
+        & .cont_button
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
         }
 
         & h2 {
@@ -69,10 +74,9 @@ section {
             text-align: center;
         }
 
-        & .add-sec-cer ,
-        & .add-sec-pro ,
-        & .com-but ,
-        & .res-but
+
+        & .add_track,
+        & .add-cer
         {
             background-color: var(--num4-color);
             color: var(--num0-color);
@@ -84,12 +88,12 @@ section {
             transition: 0.7s ease;
             font-weight: 400;
             text-align: center;
+            cursor: pointer;
         }
 
-        & .add-sec-cer:hover,
-        & .add-sec-pro:hover,
-        & .com-but:hover ,
-        & .res-but:hover {
+        & .add_track:hover ,
+        & .add-cer:hover
+        {
             transform: scale(1.1);
             background-color: var(--num1-color);
             color: var(--num4-color);
@@ -135,41 +139,11 @@ section {
                 box-shadow: 5px 5px 10px var(--num5-color);
             }
         }
-
-
     }
 }
 
 
- .add-cer  {
-    background-color: var(--num4-color);
-    color: var(--num0-color);
-    width: 150px;
-    padding: 5px;
-    margin: 10px 10px 20px;
-    border-radius: 22px;
-    border: var(--num4-color);
-    transition: 0.7s ease;
-    font-weight: 400;
-}
 
- .add-cer:hover {
-    transform: scale(1.1);
-    background-color: var(--num1-color);
-    color: var(--num4-color);
-    font-weight: 400;
-    cursor: pointer;
-    box-shadow: 5px 5px 10px var(--num5-color);
-}
-
-.ncer
-{
-    border: 1px solid var(--num1-color);
-    padding: 10px;
-    border-radius: 22px;
-    display: flex;
-    flex-direction: column;
-}
 
 
 

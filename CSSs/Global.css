@@ -14,6 +14,7 @@
     --num5-color: #3C3D37;
     --num6-color: black;
     --num7-color: rgb(131, 191, 237);
+    --num8-color:rgba(0, 0, 0, 0.7);
 }
 
 .dark {
@@ -39,6 +40,13 @@ a {
 
 }
 
+ul
+{
+    display: flex;
+    & li {
+        list-style: none;
+    }
+}
 
 button {
     all: unset;
@@ -53,11 +61,12 @@ body {
 
 .flex {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .border {
-    border: 4px solid red;
+    border: 1px solid black;
 }
 
 label {
@@ -79,6 +88,32 @@ input {
     margin: 5px 0px;
 }
 
+input[type = "submit"],
+input[type = "reset"]
+{
+    background-color: var(--num4-color);
+    color: var(--num0-color);
+    width: 150px;
+    padding: 5px;
+    border-radius: 22px;
+    margin-left: 20px;
+    border: var(--num4-color);
+    transition: 0.7s ease;
+    font-weight: 400;
+    text-align: center;
+}
+
+input[type = "submit"]:hover,
+input[type = "reset"]:hover
+ {
+    transform: scale(1.1);
+    background-color: var(--num1-color);
+    color: var(--num4-color);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px var(--num5-color);
+}
+
 textarea {
     display: inline-block;
     border: 1px solid var(--num5-color);
@@ -92,7 +127,7 @@ textarea:hover {
     background-color: white;
 }
 
-select {
+datalist {
     border: 1px solid var(--num5-color);
     border-radius: 5px;
     background-color: rgb(238, 237, 237);
@@ -102,7 +137,7 @@ select {
     height: 30px;
 }
 
-select:hover {
+datalist:hover {
     background-color: white;
 }
 
@@ -111,9 +146,7 @@ input[type="file"] {
     background-color: white;
 }
 
-/* ==================
-     Start Scrollbar  
-    =================  */
+/* Start Scrollbar  */
 
 
 ::-webkit-scrollbar {
@@ -142,6 +175,4 @@ html {
 }
 
 
-/* ===================
-     End Scrollbar  
-   =================== */
+/* End Scrollbar   */

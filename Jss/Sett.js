@@ -1,39 +1,48 @@
-function sec_cer(event) {
+function Track_cer(event) {
     
     event.preventDefault();  //ok
 
-    const cer_form = document.getElementById("cer_form"); // Get the form element  //ok
+    const Form_Track_Cer = document.getElementById("Form_Track_Cer"); // Get the form element  //ok
 
     // Create unique section container
-    const sec_div_create = document.createElement("div");
-    const sectionId = `section-${Date.now()}`; // Generate a unique ID for the section
-    sec_div_create.className = "cont cer";
-    sec_div_create.id = sectionId;
-    
+    const Div_Track_create = document.createElement("div");
+    const TrackId = `section-${Date.now()}`; // Generate a unique ID for the section
+    Div_Track_create.className = "Track_Cer";
+    Div_Track_create.id = "TrackId";
+    // Div_Track_create.style.border = "1px solid red";
+    Div_Track_create.style.display = "flex";
+    Div_Track_create.style.flexDirection = "column";
+
 
     // Create section label
-    const lab_sec = document.createElement("label");
-    lab_sec.htmlFor = "sec-name";
-    lab_sec.innerText = "Field Name:";
-    
+    const label_Track = document.createElement("label");
+    label_Track.htmlFor = "Track-name";
+    label_Track.innerText = "Track Name:";
+    // label_Track.id = "label_Track" ;
 
     // Create section input
-    const inp_sec = document.createElement("input");
-    inp_sec.type = "text";
-    inp_sec.name = "sec-name";
-    inp_sec.maxLength = 30;
-    inp_sec.placeholder = "Profile Name";
-    inp_sec.size = 50;
+    const input_track = document.createElement("input");
+    input_track.type = "text";
+    input_track.placeholder = "Add Track Name ";
 
     // Create 'Add Certificate' button
+    const button_commit = document.createElement("button");
+    button_commit.className = "add";
+    // button_commit.innerHTML = "<i class='fa-solid fa-square-plus'></i>";
+    // button_commit.onclick = "submit"; 
+    // button_commit.style.width = "40px";
+    // button_commit.style.display = "inline"
+
+
     const button_cer = document.createElement("button");
     button_cer.className = "add-cer";
-    button_cer.innerHTML = "Add Certificate <i class='fa-solid fa-square-plus'></i>";
+    button_cer.innerHTML = "Certificate <i class='fa-solid fa-square-plus'></i>";
     button_cer.onclick = (e) => cer(e, sectionId); // Pass section ID to the `cer` function
 
     // Append elements to section
-    cer_form.append(sec_div_create);
-    sec_div_create.append(lab_sec, inp_sec, button_cer);
+    Form_Track_Cer.append(Div_Track_create);
+    Div_Track_create.append(label_Track, input_track, button_commit, button_cer );
+
 }
 
 function cer(event, sectionId) {
@@ -58,14 +67,14 @@ function cer(event, sectionId) {
     // Create label for certificate title
     const lab_cer = document.createElement("label");
     lab_cer.htmlFor = "cer-name";
-    lab_cer.innerText = "Title:";
+    lab_cer.innerText = "Certificte Name :";
 
     // Create text input for certificate title
     const inp_cer = document.createElement("input");
     inp_cer.type = "text";
     inp_cer.name = "cer-name";
     inp_cer.maxLength = 200;
-    inp_cer.placeholder = "Certificate Title";
+    inp_cer.placeholder = "Add Certificate Title";
     inp_cer.size = 50;
 
     // Create label for description
@@ -82,4 +91,9 @@ function cer(event, sectionId) {
     // Append elements to certificate container
     sectionContainer.append(cer_div_create);
     cer_div_create.append(inp_cer_img, lab_cer, inp_cer, lab_desc, area_cer);
+}
+
+function sec_pro(event)
+{
+    const pro_form = document.getElementById("");
 }

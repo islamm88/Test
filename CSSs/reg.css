@@ -107,13 +107,13 @@ section {
         & .reset {
             all:unset;
             color: white;
-            background-color: #0d48eb;
+            background-color: var(--num4-color);
             margin: 0px 20px;
             width: 100px;
             height: 30px;
             transition: 0.7s ease;
             border-radius: 22px;
-            border: 1px solid #0d48eb;
+            border: 1px solid var(--num4-color);
             text-align: center;
         }
 
@@ -121,7 +121,8 @@ section {
         & .reset:hover {
             transform: scale(1.1);
             background-color: white;
-            color: #0d48eb;
+            color: var(--num4-color);
+            cursor: pointer;
         }
     }
 }

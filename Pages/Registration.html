@@ -5,30 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "author" content = "Islam Mustafa Fawzy"> 
+    <meta name = "description" content = "creating your profile on website page add your cv your certificates and your projects ">
+    <meta name = "keywords" content = "BP Blue Page CV Certificates Projects portofolio ">
     <!-- title  -->
-    <title>MyProfile_Registration</title>
+    <title>BP Blue Page_Registration</title>
     <!-- style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="../CSSs/Global.css">
     <link rel="stylesheet" href="../CSSs/Header.css">
     <link rel="stylesheet" href="../CSSs/reg.css"/>
     <link rel="stylesheet" href="../CSSs/Footer.css">
+    <!-- project icon  -->
+    <link rel="shortcut icon" href="../Imgs/user-solid.svg" type="image/x-icon">
 </head>
 <body class = "root">
-    <header class = "flex">
-        <div class = "logo">
-            <h1><a href="../index.html"><spam class = "L">BP</spam><spam class = "LB">B</spam>lue <spam class = "LP">P</spam>age</a></h1>
+    <header class = "flex ">
+        <div class="contener flex  ">
+            <div class = "logo ">
+                <h1><a href="#"><spam class = "L"><i class="fa-solid fa-compass"></i></spam> <spam class = "L">BP</spam><spam class = "LB">B</spam>lue <spam class = "LP">P</spam>age</a></h1>
+            </div>
+            <nav class = "flex">     
+                <i class = "fa fa-bars menu"></i>
+                <ul>
+                    <li><a class = "active" href="../index.html">Home</a></li>
+                    <li><a href="Pcertificates.html">Certificates</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="ContactUs.html">ContactUs</a></li>
+                    <li><a href="Settings.html">Settings</a></li>
+                    <li><a href="Registration.html">Registration</a></li>
+                    <li><a href="About.html">AboutUs</a></li>
+                    <li><a href="log.html">Login</a></li>
+                </ul>
+                <div class = "form flex ">
+                    <i class = "fa fa-search  search"></i>
+                </div>
+            </nav> 
         </div>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="certificates.html">Certificates</a>
-            <a href="Projects.html">Projects</a>
-            <a href="ContactUs.html">ContactUs</a>
-            <a href="Settings.html">Settings</a>
-            <a href="Registration.html">Registration</a>
-            <a href="About.html">AboutUs</a>
-            <a href="log.html">Login</a>
-        </nav>
     </header>
     <section>
             <h2 class = "tit-reg">Registration</h2>
@@ -131,7 +143,7 @@
                         <label for="Country"><span>*</span>Country  :</label>
                     </div>
                     <div class="inp">
-                    <select name="Country" id="Country">
+                    <datalist name="Country" id="Country">
                         <option value="" selected ></option>
                         <option value="Afghanistan">Afghanistan</option>
                         <option value="Albania">Albania</option>
@@ -307,7 +319,8 @@
                         <option value="Tanzania">Tanzania</option>
                         <option value="Thailand">Thailand</option>
                         <option value="Timor-Leste">Timor-Leste</option>
-                    </select>
+                    </datalist>
+                    <input list="Country" name="" id="">
                     </div>
                 </div>
 
@@ -316,49 +329,50 @@
                         <label for="computer-fields"><span>*</span>Computer-fields  :</label>
                     </div>
                     <div class="inp">
-                    <select name="Computer-fields" id="Computer-fields">
+                    <datalist name="Computer-fields" id="Computer-fields">
                         <option value=""></option>
-                        <option value="software-development">Software Development</option>
-                        <option value="web-development">Web Development</option>
-                        <option value="mobile-development">Mobile Development</option>
-                        <option value="desktop-application-development">Desktop Application Development</option>
-                        <option value="game-development">Game Development</option>
-                        <option value="data-science">Data Science</option>
-                        <option value="big-data">Big Data</option>
-                        <option value="data-analysis">Data Analysis</option>
-                        <option value="database-management">Database Management</option>
-                        <option value="network-administration">Network Administration</option>
-                        <option value="network-security">Network Security</option>
-                        <option value="cloud-networking">Cloud Networking</option>
-                        <option value="information-security">Information Security</option>
-                        <option value="ethical-hacking">Ethical Hacking</option>
-                        <option value="cyber-forensics">Cyber Forensics</option>
-                        <option value="help-desk-support">Help Desk Support</option>
-                        <option value="system-administration">System Administration</option>
-                        <option value="technical-support">Technical Support</option>
-                        <option value="cloud-infrastructure">Cloud Infrastructure</option>
-                        <option value="cloud-application-development">Cloud Application Development</option>
-                        <option value="devops">DevOps</option>
-                        <option value="ai-development">Artificial Intelligence Development</option>
-                        <option value="machine-learning">Machine Learning</option>
-                        <option value="natural-language-processing">Natural Language Processing</option>
-                        <option value="web-design">Web Design</option>
-                        <option value="ui-ux-design">UI/UX Design</option>
-                        <option value="it-consulting">IT Consulting</option>
-                        <option value="project-management">IT Project Management</option>
-                        <option value="hardware-engineering">Hardware Engineering</option>
-                        <option value="it-infrastructure-management">IT Infrastructure Management</option>
-                        <option value="blockchain-development">Blockchain Development</option>
-                        <option value="iot">Internet of Things (IoT)</option>
-                        <option value="quantum-computing">Quantum Computing</option>
-                        <option value="technical-writing">Technical Writing</option>
-                    </select>
+                        <option value="Software-Development"></option>
+                        <option value="Web-Development"></option>
+                        <option value="Mobile-Development"></option>
+                        <option value="Desktop-Application-Development"></option>
+                        <option value="Game-Development"></option>
+                        <option value="Data-Science"></option>
+                        <option value="Big-Data"></option>
+                        <option value="Data-Analysis"></option>
+                        <option value="Database-Management"></option>
+                        <option value="Network-Administration"></option>
+                        <option value="Network-security"></option>
+                        <option value="Cloud-Networking"></option>
+                        <option value="Information-Security"></option>
+                        <option value="Ethical-hacking"></option>
+                        <option value="Cyber-Forensics"></option>
+                        <option value="Help-Desk-Support"></option>
+                        <option value="System-Administration"></option>
+                        <option value="Technical-Support"></option>
+                        <option value="Cloud-Infrastructure"></option>
+                        <option value="Cloud-Application-Development"></option>
+                        <option value="Devops"></option>
+                        <option value="AI-Development"></option>
+                        <option value="Machine-Learning"></option>
+                        <option value="Natural-Language-Processing"></option>
+                        <option value="Web-Design"></option>
+                        <option value="UI-UX-Design"></option>
+                        <option value="IT-Consulting"></option>
+                        <option value="Project-Management"></option>
+                        <option value="Hardware-Engineering"></option>
+                        <option value="IT-Infrastructure-Management"></option>
+                        <option value="Blockchain-Development"></option>
+                        <option value="IoT"></option>
+                        <option value="Quantum-Computing"></option>
+                        <option value="Technical-Writing"></option>
+                    </datalist>
+                    <input list ="Computer-fields" name="" id="">
                     </div>
                 </div>
 
                 <div class ="Cont-button">
-                    <input class = "submit"type="submit" value = "Commit"   id="submit">
-                    <input class = "reset" type="reset"  value = "Reset"  id="reset">
+                    <input type="submit" value = "Commit" id="submit">
+                    <input type="reset"  value = "Reset"  id="reset">
                 </div>
 
             </form> 
@@ -367,15 +381,15 @@
         
         <footer>
             <div class="footer-content">
-                <p>&copy; 2024 <spam style = "color:blue">BP &nbsp </spam><spam style = "color:blue">B</spam>lue <spam style = "color:blue">P</spam>age. All rights reserved.</p>
+                <p> <spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.5em">&copy;</spam>  2024 <spam style = "color:var(--num3-color) ;font-weight: 900 ; font-size: 1.5em"><i class="fa-solid fa-compass"></i>BP </spam><spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.0em">B</spam><spam style="color: var(--num0-color);">lue</spam> <spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.0em">P</spam><spam style = "color: var(--num0-color);">age</spam>. All rights reserved.</p>
                 <nav class="footer-nav">
-                    <a href="index.html">Home</a>
-                    <a href="Pages/certificates.html">Certificates</a>
-                    <a href="Pages/Projects.html">Projects</a>
-                    <a href="Pages/ContactUs.html">Contact Us</a>
+                    <a href="../index.html">Home</a>
+                    <a href="certificates.html">Certificates</a>
+                    <a href="Projects.html">Projects</a>
+                    <a href="ContactUs.html">Contact Us</a>
                     <a href="Settings.html">Settings</a>
-                    <a href="Pages/Registration.html">Register</a>
-                    <a href="Pages/log.html">Login</a>
+                    <a href="Registration.html">Register</a>
+                    <a href="log.html">Login</a>
                 </nav>
                 <div class="footer-social">
                     <a id ="linkedin" href="https://linkedin.com/in/islam-mustafa-755a49235" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
