@@ -14,81 +14,65 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 100vh ;
             background-color: var(--num8-color); 
-            /* border: 10px solid red; */
-    
-            & .intro {
-                position: absolute;
-                left: 10%;
-                top: 50%;
-                background-color: var(--num1-color);
-                width: 40%;
-                padding: 40px 40px;
-                flex-direction: column;
-                /* border-radius: 10px; */
-    
-                & h2 {
-                    /* text-align: center; */
-                    font-size: 2.2em;
-                    font-weight: 900;
-                    color: var(--num3-color);
-                    /* border : 1px solid red */
-                }
-    
-                 & p {
-                    padding: 10px;
-                    word-spacing: 2px;
-                    color: var(--num6-color);
-                    text-indent: 5px;
-                    font-size: 1.0em;
-                }
-        
-                & h3 {
-                    font-size: 1.5em;
-                    font-weight: 500;
-                    color: var(--num2-color);
-                    padding-left: 25px;
-                }
-        
-                & .social-icons a .fa-brands{
-                    display: inline-block;
-                    /* color: var(--num3-color); */
-                    font-weight: 400;
-                    font-size: 1.2em;
-                    padding: 2px;
-                    /* transition: 0.7s ease; */
-                }
-    
-                & .social-icons .fa-youtube
-                {
-                    color:red;
-                }
-                & .social-icons .fa-github
-                {
-                    color:black;
-                }
-                & .social-icons .fa-linkedin
-                {
-                    color: #0077b5; 
-                } 
-            
+        }
+
+        & .intro {
+            position: absolute;
+            left: 10%;
+            top: 40%;
+            background-color: var(--num1-color);
+            width: 50%;
+            padding: 40px 40px;
+            flex-direction: column;
+            /* border-radius: 10px; */
+
+            & h2 {
+                /* text-align: center; */
+                font-size: 2.2em;
+                font-weight: 900;
+                color: var(--num3-color);
+                /* border : 1px solid red */
             }
-            & .photo
+
+             & p {
+                padding: 10px;
+                word-spacing: 2px;
+                color: var(--num6-color);
+                text-indent: 5px;
+                font-size: 1.0em;
+            }
+    
+            & h3 {
+                font-size: 1.5em;
+                font-weight: 500;
+                color: var(--num2-color);
+                padding-left: 25px;
+            }
+    
+            & .social-icons a .fa-brands{
+                display: inline-block;
+                /* color: var(--num3-color); */
+                font-weight: 400;
+                font-size: 1.2em;
+                padding: 2px;
+                /* transition: 0.7s ease; */
+            }
+
+            & .social-icons .fa-youtube
             {
-                background-color: var(--num1-color);
-                width: 25%;
-                height: 390px;
-                padding: 20px;
-                margin-left: 10px;
-                border-radius: 22px;
-        
-                & img
-                {
-                    width: 100%;
-                    height: 100%;
-                }
+                color:red;
             }
+            & .social-icons .fa-github
+            {
+                color:black;
+            }
+            & .social-icons .fa-linkedin
+            {
+                color: #0077b5; 
+            } 
+        
         }
     
     }
@@ -172,68 +156,68 @@
 
         & .overlay
         {
-            /* position: absolute;
+            position: absolute;
             top: 0;
-            left: 0; */
-            /* width: 100%;
+            left: 0;
+            width: 100%;
             min-height: 100vh;
             background-color: var(--num8-color); 
-     */
-            & .intro {
-                position: absolute;
-                left: 10%;
-                top: 20%;
-                background-color: var(--num1-color);
-                width:80%;
-                padding: 20px;
-                flex-direction: column;
-                
+        }
+
+        & .intro {
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            background-color: var(--num1-color);
+            width:80%;
+            padding: 20px;
+            flex-direction: column;
+            
+
+            & h2 {
+             
+                font-size: 1.0em;
+                font-weight: 600;
+                color: var(--num3-color);
+               
+            }
+
+             & p {
+                padding: 10px;
+                word-spacing: 2px;
+                color: var(--num6-color);
+                text-indent: 5px;
+                font-size: 0.8em;
+            }
     
-                & h2 {
-                 
-                    font-size: 1.0em;
-                    font-weight: 600;
-                    color: var(--num3-color);
-                   
-                }
+            & h3 {
+                font-size: 1.0em;
+                font-weight: 500;
+                color: var(--num2-color);
+                padding-left: 25px;
+            }
     
-                 & p {
-                    padding: 10px;
-                    word-spacing: 2px;
-                    color: var(--num6-color);
-                    text-indent: 5px;
-                    font-size: 0.8em;
-                }
-        
-                & h3 {
-                    font-size: 1.0em;
-                    font-weight: 500;
-                    color: var(--num2-color);
-                    padding-left: 25px;
-                }
-        
-                & .social-icons .fa-brands{
-                    display: inline-block;   
-                    font-weight: 400;
-                    font-size: 0.8em;
-                    padding: 2px;
-                
-                }
-    
-                & .social-icons .fa-youtube
-                {
-                    color:red;
-                }
-                & .social-icons .fa-githb
-                {
-                    color:black;
-                }
-                & .social-icons .fa-linkedin
-                {
-                    color: #0077b5; 
-                } 
+            & .social-icons .fa-brands{
+                display: inline-block;   
+                font-weight: 400;
+                font-size: 0.8em;
+                padding: 2px;
             
             }
+
+            & .social-icons .fa-youtube
+            {
+                color:red;
+            }
+            & .social-icons .fa-githb
+            {
+                color:black;
+            }
+            & .social-icons .fa-linkedin
+            {
+                color: #0077b5; 
+            } 
+        
         }
     
     }
