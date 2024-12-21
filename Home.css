@@ -1,0 +1,308 @@
+@media (min-width: 1025px) 
+{
+    .landing 
+    {
+        min-height: 100vh;
+        background-color: #0077b5;
+        background: url(../Imgs/main-img.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+
+        & .overlay
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--num8-color); 
+            /* border: 10px solid red; */
+    
+            & .intro {
+                position: absolute;
+                left: 10%;
+                top: 50%;
+                background-color: var(--num1-color);
+                width: 40%;
+                padding: 40px 40px;
+                flex-direction: column;
+                /* border-radius: 10px; */
+    
+                & h2 {
+                    /* text-align: center; */
+                    font-size: 2.2em;
+                    font-weight: 900;
+                    color: var(--num3-color);
+                    /* border : 1px solid red */
+                }
+    
+                 & p {
+                    padding: 10px;
+                    word-spacing: 2px;
+                    color: var(--num6-color);
+                    text-indent: 5px;
+                    font-size: 1.0em;
+                }
+        
+                & h3 {
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    color: var(--num2-color);
+                    padding-left: 25px;
+                }
+        
+                & .social-icons a .fa-brands{
+                    display: inline-block;
+                    /* color: var(--num3-color); */
+                    font-weight: 400;
+                    font-size: 1.2em;
+                    padding: 2px;
+                    /* transition: 0.7s ease; */
+                }
+    
+                & .social-icons .fa-youtube
+                {
+                    color:red;
+                }
+                & .social-icons .fa-github
+                {
+                    color:black;
+                }
+                & .social-icons .fa-linkedin
+                {
+                    color: #0077b5; 
+                } 
+            
+            }
+            & .photo
+            {
+                background-color: var(--num1-color);
+                width: 25%;
+                height: 390px;
+                padding: 20px;
+                margin-left: 10px;
+                border-radius: 22px;
+        
+                & img
+                {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    
+    }
+    
+    /* .departments
+    {
+        & .certificates,
+        & .Projects {
+            margin: 50px 0px 200px 200px;
+            border: 1px solid var(--num1-color);
+            width: 50%;
+            max-width: 800px;
+            height: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 5px 5px 10px var(--num5-color);
+            background-color: var(--num1-color);
+            border-radius: 20px;
+    
+    
+            & h2,
+            & h2 {
+                margin: 20px;
+                color: var(--num3-color);
+                font-size: 2.0em;
+            }
+    
+            & img,
+            & img {
+                display: block;
+                width: 80%;
+                height: 70%;
+                border-radius: 20px;
+                margin-bottom: 30px;
+            }
+    
+            & p,
+            & p {
+                margin: 10px 0;
+                font-size: 1em;
+                letter-spacing: 1px;
+                font-weight: 500;
+                color: var(--num5-color);
+                text-align: center;
+            }
+    
+            & a,
+            & a {
+                color: var(--num3-color);
+                font-size: 1.4em;
+                transition: 0.7s ease;
+            }
+    
+            & a:hover,
+            & a:hover {
+                transform: scale(1.1);
+                color: var(--num2-color);
+                cursor: pointer;
+            }
+        }
+    
+        & .Projects {
+            margin-left: 600px;
+        }
+    } */
+
+}
+
+@media (max-width: 480px)
+{
+    .landing 
+    {
+        min-height: 100vh;
+        background-color: #0077b5;
+        background: url(../Imgs/main-img.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+
+        & .overlay
+        {
+            /* position: absolute;
+            top: 0;
+            left: 0; */
+            width: 100%;
+            min-height: 100vh;
+            background-color: var(--num8-color); 
+    
+            & .intro {
+                position: absolute;
+                left: 10%;
+                top: 20%;
+                background-color: var(--num1-color);
+                width:80%;
+                padding: 20px;
+                flex-direction: column;
+                
+    
+                & h2 {
+                 
+                    font-size: 1.0em;
+                    font-weight: 600;
+                    color: var(--num3-color);
+                   
+                }
+    
+                 & p {
+                    padding: 10px;
+                    word-spacing: 2px;
+                    color: var(--num6-color);
+                    text-indent: 5px;
+                    font-size: 0.8em;
+                }
+        
+                & h3 {
+                    font-size: 1.0em;
+                    font-weight: 500;
+                    color: var(--num2-color);
+                    padding-left: 25px;
+                }
+        
+                & .social-icons .fa-brands{
+                    display: inline-block;   
+                    font-weight: 400;
+                    font-size: 0.8em;
+                    padding: 2px;
+                
+                }
+    
+                & .social-icons .fa-youtube
+                {
+                    color:red;
+                }
+                & .social-icons .fa-githb
+                {
+                    color:black;
+                }
+                & .social-icons .fa-linkedin
+                {
+                    color: #0077b5; 
+                } 
+            
+            }
+        }
+    
+    }
+    
+    /* .departments
+    {
+        & .certificates,
+        & .Projects {
+            margin: 50px 0px 200px 200px;
+            border: 1px solid var(--num1-color);
+            width: 50%;
+            max-width: 800px;
+            height: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 5px 5px 10px var(--num5-color);
+            background-color: var(--num1-color);
+            border-radius: 20px;
+    
+    
+            & h2,
+            & h2 {
+                margin: 20px;
+                color: var(--num3-color);
+                font-size: 2.0em;
+            }
+    
+            & img,
+            & img {
+                display: block;
+                width: 80%;
+                height: 70%;
+                border-radius: 20px;
+                margin-bottom: 30px;
+            }
+    
+            & p,
+            & p {
+                margin: 10px 0;
+                font-size: 1em;
+                letter-spacing: 1px;
+                font-weight: 500;
+                color: var(--num5-color);
+                text-align: center;
+            }
+    
+            & a,
+            & a {
+                color: var(--num3-color);
+                font-size: 1.4em;
+                transition: 0.7s ease;
+            }
+    
+            & a:hover,
+            & a:hover {
+                transform: scale(1.1);
+                color: var(--num2-color);
+                cursor: pointer;
+            }
+        }
+    
+        & .Projects {
+            margin-left: 600px;
+        }
+    } */
+
+}
+
+
