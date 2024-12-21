@@ -2,14 +2,13 @@
 {
     header
     {
-        /* position: absolute; */
         position: fixed;
         width: 100%;
         background-color: var(--num1-color);
         z-index: 999;
         border-bottom: 1px solid var(--num3-color);
 
-        & .contener
+        & .container
         {
             width: 100%;
             margin-inline: 3%;
@@ -115,12 +114,13 @@
 {
     header
     {
-        background-color: var(--num1-color);
-        width: 100%;
         position: fixed;
+        width: 100%;
+        background-color: var(--num1-color);
         z-index: 999;
         border-bottom: 1px solid var(--num3-color);
-        & .contener
+        
+        & .container
         {
             width: 100%;
             margin-inline: 1%;

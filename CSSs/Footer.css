@@ -1,7 +1,7 @@
 @media (min-width: 1025px) 
 {
     footer {
-        /* margin-top: 100px; */
+        /* z-index: 3; */
         background-color: var(--num1-color);
         width: 100%;
         padding: 30px 200px;
@@ -13,7 +13,6 @@
             flex-direction: column;
             align-items:center;
 
-    
             & p {
                 margin-bottom: 30px;
                 color: va(--num0-color);
@@ -62,9 +61,7 @@
 
 @media (max-width: 480px)
 {
-
     footer {
-        /* margin-top: 100px; */
         background-color: var(--num1-color);
         width: 100%;
         padding: 5px 5px;
