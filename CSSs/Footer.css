@@ -1,10 +1,11 @@
 @media (min-width: 1025px) 
 {
     footer {
-        /* z-index: 3; */
+        border-top: 1px solid var(--num3-color);
         background-color: var(--num1-color);
         width: 100%;
         padding: 30px 200px;
+        margin-top:100px  ;
     
         & .footer-content {
             max-width: 1200px;
@@ -65,6 +66,7 @@
         background-color: var(--num1-color);
         width: 100%;
         padding: 5px 5px;
+        margin-top: 50px;
     
         & .footer-content {
             width: 100%;
