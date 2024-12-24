@@ -1,5 +1,5 @@
 /* /////// PC Size //////   */
-@media (min-width: 1024px) 
+@media (min-width: 1140px) 
 {
     .landing 
     {
@@ -226,7 +226,7 @@
     }
 }
 
-@media (min-width: 481px) and (max-width: 950px)
+@media (min-width: 481px) and (max-width: 1139px)
 {
     .landing 
     {

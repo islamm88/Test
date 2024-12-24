@@ -1,4 +1,5 @@
 section {
+    margin: 100px 0px;
     padding: 50px 200px;
     width: 100%;
     min-height: 100vh;
@@ -25,19 +26,16 @@ section {
         text-shadow: -1px 1px 3px var(--num5-color);
         text-align: center;
     }
-
     & .Project {
         width: 90%;
-        /* height: 600px; */
         border: 1px solid var(--num1-color);
-        box-shadow: -10px 10px 3px var(--num5-color);
+        box-shadow: -5px 5px 3px var(--num5-color);
         border-radius: 20px;
         margin: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 10px;
-
         & .cont
         {
             border: 1px solid var(--num1-color);
