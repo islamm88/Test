@@ -51,6 +51,7 @@ ul
 button {
     all: unset;
     text-align: center;
+
 }
 
 body {
@@ -59,11 +60,13 @@ body {
     background-color: var(--num0-color);
 }
 
+
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .border {
     border: 1px solid black;

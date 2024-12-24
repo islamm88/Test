@@ -1,9 +1,9 @@
 section {
-    /* border: 1px solid red ; */
+    margin: 100px 0px;
     padding: 50px 200px;
     width: 100%;
     min-height: 100vh;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
 
@@ -18,8 +18,8 @@ section {
 
     & form {
         border: 2px solid var(--num1-color);
-        border-radius: 20px;
-        box-shadow: -10px 10px 3px var(--num5-color);
+        border-radius: 2px;
+        box-shadow: -5px 5px 3px var(--num5-color);
         width: 80%;
         margin: 10px auto;
         border-radius: 10px;

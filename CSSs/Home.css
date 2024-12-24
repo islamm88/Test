@@ -1,5 +1,5 @@
 /* /////// PC Size //////   */
-@media (min-width: 1025px) 
+@media (min-width: 1024px) 
 {
     .landing 
     {
@@ -27,7 +27,7 @@
             width: 50%;
             padding: 40px 40px;
             flex-direction: column;
-            /* border-radius: 10px; */
+            border-radius: 5px;
 
             & h2 {
                 /* text-align: center; */
@@ -224,6 +224,220 @@
         }
 
     }
+}
+
+@media (min-width: 481px) and (max-width: 950px)
+{
+    .landing 
+    {
+        min-height: 100vh;
+        background-color: #0077b5;
+        background: url(../Imgs/main-img.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+
+        & .overlay
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            background-color: var(--num8-color); 
+        }
+
+        & .intro {
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            background-color: var(--num1-color);
+            width:80%;
+            padding: 20px;
+            flex-direction: column;
+            
+
+            & h2 {
+             
+                font-size: 1.0em;
+                font-weight: 600;
+                color: var(--num3-color);
+               
+            }
+
+             & p {
+                padding: 10px;
+                word-spacing: 2px;
+                color: var(--num6-color);
+                text-indent: 5px;
+                font-size: 0.8em;
+            }
+    
+            & h3 {
+                font-size: 1.0em;
+                font-weight: 500;
+                color: var(--num2-color);
+                padding-left: 25px;
+            }
+    
+            & .social-icons .fa-brands{
+                display: inline-block;   
+                font-weight: 400;
+                font-size: 0.8em;
+                padding: 2px;
+            
+            }
+
+            & .social-icons .fa-youtube
+            {
+                color:red;
+            }
+            & .social-icons .fa-githb
+            {
+                color:black;
+            }
+            & .social-icons .fa-linkedin
+            {
+                color: #0077b5; 
+            } 
+        
+        }
+    
+    }
+    
+    .departments
+    {
+        flex-direction: column;
+        
+        /* border: 1px solid red; */
+        & .certificates 
+        {
+            width: 90%;
+            flex-direction: column;
+            margin-top: 100px;
+            /* border: 1px solid red; */
+
+            & .content
+            {
+                display: flex;
+                flex-direction: column; 
+                width: 100%;
+                /* border: 1px solid rgb(7, 7, 7); */
+
+                & .img
+                {
+                   display: block;
+                   width: 50%; 
+                   & img 
+                   {
+                       width: 100%;
+                       height: 100%;
+                   }
+                }
+        
+
+                & p
+                {
+                    padding: 10px;
+                    margin:10px ;
+                    text-align: left;
+                    font-size: 0.5 em;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+                    color: var(--num5-color);
+                    text-indent: 15px;
+                }
+            }
+    
+
+            & h2
+            {
+                margin: 5px;
+                color: var(--num3-color);
+                font-size: 1.5em;
+            }
+    
+            & a
+            {
+                color: var(--num3-color);
+                font-size: 1.0em;
+                transition: 0.7s ease;
+                margin-top: 5px;
+            }
+    
+            & a:hover,
+            & a:hover
+            {
+                transform: scale(1.1);
+                color: var(--num2-color);
+                cursor: pointer;
+            }
+        }
+
+        & .Projects
+        {
+            width: 90%;
+            flex-direction: column;
+            margin-top: 100px;
+            /* border: 1px solid red; */
+
+            & .content
+            {
+                display: flex;
+                flex-direction: column; 
+                width: 100%;
+                /* border: 1px solid rgb(7, 7, 7); */
+
+                & .img
+                {
+                   display: block;
+                   width: 50%; 
+                   & img 
+                   {
+                       width: 100%;
+                       height: 100%;
+                   }
+                }
+        
+                & p
+                {
+                    padding: 10px;
+                    margin:10px ;
+                    text-align: left;
+                    font-size: 0.5 em;
+                    letter-spacing: 1px;
+                    font-weight: 300;
+                    color: var(--num5-color);
+                    text-indent: 15px;
+                }
+            }
+    
+
+            & h2
+            {
+                margin: 5px;
+                color: var(--num3-color);
+                font-size: 1.5em;
+            }
+    
+            & a
+            {
+                color: var(--num3-color);
+                font-size: 1.0em;
+                transition: 0.7s ease;
+                margin-top: 5px;
+            }
+    
+            & a:hover,
+            & a:hover
+            {
+                transform: scale(1.1);
+                color: var(--num2-color);
+                cursor: pointer;
+            }
+        }
+
+    }
+
 }
 
 /* ///// Mobile Size ////// */

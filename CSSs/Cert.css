@@ -1,14 +1,14 @@
 
-/* Start main */
-
-main
+@media (min-width: 1025px) 
+{
+    main
 {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    padding: 100px 0px;
 
     /* h2 */
     & .title     
@@ -27,12 +27,12 @@ main
         padding: 20px 0px;
         display: flex; 
         justify-content: space-around;
+        flex-direction: row;
         flex-wrap: wrap;
         border: 2px solid var(--num1-color);
-        border-radius: 20px;
-        box-shadow: -10px 10px 3px var(--num5-color);
+        border-radius: 10px;
+        box-shadow: -5px 5px 3px var(--num5-color);
         margin-top: 50px;
-
 
         /* card  */
         
@@ -41,7 +41,7 @@ main
             width: 30%;
             height: 300px;
             border: 2px solid var(--num1-color);
-            border-radius: 20px;
+            border-radius: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -75,9 +75,6 @@ main
                 {
                     font-size: 0.8em;
                 }
-
-               
-
             }
 
         & .card:hover
@@ -87,8 +84,17 @@ main
             background-color: lightgray;
             }
     }
+}
+}
+
+@media (max-width: 480px)
+{
+
+}
 
 
+@media (min-width: 481px) and (max-width: 768px) {
+    
 }
 
 

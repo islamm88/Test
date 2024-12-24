@@ -1,4 +1,4 @@
-@media (min-width: 1025px) 
+@media (min-width: 1024px) 
 {
     
     header
@@ -26,7 +26,7 @@
                     & a
                     {
                         all: unset;
-                        color: var(--num0-color);
+                        color: var(--num6-color);
                         text-transform: uppercase;
                         font-weight: 400;
                         font-size: 1.5em;
@@ -111,6 +111,128 @@
     }
 }
 
+@media (min-width: 481px) and (max-width: 950px)
+    {
+        header
+        {
+            position: fixed;
+            width: 100%;
+            background-color: var(--num1-color);
+            z-index: 999;
+            border-bottom: 1px solid var(--num3-color);
+            
+            & .container
+            {
+                width: 100%;
+                margin-inline: 1%;
+                justify-content: space-between;
+                align-items:end;
+                padding-inline: 5px;
+    
+                & .logo
+                {
+                    & h1 
+                    {
+                        all: unset;
+    
+                        & a
+                        {
+                            all: unset;
+                            color: var(--num6-color);
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            font-size: 0.5em;
+                        }
+    
+                    & a:hover
+                        {
+                            cursor: pointer;
+                        }
+    
+                    & a .L
+                        {
+                            all: unset;
+                            color: var(--num3-color);
+                            font-weight: 900;
+                            font-size: 2.8em;
+                            display: inline-block;
+                        }
+    
+                    & a .LB,
+                    & a .LP
+                        {
+                            color: var(--num3-color);
+                        }
+                    }
+                }
+    
+            & nav 
+                {
+                    & .menu
+                    {
+                        display: block;
+                        color: var(--num3-color);
+                        margin: 5px;
+                    }
+    
+                    & .menu:hover
+                    {
+                        color: var(--num0-color);
+                    }
+    
+                    & .menu:hover+ul
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                    }
+    
+                    & ul {
+                        display: none;
+                        background-color: var(--num1-color);
+    
+                        & li
+                        {
+                            display: inline-block;
+                            padding: 10px;
+                            border: 1px solid var(--num0-color);
+                            text-align: center;
+                            
+                            & a{
+                                color: var(--num4-color);
+                            }
+    
+                            & a:hover
+                            {
+                                color: var(--num0-color);
+                                background-color: var(--num5-color);
+                            }
+                        }
+                      
+                    }
+    
+                    & .form
+                    {
+                            padding-inline: 5px ;
+                            color: var(--num3-color);
+                            margin: 5px;
+                            border-left: 1px solid var(--num0-color);
+    
+                            & .search:hover
+                            {
+                                transform: scale(1.1);
+                                color: var(--num0-color);
+                                cursor: pointer;
+                            }
+                    }
+                }    
+            }
+        }
+    }
+
 @media (max-width: 480px)
 {
     header
@@ -138,7 +260,7 @@
                     & a
                     {
                         all: unset;
-                        color: var(--num0-color);
+                        color: var(--num6-color);
                         text-transform: uppercase;
                         font-weight: 400;
                         font-size: 0.5em;
@@ -220,8 +342,6 @@
                         color: var(--num3-color);
                         margin: 5px;
                         border-left: 1px solid var(--num0-color);
-                        
-                       
 
                         & .search:hover
                         {
@@ -236,6 +356,3 @@
 }
 
 
-@media (min-width: 481px) and (max-width: 768px) {
-    
-}

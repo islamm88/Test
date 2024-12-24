@@ -1,4 +1,4 @@
-@media (min-width: 1025px) 
+@media (min-width: 1024px) 
 {
     footer {
         border-top: 1px solid var(--num3-color);
@@ -38,7 +38,60 @@
                 color: var(--num5-color);
                 font-size: 18px;
                 display: inline-block;
-            
+            }
+    
+            & .footer-social #youtube:hover
+            {
+                color:red;
+            }
+            & .footer-social #github:hover
+            {
+                color:black;
+            }
+            & .footer-social #linkedin:hover
+            {
+                color: #0077b5;
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 950px) {
+    footer {
+        background-color: var(--num1-color);
+        width: 100%;
+        padding: 5px 5px;
+        margin-top: 50px;
+
+        & .footer-content {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            & p {
+                margin-bottom: 5px;
+                color: va(--num0-color);
+                font-size: 0.5em;
+            }
+    
+            & .footer-nav a {
+                margin: 0px 3px;
+                font-size: 0.4em;
+                transition: 0.7s ease;
+            }
+    
+            & nav a:hover {
+                color: var(--num2-color);
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+    
+            & .footer-social a {
+                margin: 20px 10px 0px;
+                color: var(--num5-color);
+                font-size: 1.em;
+                display: inline-block;
             }
     
             & .footer-social #youtube:hover
@@ -54,9 +107,9 @@
                 color: #0077b5;
             }
                     
-            }
+        }
     }
-    
+
 }
 
 
@@ -121,9 +174,7 @@
 }
 
 
-@media (min-width: 481px) and (max-width: 768px) {
-    
-}
+
 
 
 
