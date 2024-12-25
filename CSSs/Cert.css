@@ -20,6 +20,14 @@
     color: var(--num4-color);
     text-shadow: -1px 1px 3px var(--num5-color);
     }
+
+    & p{
+        text-align: center;
+        margin-inline: 20px;
+        font-size: 1.0em;
+        font-weight: 600;
+        text-align: center;
+        }
     
     & .content
     {
@@ -113,6 +121,7 @@
     margin-inline: 20px;
     font-size: 1.0em;
     font-weight: 600;
+    text-align: center;
     }
     
     & .content
@@ -210,6 +219,7 @@
     margin-inline: 20px;
     font-size: 1.0em;
     font-weight: 600;
+    text-align: center;
     }
     
     & .content

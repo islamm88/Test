@@ -30,7 +30,7 @@
             border-radius: 5px;
 
             & h2 {
-                /* text-align: center; */
+                text-align: center;
                 font-size: 2.2em;
                 font-weight: 900;
                 color: var(--num3-color);
@@ -257,7 +257,7 @@
             
 
             & h2 {
-             
+                text-align: center;
                 font-size: 1.0em;
                 font-weight: 600;
                 color: var(--num3-color);
@@ -471,9 +471,8 @@
             padding: 20px;
             flex-direction: column;
             
-
             & h2 {
-             
+                text-align: center;
                 font-size: 1.0em;
                 font-weight: 600;
                 color: var(--num3-color);
