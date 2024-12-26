@@ -43,18 +43,10 @@
         </div>
     </header>
     <div class = "content">
-        <main>
-            <section class = "sec-form1" id = "">
-                        <h3> Welcome to your personal account </h3>
-                        <p>A site that allows you to create a personal account through which you can display your skills, 
-                        projects and certificates in a practical and effective way</p>
-                        <button class = "Google" name="Google"    id="Google"    size="40" height="20px"><i class="fa-brands fa-google"></i> Sign in with Google</button>
-                        <button class = "facebook" name="facebook" id="facebook" size="40" height="20px"><i class="fa-brands fa-facebook"></i> Sign in with facebook</button>
-                        <button class = "twitter" name="twitter"  id="twitter"  size="40" height="20px"><i class="fa-brands fa-twitter"></i> Sign in with twitter</button>
-            </section>
-            <section class = "sec-form2" id = "">
+        <main class = "flex">
+            <section class = "sec-form2 flex" id = "">
                 <h2 class = "SignIn">Sign In Your Account</h2>
-                <form action="" method="post">
+                <form action="" method="post" class = "flex">
                     <div class = "inp">
                         <label for="user">User Name</label>
                         <br>
@@ -65,7 +57,7 @@
                         <br>
                         <i class="fa-solid fa-lock"></i>&nbsp&nbsp<input required type="password" name="password" id="password" placeholder="Your password" size="40" >
                     </div>
-                    <div class = "rm-for">
+                    <div class = "rm-for flex">
                         <div class = "checkbox-remember">
                             <input type="checkbox" name="rm" id="rm" value = "R">
                             <label for="rm" class = "rm">Remember me </label>
@@ -81,12 +73,20 @@
                         <button class = "log"  value = "" name="log" id="log" size="40" height="20px"> <i class="fa-solid fa-right-to-bracket"></i> Sign in </button>
                     </div>
                 </form>
-            </section>
+            </section> 
+            <section class = "sec-form1 flex" id = "">
+                        <h3> Welcome to your personal account </h3>
+                        <p>A site that allows you to create a personal account through which you can display your skills, 
+                        projects and certificates in a practical and effective way</p>
+                        <button class = "Google" name="Google"    id="Google"    size="40" height="20px"><i class="fa-brands fa-google"></i> Sign in with Google</button>
+                        <button class = "facebook" name="facebook" id="facebook" size="40" height="20px"><i class="fa-brands fa-facebook"></i> Sign in with facebook</button>
+                        <button class = "twitter" name="twitter"  id="twitter"  size="40" height="20px"><i class="fa-brands fa-twitter"></i> Sign in with twitter</button>
+            </section> 
         </main>
     </div>
     <footer>
         <div class="footer-content">
-            <p> <spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.5em">&copy;</spam>  2024 <spam style = "color:var(--num3-color) ;font-weight: 900 ; font-size: 1.5em"><i class="fa-solid fa-compass"></i>BP </spam><spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.0em">B</spam><spam style="color: var(--num0-color);">lue</spam> <spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.0em">P</spam><spam style = "color: var(--num0-color);">age</spam>. All rights reserved.</p>
+            <p> <spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.5em">&copy;</spam>  2024 <spam style = "color:var(--num3-color) ;font-weight: 900 ; font-size: 1.5em"><i class="fa-solid fa-compass"></i>BP </spam><spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.0em">B</spam><spam style="color: var(--num6-color);">lue</spam> <spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.0em">P</spam><spam style = "color: var(--num6-color);">age</spam>. All rights reserved.</p>
             <nav class="footer-nav">
                 <a href="../index.html">Home</a>
                 <a href="certificates.html">Certificates</a>
