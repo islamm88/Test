@@ -1,151 +1,378 @@
-section {
-    margin: 100px 0px;
-    padding: 50px 200px;
-    width: 100%;
-    min-height: 100vh;
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
 
-    & .tit-reg {
-        margin-bottom: 20px;
-        margin-top: 20px;
-        font-size: 2.8em;
-        font-weight: 900;
-        color: var(--num4-color);
-        text-shadow: -1px 1px 3px var(--num5-color);
+@media (min-width: 1140px) 
+{
+
+    body {
+        background: linear-gradient(to right, var(--num3-color), var(--num7-color) 80%);
     }
+   
 
-    & form {
-        border: 2px solid var(--num1-color);
-        border-radius: 2px;
-        box-shadow: -5px 5px 3px var(--num5-color);
-        width: 80%;
-        margin: 10px auto;
-        border-radius: 10px;
-        display: flex;
+    section {
+        margin: 100px 0px;
+        padding: 50px 200px;
+        width: 100%;
+        min-height: 100vh;
         flex-direction: column;
-
-        & .cont {
+        align-items: center;
+       
+    
+        & .tit-reg {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 2.8em;
+            font-weight: 900;
+            color: var(--num4-color);
+            text-shadow: -1px 1px 3px var(--num5-color);
+        }
+    
+        & form {
+            border: 2px solid var(--num1-color);
+            border-radius: 2px;
+            box-shadow: -5px 5px 3px var(--num5-color);
+            width: 80%;
+            margin: 10px auto;
+            border-radius: 10px;
+            flex-direction: column;
+            background-color: white;
+    
+            & .cont {
+                border: 1px solid var(--num1-color);
+                border-radius: 10px;
+                margin: 15px;
+                padding: 10px;
+                flex-direction: column;
+                align-items: flex-start;
+                /* border: 1px solid red; */
+    
+                & label {
+                    font-size: 1.0em;
+    
+                    & span {
+                        color: red;
+                    }
+                }
+                & input
+                {
+                    /* width: 500px; */
+                }
+            }
+    
+            & .inpOP {
+                & .male,
+                & .female { 
+                    padding: 5px;
+                    margin: 10px;
+                    gap: 5px;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    
+        /* & .contpass {
             border: 1px solid var(--num1-color);
             border-radius: 10px;
             margin: 15px;
             padding: 10px;
             display: flex;
-            flex-direction: row;
-
-            & label {
-                display: inline-block;
-                width: 10em;
-
-                & span {
-                    color: red;
-                }
-            }
-        }
-
-        & .inpOP {
-            /* border: 1px solid red; */
-            display: flex;
-            align-items: center;
-
-            & .male,
-            & .female {
+            flex-direction: column;
+    
+            & .pass,
+            & .cpass {
                 display: flex;
-                padding: 0px;
-                margin: 0px;
-                align-items: center;
-                gap: 5px;
-            }
-
-            & .ola & .op {
-                display: inline;
-                color: black;
-                font-size: 1.1em;
-                font-weight: 400;
-            }
-        }
-    }
-
-    & .contpass {
-        border: 1px solid var(--num1-color);
-        border-radius: 10px;
-        margin: 15px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-
-        & .pass,
-        & .cpass {
-            display: flex;
-            flex-direction: row;
-
-            & label {
-                display: inline-block;
-                width: 10em;
-                color: var(--num3-color);
-                font-size: 1.2em;
-                font-weight: 400;
-
-                & span {
-                    color: red;
+                flex-direction: row;
+    
+                & label {
+                    display: inline-block;
+                    width: 10em;
+                    color: var(--num3-color);
+                    font-size: 1.2em;
+                    font-weight: 400;
+    
+                    & span {
+                        color: red;
+                    }
                 }
             }
-        }
-
-        & .cpass {
-            margin-top: 10px;
+    
+            & .cpass {
+                margin-top: 10px;
+            }
+        } */
+    
+        & .Cont-button {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+    
+            & .submit,
+            & .reset {
+                all:unset;
+                color: white;
+                background-color: var(--num4-color);
+                margin: 0px 20px;
+                width: 100px;
+                height: 30px;
+                transition: 0.7s ease;
+                border-radius: 22px;
+                border: 1px solid var(--num4-color);
+                text-align: center;
+            }
+    
+            & .submit:hover,
+            & .reset:hover {
+                transform: scale(1.1);
+                background-color: white;
+                color: var(--num4-color);
+                cursor: pointer;
+            }
         }
     }
-
-    & .Cont-button {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-
-        & .submit,
-        & .reset {
-            all:unset;
-            color: white;
-            background-color: var(--num4-color);
-            margin: 0px 20px;
-            width: 100px;
-            height: 30px;
-            transition: 0.7s ease;
-            border-radius: 22px;
-            border: 1px solid var(--num4-color);
-            text-align: center;
+    
+    & p {
+        margin-top: 20px;
+    
+        & .Term-link {
+            all: unset;
+            color: var(--num3-color);
         }
+    
+        & .Term-link:hover {
+            all: unset;
+            color: var(--num2-color);
+            cursor: pointer;
+        }
+    }
+    
+}
 
-        & .submit:hover,
-        & .reset:hover {
-            transform: scale(1.1);
-            background-color: white;
+@media (min-width: 481px) and (max-width: 1139px)
+{
+    body {
+        background: linear-gradient(to right, var(--num3-color), var(--num7-color) 80%);
+    }
+    section {
+        margin: 50px 0px;
+        padding: 5px 5px;
+        width: 100%;
+        min-height: 100vh;
+        flex-direction: column;
+        /* border: 1px solid green; */
+    
+        & .tit-reg {
+            margin: 10px 0px;
+            font-size: 1.8em;
+            font-weight: 400;
             color: var(--num4-color);
+            text-shadow: -1px 1px 3px var(--num5-color);
+        }
+    
+        & form {
+            border: 2px solid var(--num1-color);
+            border-radius: 2px;
+            box-shadow: -5px 5px 3px var(--num5-color);
+            width: 95%;
+            margin:  5px;
+            padding: 5px;
+            border-radius: 10px;
+            flex-direction: column;
+            background-color: white;
+            
+    
+            & .cont {
+                border: 1px solid var(--num1-color);
+                border-radius: 5px;
+                margin: 5px;
+                padding: 5px;
+                flex-direction: column;
+                align-items: flex-start;
+                /* border: 1px solid red; */
+    
+                & label {
+                    font-size: 1.0em;
+                    & span {
+                        color: red;
+                    }
+                }
+            }
+    
+            & .inpOP {
+                /* border: 1px solid red; */
+                display: flex;
+                align-items: center;
+
+                & .male,
+                & .female {
+                    display: flex;
+                    padding: 5px;
+                    margin: 10px;
+                    align-items: center;
+                    gap: 5px;
+                    /* border: 1px solid red; */
+                    font-size: 0.8em;
+                }
+    
+               
+            }
+        }
+    
+        & .Cont-button {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+    
+            & .submit,
+            & .reset {
+                all:unset;
+                color: white;
+                background-color: var(--num4-color);
+                margin: 0px 20px;
+                width: 100px;
+                height: 30px;
+                transition: 0.7s ease;
+                border-radius: 22px;
+                border: 1px solid var(--num4-color);
+                text-align: center;
+            }
+    
+            & .submit:hover,
+            & .reset:hover {
+                transform: scale(1.1);
+                background-color: white;
+                color: var(--num4-color);
+                cursor: pointer;
+            }
+        }
+    }
+    
+    & p {
+        margin-top: 20px;
+    
+        & .Term-link {
+            all: unset;
+            color: var(--num3-color);
+        }
+    
+        & .Term-link:hover {
+            all: unset;
+            color: var(--num2-color);
             cursor: pointer;
         }
     }
 }
-
-& p {
-    margin-top: 20px;
-
-    & .Term-link {
-        all: unset;
-        color: var(--num3-color);
+@media (max-width: 480px)
+{
+    body {
+        background: linear-gradient(to right, var(--num3-color), var(--num7-color) 80%);
     }
+    section {
+        margin: 50px 0px;
+        padding: 5px 5px;
+        width: 100%;
+        min-height: 100vh;
+        flex-direction: column;
+        /* border: 1px solid green; */
+    
+        & .tit-reg {
+            margin: 10px 0px;
+            font-size: 1.8em;
+            font-weight: 400;
+            color: var(--num4-color);
+            text-shadow: -1px 1px 3px var(--num5-color);
+        }
+    
+        & form {
+            border: 2px solid var(--num1-color);
+            border-radius: 2px;
+            box-shadow: -5px 5px 3px var(--num5-color);
+            width: 95%;
+            margin:  5px;
+            padding: 5px;
+            border-radius: 10px;
+            flex-direction: column;
+            background-color: white;
+            
+    
+            & .cont {
+                border: 1px solid var(--num1-color);
+                border-radius: 5px;
+                margin: 5px;
+                padding: 5px;
+                flex-direction: column;
+                align-items: flex-start;
+                /* border: 1px solid red; */
+    
+                & label {
+                    font-size: 1.0em;
+                    & span {
+                        color: red;
+                    }
+                }
+            }
+    
+            & .inpOP {
+                /* border: 1px solid red; */
+                display: flex;
+                align-items: center;
 
-    & .Term-link:hover {
-        all: unset;
-        color: var(--num2-color);
-        cursor: pointer;
+                & .male,
+                & .female {
+                    display: flex;
+                    padding: 5px;
+                    margin: 10px;
+                    align-items: center;
+                    gap: 5px;
+                    /* border: 1px solid red; */
+                    font-size: 0.8em;
+                }
+    
+               
+            }
+        }
+    
+        & .Cont-button {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+    
+            & .submit,
+            & .reset {
+                all:unset;
+                color: white;
+                background-color: var(--num4-color);
+                margin: 0px 20px;
+                width: 100px;
+                height: 30px;
+                transition: 0.7s ease;
+                border-radius: 22px;
+                border: 1px solid var(--num4-color);
+                text-align: center;
+            }
+    
+            & .submit:hover,
+            & .reset:hover {
+                transform: scale(1.1);
+                background-color: white;
+                color: var(--num4-color);
+                cursor: pointer;
+            }
+        }
+    }
+    
+    & p {
+        margin-top: 20px;
+    
+        & .Term-link {
+            all: unset;
+            color: var(--num3-color);
+        }
+    
+        & .Term-link:hover {
+            all: unset;
+            color: var(--num2-color);
+            cursor: pointer;
+        }
     }
 }
-
-
-
-
-
 
 
 

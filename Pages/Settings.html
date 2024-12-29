@@ -18,7 +18,7 @@
     <!-- project icon  -->
     <link rel="shortcut icon" href="../Imgs/user-solid.svg" type="image/x-icon">
     <!-- Scripting file  -->
-    <script src = "../Jss/Sett.js" ></script>
+    
 </head>
 <body class = "root">
     <header class = "flex ">
@@ -48,8 +48,8 @@
         <h2>Settings</h2>
         <p>you can add sittinges of your profile from this page add your profile name , photo , certificates
         CV , projects </p>
-        <form method = "post" action="">
-            <div class = "cont">
+        <form class = "main-info flex" method = "post" action="">
+            <div class = "cont flex">
                 <div>
                     <label for="pro-name"><span>*</span>Profile Name  :</label>
                 </div>
@@ -57,7 +57,7 @@
                     <input type="text" name="pro-name" id="pro-name"  maxlength="30" placeholder="Profile Name" size="50" required>
                 </div>
             </div>
-            <div class = "cont">
+            <div class = "cont flex">
                 <div>
                     <label for="photo">Your photo  :</label>
                 </div>
@@ -65,7 +65,7 @@
                     <input type="file" name="photo" id="photo" >
                 </div>
             </div>
-            <div class = "cont">
+            <div class = "cont flex">
                 <div>
                     <label for="CV-file"><span>*</span>Your CV File  :</label>
                 </div>
@@ -73,7 +73,7 @@
                     <input type="file" name="CV-file" id="CV-file" >
                 </div>
             </div>
-            <div class = "cont url border" >
+            <div class = "cont flex border" >
                 <div>
                     <label for="LN_URL">LinkedIn URL</label>
                 </div>
@@ -99,20 +99,19 @@
             </div>
             
         </form>
-
         <!-- Start Track_Certificates  -->
-            <form action="#" method="post" id = "Form_Track_Cer">
-                <h2>Trackes_Certificates</h2>
-                <button class = "add_track" onclick="Track_cer(event)">
-                    Add Track <i class="fa-solid fa-square-plus"></i>
-                </button>
-               <div class = "modify">         
-                   <button type = "submit" title = "Save" class = "cer_sec_save"  name="cer_sec_save" id="cer_sec_save"><i class="fa-solid fa-floppy-disk"></i></button>
-                   <button type = "reset" title = "reset" class = "cer_sec_res"  name="cer_sec_res" id="cer_sec_res"><i class="fa-solid fa-trash-arrow-up"></i></button>
-                   <button type = "" title = "modify" class = "cer_sec_mod"  name="cer_sec_mod" id="cer_sec_mod"><i class="fa-solid fa-pen-to-square"></i></button>
-               </div>
-            </form>
-            <!-- Start Projects  -->
+        <form action="#" method="post" class = "Form_Track_Cer flex" id = "Form_Track_Cer">
+            <h2>Trackes_Certificates</h2>
+            <button class = "add_track">
+                Add Track <i class="fa-solid fa-square-plus"></i>
+            </button>
+           <div class = "modify">         
+               <button type = "submit" title = "Save" class = "cer_sec_save"  name="cer_sec_save" id="cer_sec_save"><i class="fa-solid fa-floppy-disk"></i></button>
+               <button type = "reset" title = "reset" class = "cer_sec_res"  name="cer_sec_res" id="cer_sec_res"><i class="fa-solid fa-trash-arrow-up"></i></button>
+               <button type = "" title = "modify" class = "cer_sec_mod"  name="cer_sec_mod" id="cer_sec_mod"><i class="fa-solid fa-pen-to-square"></i></button>
+           </div>
+        </form>   
+        <!-- Start Projects  -->
          <!-- <form method = "post" action=""  id = "Form_Cer">
             <h2>Projects</h2>
             <button class = "add-sec-pro">
@@ -180,6 +179,7 @@
             </div>
         </div>
     </footer>
+    <script src = "../Jss/Sett.js" ></script>
 </body>
 
 </html>

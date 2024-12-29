@@ -1,6 +1,6 @@
-/* /////// PC Size //////   */
 @media (min-width: 1140px) 
 {
+    
     .landing 
     {
         min-height: 100vh;
@@ -80,6 +80,7 @@
     
     .departments
     {
+        
         flex-direction: column;
         & .certificates
         {
