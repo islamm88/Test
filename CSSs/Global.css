@@ -88,7 +88,6 @@ input {
     background-color: rgb(238, 237, 237);
     padding-left: 15px;
     height: 30px;
-    height: 30px;
     margin: 5px 0px;
 }
 
@@ -100,7 +99,7 @@ input[type = "reset"]
     width: 150px;
     padding: 5px;
     border-radius: 22px;
-    margin-left: 20px;
+    margin: 20px;
     border: var(--num4-color);
     transition: 0.7s ease;
     font-weight: 400;
