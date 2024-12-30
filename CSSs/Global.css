@@ -98,7 +98,8 @@ input[type = "text"],
 input[type = "number"],
 input[type = "date"] ,
 input[type = "password"] ,
-input[type = "email"]
+input[type = "email"] ,
+input[type = "url"] 
 {
     all:unset;
     display: inline-block;
