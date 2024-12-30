@@ -534,7 +534,7 @@
                         color: white;
                         background-color: #eb0d1f;
                         margin: 0px auto;
-                        width: 300px;
+                        width: 200px;
                         height: 30px;
                         transition: 0.9s ease;
                         border-radius: 15px;
@@ -559,7 +559,7 @@
                         color: white;
                         background-color: #0b22f3;
                         margin: 0px auto;
-                        width: 300px;
+                        width: 200px;
                         height: 30px;
                         transition: 0.9s ease;
                         border-radius: 15px;
@@ -585,7 +585,7 @@
                         color: white;
                         background-color: #0aedf5;
                         margin: 0px auto;
-                        width: 300px;
+                        width: 200px;
                         height: 30px;
                         transition: 0.9s ease;
                         border-radius: 22px;
@@ -640,10 +640,10 @@
                             border-radius: 5px;
                             background-color: var(--num1-color);
                             padding: 5px;
-                            height: 30px;
+                            height: 20px;
                             margin-top: 10px;
                             border: 1px solid var(--num5-color);
-                            width: 300px;
+                            width: 200px;
                         }
                         & input:hover {
                             background-color: white;
@@ -653,7 +653,7 @@
                         /* border: 1px solid rebeccapurple; */
                         padding: 5px;
                         margin-top: 10px;
-                        width: 70%;
+                        width: 100%;
     
                         & .checkbox-remember {
                             display: flex;
@@ -706,7 +706,7 @@
                         color: white;
                         background-color: #0b22f3;
                         margin: 0px 20px;
-                        width: 300px;
+                        width: 200px;
                         height: 30px;
                         transition: 0.9s ease;
                         border-radius: 22px;
