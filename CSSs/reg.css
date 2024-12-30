@@ -329,11 +329,12 @@
                     padding-inline: 45px;
                     margin: 10px;
                     align-items: center;
-                    gap: 5px;
+                    gap: 2px;
                     font-size: 0.8em;
-                    width: 50px;
+                    width: 10px;
                     visibility: visible;
                     opacity: 1; 
+                    cursor: pointer;
                 } 
             }
         }
