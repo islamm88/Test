@@ -317,25 +317,19 @@
                 }
             }
     
-            & .inpOP {
-                /* border: 1px solid red; */
+            & .radio-group {
+                /* border: 1px solid green; */
+                width: 100%;
+                padding: 5px;
+                gap: 5px;
                 display: flex;
                 align-items: center;
 
-                & .male,
-                & .female {
-                    appearance: none;
-                    display: flex;
-                    padding-inline: 45px;
-                    margin: 10px;
-                    align-items: center;
-                    gap: 2px;
-                    font-size: 0.8em;
+                & .opm ,
+                & .opf
+                {
                     width: 10px;
-                    visibility: visible;
-                    opacity: 1; 
-                    cursor: pointer;
-                } 
+                }
             }
         }
     
