@@ -81,15 +81,36 @@ label {
     font-weight: 400;
 }
 
-input {
+/* input
+{
+    all:unset;
     display: inline-block;
-    border: 1px solid var(--num5-color);
+    border-bottom: 2px solid var(--num5-color);
     border-radius: 5px;
     background-color: rgb(238, 237, 237);
     padding-left: 15px;
     height: 30px;
     margin: 5px 0px;
+    width: 90%;
+} */
+
+input[type = "text"],
+input[type = "number"],
+input[type = "date"] ,
+input[type = "password"] ,
+input[type = "email"]
+{
+    all:unset;
+    display: inline-block;
+    border-bottom: 2px solid var(--num5-color);
+    border-radius: 5px;
+    background-color: rgb(238, 237, 237);
+    padding-left: 15px;
+    height: 30px;
+    margin: 5px 0px;
+    width: 90%;
 }
+
 
 input[type = "submit"],
 input[type = "reset"]

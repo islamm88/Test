@@ -38,6 +38,14 @@
                 flex-direction: column;
                 align-items: flex-start;
                 /* border: 1px solid red; */
+
+                & .inp ,
+                & .pass ,
+                & .cpass
+                {
+                    width: 100%;
+                    padding-inline: 10px;
+                }
     
                 & label {
                     font-size: 1.0em;
@@ -48,23 +56,36 @@
                 }
                 & input
                 {
-                    width: 400px;
+                    max-width: 100%;
+                }
+
+                & .datalist
+                {
+                    all:unset;
+                    display: inline-block;
+                    border-bottom: 2px solid var(--num5-color);
+                    border-radius: 5px;
+                    background-color: rgb(238, 237, 237);
+                    padding-left: 15px;
+                    height: 30px;
+                    margin: 5px 0px;
+                    width: 90%;
                 }
             }
     
-            & .inpOP {
-                & .male,
-                & .female { 
-                    appearance: none;
-                    display: flex;
-                    padding-inline: 45px;
-                    margin: 10px;
-                    align-items: center;
-                    gap: 5px;
-                    font-size: 0.8em;
-                    width: 50px;
-                    visibility: visible;
-                    opacity: 1; 
+            & .radio-group {
+                /* border: 1px solid green; */
+                width: 100%;
+                padding: 5px;
+                gap: 5px;
+                display: flex;
+                align-items: center;
+
+                & .opm ,
+                & .opf
+                {
+                    width: 10px;
+
                 }
             }
         }
@@ -179,43 +200,61 @@
     
             & .cont {
                 border: 1px solid var(--num1-color);
-                border-radius: 5px;
-                margin: 5px;
-                padding: 5px;
+                border-radius: 10px;
+                margin: 15px;
+                padding: 10px;
                 flex-direction: column;
                 align-items: flex-start;
                 /* border: 1px solid red; */
+
+                & .inp ,
+                & .pass ,
+                & .cpass
+                {
+                    width: 100%;
+                    padding-inline: 10px;
+                }
     
                 & label {
                     font-size: 1.0em;
+    
                     & span {
                         color: red;
                     }
                 }
-                & input 
+                & input
                 {
-                    width: 400px;
+                    max-width: 100%;
+                }
+
+                & .datalist
+                {
+                    all:unset;
+                    display: inline-block;
+                    border-bottom: 2px solid var(--num5-color);
+                    border-radius: 5px;
+                    background-color: rgb(238, 237, 237);
+                    padding-left: 15px;
+                    height: 30px;
+                    margin: 5px 0px;
+                    width: 90%;
                 }
             }
     
-            & .inpOP {
-                /* border: 1px solid red; */
+            & .radio-group {
+                /* border: 1px solid green; */
+                width: 100%;
+                padding: 5px;
+                gap: 5px;
                 display: flex;
                 align-items: center;
 
-                & .male,
-                & .female {
-                    appearance: none;
-                    display: flex;
-                    padding-inline: 45px;
-                    margin: 10px;
-                    align-items: center;
-                    gap: 5px;
-                    font-size: 0.8em;
-                    width: 50px;
-                    visibility: visible;
-                    opacity: 1; 
-                } 
+                & .opm ,
+                & .opf
+                {
+                    width: 10px;
+
+                }
             }
         }
     
@@ -298,22 +337,44 @@
     
             & .cont {
                 border: 1px solid var(--num1-color);
-                border-radius: 5px;
-                margin: 5px;
-                padding: 5px;
+                border-radius: 10px;
+                margin: 15px;
+                padding: 10px;
                 flex-direction: column;
                 align-items: flex-start;
                 /* border: 1px solid red; */
+
+                & .inp ,
+                & .pass ,
+                & .cpass
+                {
+                    width: 100%;
+                    padding-inline: 10px;
+                }
     
                 & label {
                     font-size: 1.0em;
+    
                     & span {
                         color: red;
                     }
                 }
-                & input 
+                & input
                 {
-                    width: 280px;
+                    max-width: 100%;
+                }
+
+                & .datalist
+                {
+                    all:unset;
+                    display: inline-block;
+                    border-bottom: 2px solid var(--num5-color);
+                    border-radius: 5px;
+                    background-color: rgb(238, 237, 237);
+                    padding-left: 15px;
+                    height: 30px;
+                    margin: 5px 0px;
+                    width: 90%;
                 }
             }
     
@@ -329,6 +390,7 @@
                 & .opf
                 {
                     width: 10px;
+
                 }
             }
         }
