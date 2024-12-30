@@ -320,14 +320,16 @@
 
                 & .male,
                 & .female {
+                    appearance: none;
                     display: flex;
-                    padding: 5px;
+                    padding-inline: 45px;
                     margin: 10px;
                     align-items: center;
                     gap: 5px;
-                    /* border: 1px solid red; */
                     font-size: 0.8em;
                     width: 50px;
+                    visibility: visible;
+                    opacity: 1; 
                 } 
             }
         }
