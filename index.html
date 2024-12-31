@@ -20,29 +20,42 @@
     <link rel="shortcut icon" href="Imgs/user-solid.svg" type="image/x-icon">
 </head>
 <body>
-    <header class = "flex ">
-        <div class="container flex  ">
+    <header class ="flex">
+        <div class="container flex">
             <div class = "logo ">
                 <h1><a href="#"><spam class = "L"><i class="fa-solid fa-compass"></i></spam> <spam class = "L">BP</spam><spam class = "LB">B</spam>lue <spam class = "LP">P</spam>age</a></h1>
             </div>
-            <nav class = "flex">     
-                <i class = "fa fa-bars menu"></i>
-                <ul>
-                    <li><a class = "active" href="index.html">Home</a></li>
-                    <li><a href="Pages/certificates.html">Certificates</a></li>
-                    <li><a href="Pages/Projects.html">Projects</a></li>
-                    <li><a href="Pages/ContactUs.html">ContactUs</a></li>
-                    <li><a href="Pages/Settings.html">Settings</a></li>
-                    <li><a href="Pages/About.html">AboutUs</a></li>
-                    <li><a href="Pages/Registration.html">Registration</a></li>
-                    <li><a href="Pages/log.html">Login</a></li>
-                </ul>
-                <div class = "form flex ">
-                    <i class = "fa fa-search  search"></i>
-                </div>
-            </nav> 
+            <nav class = "flex">
+                <!-- sidebar  -->
+                <ul class="sidebar">
+                    <li class = "closemenubar"><a><i class="fa-solid fa-xmark"></i></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Pages/certificates.html">Certificates</a></li>
+                        <li><a href="Pages/Projects.html">Projects</a></li>
+                        <li><a href="Pages/ContactUs.html">ContactUs</a></li>
+                        <li><a href="Pages/Settings.html">Settings</a></li>
+                        <li><a href="Pages/About.html">AboutUs</a></li>
+                        <li><a href="Pages/Registration.html">Registration</a></li>
+                        <li><a href="Pages/log.html">Login</a></li>
+                </ul> 
+                <!-- navbar  -->
+                <ul class="main-menu">
+                        <li><a class = "active" href="index.html">Home</a></li>
+                        <li><a href="Pages/certificates.html">Certificates</a></li>
+                        <li><a href="Pages/Projects.html">Projects</a></li>
+                        <li><a href="Pages/ContactUs.html">ContactUs</a></li>
+                        <li><a href="Pages/Settings.html">Settings</a></li>
+                        <li><a href="Pages/About.html">AboutUs</a></li>
+                        <li><a href="Pages/Registration.html">Registration</a></li>
+                        <li><a href="Pages/log.html">Login</a></li>
+                </ul> 
+            </nav>
+            <div class = "buttons flex">
+                <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
+                <button class = "serch-button"><i class = "fa fa-search  search"></i></button> 
+            </div>
         </div>
-    </header> 
+    </header>
     <section class="landing baner flex border">
         <div class = "overlay border"></div>
             <div class = "intro border flex">
@@ -107,44 +120,24 @@
     </footer>
 </div>
 </body>
+<script>
+    //selectors
+    const sidebarElement = document.querySelector('.sidebar');
+    const menuButtonElement = document.querySelector('.menu-button');
+    const closeSidebarButtonElement = document.querySelector('.closemenubar');
+    // Listener
+    menuButtonElement.addEventListener('click', showsidebar);
+    closeSidebarButtonElement.addEventListener('click', hidesidebar );
+    // function
+    function showsidebar()
+    {
+        sidebarElement.style.display = "flex";
+    }
+    function hidesidebar ()
+    {
+        sidebarElement.style.display = "none";
+    }
+</script>
 </html>
-
-
-<!-- bootstrap  -->
-<!-- =================================================
-                  Test Bootstrap
-=====================================================-->
-
-    <!-- Notes :
-    we will start by div container
-    and create div row containt the divs columns -->
-
-
-<!-- <div class="container flex " style = "border: 1px solid red;">
-    <div class = "col-2 logo" style = "border: 1px solid red;">
-        <h1><a href="#"><spam class = "L"><i class="fa-solid fa-compass"></i></spam> <spam class = "L">BP</spam><spam class = "LB">B</spam>lue <spam class = "LP">P</spam>age</a></h1> 
-    </div>
-    <div class = "col-8 nav" style = "border: 1px solid red;">
-        <i class = "fa fa-bars menu"></i>
-        <ul>
-            <li><a class = "active" href="index.html">Home</a></li>
-            <li><a href="Pages/certificates.html">Certificates</a></li>
-            <li><a href="Pages/Projects.html">Projects</a></li>
-            <li><a href="Pages/ContactUs.html">ContactUs</a></li>
-            <li><a href="Pages/Settings.html">Settings</a></li>
-            <li><a href="Pages/Registration.html">Registration</a></li>
-            <li><a href="Pages/About.html">AboutUs</a></li>
-            <li><a href="Pages/log.html">Login</a></li>
-        </ul>
-    </div>
-    <div class = "col-2 form" style = "border: 1px solid red;">
-        <i class = "fa fa-search  search"></i>
-    </div>
-</div>
-    <script src="Jss/popper.min.js"></script>
-    <script src="Jss/jquery-3.7.1.min.js"></script>
-    <script src="Jss/bootstrap.js"></script>
-
-    </div> -->
 
 

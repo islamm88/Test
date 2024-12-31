@@ -15,6 +15,7 @@
     --num6-color: black;
     --num7-color: rgb(131, 191, 237);
     --num8-color:rgba(0, 0, 0, 0.7);
+    --num9-color: #dbd3d376;
 }
 
 .dark {
@@ -44,7 +45,8 @@ a {
 ul
 {
     display: flex;
-    & li {
+    & li
+    {
         list-style: none;
     }
 }

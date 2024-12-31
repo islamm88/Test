@@ -19,27 +19,40 @@
     <link rel="shortcut icon" href="../Imgs/user-solid.svg" type="image/x-icon">
 </head>
 <body class = "root">
-    <header class = "flex ">
-        <div class="container flex  ">
+    <header class ="flex">
+        <div class="container flex">
             <div class = "logo ">
                 <h1><a href="#"><spam class = "L"><i class="fa-solid fa-compass"></i></spam> <spam class = "L">BP</spam><spam class = "LB">B</spam>lue <spam class = "LP">P</spam>age</a></h1>
             </div>
-            <nav class = "flex">     
-                <i class = "fa fa-bars menu"></i>
-                <ul>
-                    <li><a class = "active" href="../index.html">Home</a></li>
-                    <li><a href="certificates.html">Certificates</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="ContactUs.html">ContactUs</a></li>
-                    <li><a href="Settings.html">Settings</a></li>
-                    <li><a href="About.html">AboutUs</a></li>
-                    <li><a href="Registration.html">Registration</a></li>
-                    <li><a href="log.html">Login</a></li>
-                </ul>
-                <div class = "form flex ">
-                    <i class = "fa fa-search  search"></i>
-                </div>
-            </nav> 
+            <nav class = "flex">
+                <!-- sidebar  -->
+                <ul class="sidebar">
+                    <li class = "closemenubar"><a><i class="fa-solid fa-xmark"></i></a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="certificates.html">Certificates</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="ContactUs.html">ContactUs</a></li>
+                        <li><a href="Settings.html">Settings</a></li>
+                        <li><a href="About.html">AboutUs</a></li>
+                        <li><a href="Registration.html">Registration</a></li>
+                        <li><a href="log.html">Login</a></li>
+                </ul> 
+                <!-- navbar  -->
+                <ul class="main-menu">
+                        <li><a class = "active" href="index.html">Home</a></li>
+                        <li><a href="certificates.html">Certificates</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="ContactUs.html">ContactUs</a></li>
+                        <li><a href="Settings.html">Settings</a></li>
+                        <li><a href="About.html">AboutUs</a></li>
+                        <li><a href="Registration.html">Registration</a></li>
+                        <li><a href="log.html">Login</a></li>
+                </ul> 
+            </nav>
+            <div class = "buttons flex">
+                <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
+                <button class = "serch-button"><i class = "fa fa-search  search"></i></button> 
+            </div>
         </div>
     </header>
         <section class="content">
@@ -122,4 +135,23 @@
         </div>
     </footer>
 </body>
+<script>
+    //selectors
+    const sidebarElement = document.querySelector('.sidebar');
+    const menuButtonElement = document.querySelector('.menu-button');
+    const closeSidebarButtonElement = document.querySelector('.closemenubar');
+    // Listener
+    menuButtonElement.addEventListener('click', showsidebar);
+    closeSidebarButtonElement.addEventListener('click', hidesidebar );
+    // function
+    function showsidebar()
+    {
+        sidebarElement.style.display = "flex";
+    }
+    function hidesidebar ()
+    {
+        sidebarElement.style.display = "none";
+    }
+</script>
+</html>
 
