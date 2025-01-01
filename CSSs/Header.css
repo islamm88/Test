@@ -1,509 +1,74 @@
-@media (min-width: 1140px) 
-{
-    
-    header
+/* ==================
+      Start header 
+   ================== */
+header{
+    background-color: var(--num1-color);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    justify-content: space-between;
+    padding-inline: 10%;
+
+    & .logo h1 a 
     {
-        position: fixed;
-        width: 100%;
-        background-color: var(--num1-color);
-        z-index: 999;
-        border-bottom: 1px solid var(--num3-color);
-
-        & .container
-        {
-            width: 100%;
-            margin-inline: 3%;
-            justify-content: space-between;
-            align-items:end;
-            padding-inline: 15px;
-            justify-content: flex-end;
-
-            & .logo
-            {
-                margin-right: auto;
-                & h1 
-                {
-                    all: unset;
-
-                    & a
-                    {
-                        all: unset;
-                        color: var(--num6-color);
-                        text-transform: uppercase;
-                        font-weight: 400;
-                        font-size: 1.5em;
-                    }
-
-                & a:hover
-                    {
-                        cursor: pointer;
-                    }
-
-                & a .L
-                    {
-                        all: unset;
-                        color: var(--num3-color);
-                        font-weight: 900;
-                        font-size: 2.8em;
-                        display: inline-block;
-                    }
-
-                & a .LB,
-                & a .LP
-                    {
-                        color: var(--num3-color);
-                    }
-                }      
-            }
-
-            & nav 
-            {
-                justify-content: flex-end;
-
-                & .main-menu
-                {
-                    
-                    & li 
-                    {
-                        & a
-                        {
-                            display: flex;
-                            color: var(--num3-color);
-                            font-size: 1.1 em;
-                            margin-inline: 0.5em;
-                            transition: 0.7s ease;
-                            
-                        }
-            
-                    &  .active , a:hover 
-                        {
-                            color: var(--num0-color);
-                            cursor: pointer;
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-
-                & .sidebar
-                {
-                    display: none;
-                    justify-content: flex-start;
-                    align-items: center;
-                    flex-direction: column;
-                    position: fixed;
-                    top: 0;
-                    right: 0;
-                    width: 250px;
-                    height: 100vh;
-                    background-color: var(--num9-color);
-                    backdrop-filter: blur(10px);
-                    z-index: 9999;
-                }
-
-                & .sidebar li 
-                {
-                    width: 100%;
-                    height: 50px;
-                }
-
-                & .sidebar li a
-                {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: var(--num4-color);
-                    transition: 0.7s ease;
-                }
-
-                & .sidebar li a:hover
-                {
-                    color: var(--num0-color);
-                    cursor: pointer;
-                    transform: scale(1.0);
-                }
-            }
-
-            & .buttons
-            {
-                justify-content: center;
-                margin: 0px;
-                padding: 0px;
-
-                & .menu-button ,
-                & .serch-button
-                {
-                padding: 0px 10px;
-                display: block;
-                color: var(--num3-color);
-                transition: 0.7s ease;
-                
-                & .fa-bars,
-                & .fa-search
-                {
-                    font-size: 1.5em;
-                }
-                }
-
-                & .menu-button:hover ,
-                & .serch-button:hover
-                {
-                    color: var(--num0-color);
-                    cursor: pointer;
-                    transform: scale(1.1);
-                }
-
-                & .serch-button
-                {
-                    border-left : 1px solid black;
-                }
-
-                & .menu-button
-                {
-                    display: none;
-                }
-            }
-        }  
-        
+        all: unset;
+        color: var(--num3-color);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.1em;
     }
-} 
 
+    & .logo h1 a:hover {
+        cursor: pointer;
+    }
 
-@media (min-width: 481px) and (max-width: 1139px)
-{
-    header
+    & nav a
     {
-        position: fixed;
-        width: 100%;
-        background-color: var(--num1-color);
-        z-index: 999;
-        border-bottom: 1px solid var(--num3-color);
-
-        & .container
-        {
-            width: 100%;
-            margin-inline: 3%;
-            justify-content: space-between;
-            align-items:end;
-            padding-inline: 15px;
-            justify-content: flex-end;
-
-            & .logo
-            {
-                margin-right: auto;
-                & h1 
-                {
-                    all: unset;
-
-                    & a
-                    {
-                        all: unset;
-                        color: var(--num6-color);
-                        text-transform: uppercase;
-                        font-weight: 400;
-                        font-size: 0.5em;
-                    }
-
-                & a:hover
-                    {
-                        cursor: pointer;
-                    }
-
-                & a .L
-                    {
-                        all: unset;
-                        color: var(--num3-color);
-                        font-weight: 900;
-                        font-size: 2.8em;
-                        display: inline-block;
-                    }
-
-                & a .LB,
-                & a .LP
-                    {
-                        color: var(--num3-color);
-                    }
-                }      
-            }
-
-            & nav 
-            {
-                justify-content: flex-end;
-
-                & .main-menu
-                {
-                    display: none;
-                    & li 
-                    {
-                        & a
-                        {
-                            display: block;
-                            color: var(--num3-color);
-                            font-size: 1.1 em;
-                            margin-inline: 0.5em;
-                            transition: 0.7s ease;
-                            
-                        }
-            
-                    &  .active , a:hover 
-                        {
-                            color: var(--num0-color);
-                            cursor: pointer;
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-
-                & .sidebar
-                {
-                    display: none;
-                    justify-content: flex-start;
-                    align-items: center;
-                    flex-direction: column;
-                    position: fixed;
-                    top: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 100vh;
-                    background-color: var(--num9-color);
-                    backdrop-filter: blur(10px);
-                    z-index: 9999;
-                }
-
-                & .sidebar li 
-                {
-                    width: 100%;
-                    height: 50px;
-                }
-
-                & .sidebar li a
-                {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: var(--num4-color);
-                    transition: 0.7s ease;
-                }
-
-                & .sidebar li a:hover
-                {
-                    color: var(--num0-color);
-                    cursor: pointer;
-                    transform: scale(1.0);
-                }
-            }
-
-            & .buttons
-            {
-                justify-content: center;
-                margin: 0px;
-                padding: 0px;
-
-                & .menu-button ,
-                & .serch-button
-                {
-                padding: 0px 10px;
-                display: block;
-                color: var(--num3-color);
-                transition: 0.7s ease;
-                
-                & .fa-bars,
-                & .fa-search
-                {
-                    font-size: 1.5em;
-                }
-                }
-
-                & .menu-button:hover ,
-                & .serch-button:hover
-                {
-                    color: var(--num0-color);
-                    cursor: pointer;
-                    transform: scale(1.1);
-                }
-
-                & .serch-button
-                {
-                    border-left : 1px solid black;
-                }
-
-                & .menu-button
-                {
-                    display: block;
-                }
-            }
-        }  
-        
+        display: inline-block;
+        color: var(--num3-color);
+        font-size: 1.1em;
+        font-weight: 400;
+        margin-inline: 1rem;
+        transition: 0.7s ease;
     }
-}  
 
-@media (max-width: 480px)
-{
-    
-    header
-    {
-        position: fixed;
-        width: 100%;
-        background-color: var(--num1-color);
-        z-index: 999;
-        border-bottom: 1px solid var(--num3-color);
-
-        & .container
-        {
-            width: 100%;
-            margin-inline: 3%;
-            justify-content: space-between;
-            align-items:end;
-            padding-inline: 15px;
-            justify-content: flex-end;
-
-            & .logo
-            {
-                margin-right: auto;
-                & h1 
-                {
-                    all: unset;
-
-                    & a
-                    {
-                        all: unset;
-                        color: var(--num6-color);
-                        text-transform: uppercase;
-                        font-weight: 400;
-                        font-size: 0.5em;
-                    }
-
-                & a:hover
-                    {
-                        cursor: pointer;
-                    }
-
-                & a .L
-                    {
-                        all: unset;
-                        color: var(--num3-color);
-                        font-weight: 900;
-                        font-size: 2.8em;
-                        display: inline-block;
-                    }
-
-                & a .LB,
-                & a .LP
-                    {
-                        color: var(--num3-color);
-                    }
-                }      
-            }
-
-            & nav 
-            {
-                justify-content: flex-end;
-
-                & .main-menu
-                {
-                    display: none;
-                    & li 
-                    {
-                        & a
-                        {
-                            display: block;
-                            color: var(--num3-color);
-                            font-size: 1.1 em;
-                            margin-inline: 0.5em;
-                            transition: 0.7s ease;
-                            
-                        }
-            
-                    &  .active , a:hover 
-                        {
-                            color: var(--num0-color);
-                            cursor: pointer;
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-
-                & .sidebar
-                {
-                    display: none;
-                    justify-content: flex-start;
-                    align-items: center;
-                    flex-direction: column;
-                    position: fixed;
-                    top: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 100vh;
-                    background-color: var(--num9-color);
-                    backdrop-filter: blur(10px);
-                    z-index: 9999;
-                }
-
-                & .sidebar li 
-                {
-                    width: 100%;
-                    height: 50px;
-                }
-
-                & .sidebar li a
-                {
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: var(--num4-color);
-                    transition: 0.7s ease;
-                }
-
-                & .sidebar li a:hover
-                {
-                    color: var(--num0-color);
-                    cursor: pointer;
-                    transform: scale(1.0);
-                }
-            }
-
-            & .buttons
-            {
-                justify-content: center;
-                margin: 0px;
-                padding: 0px;
-
-                & .menu-button ,
-                & .serch-button
-                {
-                padding: 0px 10px;
-                display: block;
-                color: var(--num3-color);
-                transition: 0.7s ease;
-                
-                & .fa-bars,
-                & .fa-search
-                {
-                    font-size: 1.5em;
-                }
-                }
-
-                & .menu-button:hover ,
-                & .serch-button:hover
-                {
-                    color: var(--num0-color);
-                    cursor: pointer;
-                    transform: scale(1.1);
-                }
-
-                & .serch-button
-                {
-                    border-left : 1px solid black;
-                }
-
-                & .menu-button
-                {
-                    display: block;
-                }
-            }
-        }  
-        
+    & nav a:hover {
+        color: var(--num2-color);
+        cursor: pointer;
+        transform: scale(1.1);
     }
-} 
+}
+
+/* =================
+      End header 
+   =================  */
+
+
+   /* ========================
+        media & responsive  
+      ======================== */
+
+/* Extra small devices (phones, portrait) */
+@media (max-width: 576px) {
+    /* Styles for phones */
+}
+
+/* Small devices (phones, landscape) */
+@media (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+    /* Styles for small laptops or larger tablets */
+}
+
+/* Large devices (desktops) */
+@media (max-width: 1200px) {
+    /* Styles for desktops */
+}
+
+/* Extra large devices (large desktops) */
+@media (max-width: 1400px) {
+    /* Styles for large screens */
+}

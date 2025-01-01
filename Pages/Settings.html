@@ -4,149 +4,140 @@
     <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "author" content = "Islam Mustafa Fawzy">
-    <meta name = "description" content = "creating your profile on website page add your cv your certificates and your projects ">
-    <meta name = "keywords" content = "BP Blue Page CV Certificates Projects portofolio "> 
+    <meta name = "author" content = "Islam Mustafa Fawzy"> 
     <!-- title  -->
-    <title>BP Blue Page_Settings</title>
+    <title>MyProfile_Settings</title>
     <!-- style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="../CSSs/Global.css">
     <link rel="stylesheet" href="../CSSs/Header.css">
     <link rel="stylesheet" href="../CSSs/set.css"/>
     <link rel="stylesheet" href="../CSSs/Footer.css">
-    <!-- project icon  -->
     <link rel="shortcut icon" href="../Imgs/user-solid.svg" type="image/x-icon">
-    <!-- Scripting file  -->
-    
 </head>
 <body class = "root">
-    <header class ="flex">
-        <div class="container flex">
-            <div class = "logo ">
-                <h1><a href="#"><spam class = "L"><i class="fa-solid fa-compass"></i></spam> <spam class = "L">BP</spam><spam class = "LB">B</spam>lue <spam class = "LP">P</spam>age</a></h1>
-            </div>
-            <nav class = "flex">
-                <!-- sidebar  -->
-                <ul class="sidebar">
-                    <li class = "closemenubar"><a><i class="fa-solid fa-xmark"></i></a></li>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="certificates.html">Certificates</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="ContactUs.html">ContactUs</a></li>
-                        <li><a href="Settings.html">Settings</a></li>
-                        <li><a href="About.html">AboutUs</a></li>
-                        <li><a href="Registration.html">Registration</a></li>
-                        <li><a href="log.html">Login</a></li>
-                </ul> 
-                <!-- navbar  -->
-                <ul class="main-menu">
-                        <li><a class = "active" href="index.html">Home</a></li>
-                        <li><a href="certificates.html">Certificates</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="ContactUs.html">ContactUs</a></li>
-                        <li><a href="Settings.html">Settings</a></li>
-                        <li><a href="About.html">AboutUs</a></li>
-                        <li><a href="Registration.html">Registration</a></li>
-                        <li><a href="log.html">Login</a></li>
-                </ul> 
-            </nav>
-            <div class = "buttons flex">
-                <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
-                <button class = "serch-button"><i class = "fa fa-search  search"></i></button> 
-            </div>
+    <header class = "flex">
+        <div class = "logo">
+            <h1><a href="../index.html">My Profile</a></h1>
         </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="certificates.html">Certificates</a>
+            <a href="Projects.html">Projects</a>
+            <a href="ContactUs.html">ContactUs</a>
+            <a href="Settings.html">Setinges</a>
+            <a href="Registration.html">Registration</a>
+            <a href="About.html">AboutUs</a>
+            <a href="log.html">Login</a>   
+        </nav>
     </header>
-    <Section class = "flex">
+    <Section>
         <h2>Settings</h2>
-        <p>you can add sittinges of your profile from this page add your profile name , photo , certificates
-        CV , projects </p>
-        <form class = "main-info flex" method = "post" action="">
-            <div class = "cont flex">
-                <div>
+        <form method = "post" action="">
+            <div class = "cont">
+                <div class = "lab">
                     <label for="pro-name"><span>*</span>Profile Name  :</label>
                 </div>
-                <div>
-                    <input type="text" name="pro-name" id="pro-name"  maxlength="30" placeholder="Profile Name" size="50" required>
+                <div class="inp">
+                    <input type="text" name="pro-name" id="pro-name" required maxlength="30" placeholder="Profile Name" size="50">
                 </div>
             </div>
-            <div class = "cont flex">
-                <div>
+            <div class = "cont">
+                <div class = "lab">
                     <label for="photo">Your photo  :</label>
                 </div>
-                <div>
-                    <input type="file" name="photo" id="photo" >
+                <div class="inp-file">
+                    <input class = "photo" type="file" name="photo" id="photo" >
                 </div>
             </div>
-            <div class = "cont flex">
-                <div>
-                    <label for="CV-file"><span>*</span>Your CV File  :</label>
+            <div class = "cont">
+                <div class = "lab">
+                    <label for="CV-file">Your CV File  :</label>
                 </div>
-                <div>
-                    <input type="file" name="CV-file" id="CV-file" >
-                </div>
-            </div>
-            <div class = "cont flex border" >
-                <div>
-                    <label for="LN_URL">LinkedIn URL</label>
-                </div>
-                <div>
-                    <input type="url" name="LN_URL" id="LN_URL"  maxlength="30" placeholder="Add your LinkedIn URL" size="50">
-                </div>
-                <div>
-                    <label for="YT_URL">Youtube URL</label>
-                </div>
-                <div>
-                    <input type="url" name="YT_URL" id="YT_URL" maxlength="30" placeholder="Add your Youtube URL" size="50">
-                </div>
-                <div>
-                    <label for="GH_URL">Github URL</label>
-                </div>
-                <div>
-                    <input type="url" name="GH_URL" id="GH_URL"  maxlength="30" placeholder="Add your Github URL" size="50">
+                <div class="inp-file">
+                    <input class = "cv-file" type="file" name="CV-file" id="CV-file" >
                 </div>
             </div>
-            <div class = "cont_button flex">
-                <input  type = "submit" value = "Commit">
-                <input  type = "reset" value = "Reset">
+            <div class = "cont url" >
+                <div class = "lab">
+                    <label for="pro-name">LinkedIn URL</label>
+                </div>
+                <div class="inp">
+                    <input type="url" name="pro-name" id="pro-name" required maxlength="30" placeholder="Add your LinkedIn URL" size="50">
+                </div>
+                <div class = "lab">
+                    <label for="pro-name">Youtube URL</label>
+                </div>
+                <div class="inp">
+                    <input type="url" name="pro-name" id="pro-name" required maxlength="30" placeholder="Add your Youtube URL" size="50">
+                </div>
+                <div class = "lab">
+                    <label for="pro-name">Github URL</label>
+                </div>
+                <div class="inp">
+                    <input type="url" name="pro-name" id="pro-name" required maxlength="30" placeholder="Add your Github URL" size="50">
+                </div>
             </div>
-            
+            <input class = "com-but" type = "submit" value = "Commit">
+            <input class = "res-but" type = "reset" value = "Reset">
         </form>
-        <!-- Start Track_Certificates  -->
-        <form action="#" method="post" class = "Form_Track_Cer flex" id = "Form_Track_Cer">
-            <h2>Trackes_Certificates</h2>
-            <button class = "add_track">
-                Add Track <i class="fa-solid fa-square-plus"></i>
-            </button>
-           <div class = "modify">         
-               <button type = "submit" title = "Save" class = "cer_sec_save"  name="cer_sec_save" id="cer_sec_save"><i class="fa-solid fa-floppy-disk"></i></button>
-               <button type = "reset" title = "reset" class = "cer_sec_res"  name="cer_sec_res" id="cer_sec_res"><i class="fa-solid fa-trash-arrow-up"></i></button>
-               <button type = "" title = "modify" class = "cer_sec_mod"  name="cer_sec_mod" id="cer_sec_mod"><i class="fa-solid fa-pen-to-square"></i></button>
-           </div>
-        </form>   
-        <!-- Start Projects  -->
-         <!-- <form method = "post" action=""  id = "Form_Cer">
+            <!-- Start Certificats  -->
+            <form action="">
+                <h2>Certificats</h2>
+                <button class = "add-sec-cer">
+                    Add Section <i class="fa-solid fa-square-plus"></i>
+                </button>
+                <div class = "cont cer">
+                    <div class = "lab">
+                        <label for="pro-name"><span>*</span>Field Name  :</label>
+                    </div>
+                    <div class="inp">
+                        <input type="text" name="pro-name" id="pro-name" required maxlength="30" placeholder="Profile Name" size="50">
+                    </div>
+                    <button class = "add-cer">
+                        Add Certificate <i class="fa-solid fa-square-plus"></i>
+                    </button>
+                    <div class = "ncer">
+                        <div class="inp-file">
+                            <input class = "cv-file" type="file" name="CV-file" id="CV-file" required maxlength="30" placeholder="Profile Name" size="50">
+                        </div>
+                        <label for="">Title :</label>
+                        <input type="text" name="" id="" maxlength="200">
+                        <label for="">Description</label>
+                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                    </div>
+                </div>  
+                <input class = "com-but" type = "submit" value = "Commit">
+                <input class = "res-but" type = "reset" value = "Reset"> 
+            </form>
+            <!-- Start Projects  -->
+        <form action="">
             <h2>Projects</h2>
             <button class = "add-sec-pro">
-                Add Track <i class="fa-solid fa-square-plus"></i>
+                Add Section <i class="fa-solid fa-square-plus"></i>
             </button>
+            
             <div class = "cont pro">
                 <div class = "lab">
                     <label for="pro-name"><span>*</span>Field Name  :</label>
                 </div>
+
                 <div class="inp">
-                    <input type="text" name="pro-name" id="pro-name"  maxlength="30" placeholder="Profile Name" size="50">
+                    <input type="text" name="pro-name" id="pro-name" required maxlength="30" placeholder="Profile Name" size="50">
                 </div>
+    
                 <button class = "add-cer">
                     Add Project <i class="fa-solid fa-square-plus"></i>
                 </button>
                 <div class = "ncer">
+                 
+        
                     <label for="">Title :</label>
                     <input type="text" name="" id="" maxlength="200">
                     <label for="">Image</label>
                     <div class = "cont img">
                         <div class="inp-file">
-                            <input title = "pleas select image"  class = "img-pro" type="file" name="img1" id="img1"  placeholder="img2" size="50">
+                            <input title = "pleas select image"  class = "img-pro" type="file" name="img1" id="img1" required placeholder="img2" size="50">
                         </div>
                         <div class="inp-file">
                             <input title = "pleas select image" class = "img-pro" type="file" name="img2" id="img2"  placeholder="img2">
@@ -165,25 +156,24 @@
                         <input title = "pleas select image" class = "img-pro" type="file" name="img4" id="img4"  maxlength="30" placeholder="img4">
                     </div>
                     
-                </div> 
+                </div>
                 
-             </div> 
+            </div> 
                 <input class = "com-but" type = "submit" value = "Commit">
                 <input class = "res-but" type = "reset" value = "Reset">
-        </form>  -->
+        </form> 
     </Section>
     <footer>
         <div class="footer-content">
-            <p> <spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.5em">&copy;</spam>  2024 <spam style = "color:var(--num3-color) ;font-weight: 900 ; font-size: 1.5em"><i class="fa-solid fa-compass"></i>BP </spam><spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.0em">B</spam><spam style="color: var(--num5-color);">lue</spam> <spam style = "color:var(--num3-color) ; font-weight: 900 ; font-size: 1.0em">P</spam><spam style = "color: var(--num5-color);">age</spam>. All rights reserved.</p>
+            <p>&copy; 2024 My Profile. All rights reserved.</p>
             <nav class="footer-nav">
-                <a href="../index.html">Home</a>
-                <a href="certificates.html">Certificates</a>
-                <a href="Projects.html">Projects</a>
-                <a href="ContactUs.html">Contact Us</a>
-                <a href="Settings.html">Settings</a>
-                <a href="About.html">AboutUs</a>
-                <a href="Registration.html">Register</a>
-                <a href="log.html">Login</a>
+                <a href="index.html">Home</a>
+                <a href="Pages/certificates.html">Certificates</a>
+                <a href="Pages/Projects.html">Projects</a>
+                <a href="Pages/ContactUs.html">Contact Us</a>
+                <a href="Settings.html">Setinges</a>
+                <a href="Pages/Registration.html">Register</a>
+                <a href="Pages/log.html">Login</a>
             </nav>
             <div class="footer-social">
                 <a id ="linkedin" href="https://linkedin.com/in/islam-mustafa-755a49235" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -192,24 +182,5 @@
             </div>
         </div>
     </footer>
-    <script src = "../Jss/Sett.js" ></script>
 </body>
-<script>
-    //selectors
-    const sidebarElement = document.querySelector('.sidebar');
-    const menuButtonElement = document.querySelector('.menu-button');
-    const closeSidebarButtonElement = document.querySelector('.closemenubar');
-    // Listener
-    menuButtonElement.addEventListener('click', showsidebar);
-    closeSidebarButtonElement.addEventListener('click', hidesidebar );
-    // function
-    function showsidebar()
-    {
-        sidebarElement.style.display = "flex";
-    }
-    function hidesidebar ()
-    {
-        sidebarElement.style.display = "none";
-    }
-</script>
 </html>

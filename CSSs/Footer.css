@@ -1,180 +1,58 @@
-@media (min-width: 1140px) 
-{
-    footer {
-        border-top: 1px solid var(--num3-color);
-        background-color: var(--num1-color);
-        width: 100%;
-        padding: 30px 200px;
-        /* margin-top:100px  ; */
-    
-        & .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items:center;
+footer {
+    margin-top: 50px;
+    background-color: var(--num1-color);
+    width: 100%;
+    padding: 30px 200px;
 
-            & p {
-                margin-bottom: 30px;
-                color: va(--num0-color);
-            }
-    
-            & .footer-nav a {
-                margin: 0 5px;
-                font-size: 14px;
-                padding: 0px;
-                transition: 0.7s ease;
-            }
-    
-            & nav a:hover {
-                color: var(--num0-color);
-                cursor: pointer;
-                transform: scale(1.1);
-            }
-    
-            & .footer-social a {
-                margin: 20px 10px 0px;
-                color: var(--num5-color);
-                font-size: 18px;
-                display: inline-block;
-            }
-    
-            & .footer-social #youtube:hover
-            {
-                color:red;
-            }
-            & .footer-social #github:hover
-            {
-                color:black;
-            }
-            & .footer-social #linkedin:hover
-            {
-                color: #0077b5;
-            }
+    & .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & p {
+            margin-bottom: 30px;
+            color: va(--num0-color);
+
         }
-    }
-}
 
-@media (min-width: 481px) and (max-width: 1139px) {
-    footer {
-        background-color: var(--num1-color);
-        width: 100%;
-        padding: 5px 5px;
-        margin-top: 50px;
-
-        & .footer-content {
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            & p {
-                margin-bottom: 5px;
-                color: va(--num0-color);
-                font-size: 0.5em;
-            }
-    
-            & .footer-nav a {
-                margin: 0px 3px;
-                font-size: 0.4em;
-                transition: 0.7s ease;
-            }
-    
-            & nav a:hover {
-                color: var(--num2-color);
-                cursor: pointer;
-                transform: scale(1.1);
-            }
-    
-            & .footer-social a {
-                margin: 20px 10px 0px;
-                color: var(--num5-color);
-                font-size: 1.em;
-                display: inline-block;
-            }
-    
-            & .footer-social #youtube:hover
-            {
-                color:red;
-            }
-            & .footer-social #github:hover
-            {
-                color:black;
-            }
-            & .footer-social #linkedin:hover
-            {
-                color: #0077b5;
-            }
-                    
+        & .footer-nav a {
+            margin: 0 5px;
+            font-size: 14px;
+            padding: 0px;
+            transition: 0.7s ease;
         }
-    }
 
-}
-
-
-@media (max-width: 480px)
-{
-    footer {
-        background-color: var(--num1-color);
-        width: 100%;
-        padding: 5px 5px;
-        margin-top: 50px;
-    
-        & .footer-content {
-            width: 100%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-    
-            & p {
-                margin-bottom: 5px;
-                color: va(--num0-color);
-                font-size: 0.5em;
-    
-            }
-    
-            & .footer-nav a {
-                margin: 0px 3px;
-                font-size: 0.4em;
-                transition: 0.7s ease;
-            }
-    
-            & nav a:hover {
-                color: var(--num2-color);
-                cursor: pointer;
-                transform: scale(1.1);
-            }
-    
-            & .footer-social a {
-                margin: 20px 10px 0px;
-                color: var(--num5-color);
-                font-size: 1.em;
-                display: inline-block;
-            
-            }
-    
-            & .footer-social #youtube:hover
-            {
-                color:red;
-            }
-            & .footer-social #github:hover
-            {
-                color:black;
-            }
-            & .footer-social #linkedin:hover
-            {
-                color: #0077b5;
-            }
-                    
+        & nav a:hover {
+            color: var(--num2-color);
+            cursor: pointer;
+            transform: scale(1.1);
         }
-    }
 
+        & .footer-social a {
+            margin: 20px 10px 0px;
+            color: var(--num5-color);
+            font-size: 18px;
+            display: inline-block;
+        
+        }
+
+        & .footer-social #youtube:hover
+        {
+            color:red;
+        }
+        & .footer-social #github:hover
+        {
+            color:black;
+        }
+        & .footer-social #linkedin:hover
+        {
+            color: #0077b5;
+        }
+                
+                }
 }
-
-
-
-
 
 
 
