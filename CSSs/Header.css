@@ -58,6 +58,7 @@
             & nav 
             {
                 justify-content: flex-end;
+                padding: 10px 0px;
 
                 & .main-menu
                 {
@@ -135,7 +136,7 @@
             {
                 justify-content: center;
                 margin: 0px;
-                padding: 0px;
+                padding: 10px 0px;
 
                 & .menu-button ,
                 & .serch-button

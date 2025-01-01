@@ -83,7 +83,7 @@ label {
     font-weight: 400;
 }
 
-/* input
+input
 {
     all:unset;
     display: inline-block;
@@ -93,8 +93,8 @@ label {
     padding-left: 15px;
     height: 30px;
     margin: 5px 0px;
-    width: 90%;
-} */
+    width: 100%;
+}
 
 input[type = "text"],
 input[type = "number"],
@@ -120,14 +120,14 @@ input[type = "reset"]
 {
     background-color: var(--num4-color);
     color: var(--num0-color);
-    width: 150px;
-    padding: 5px;
+    width: 250px;
+    height: 30px;
     border-radius: 22px;
     margin: 20px;
     border: var(--num4-color);
-    transition: 0.7s ease;
     font-weight: 400;
     text-align: center;
+    transition: 0.7s ease;
 }
 
 input[type = "submit"]:hover,
