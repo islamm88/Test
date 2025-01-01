@@ -8,6 +8,7 @@
     min-height: 100vh;  
     /* border: 1px solid red;   */
     margin-top: 89px;
+
     & .contact-container{
         border: 1px solid var(--num1-color);
         border-radius: 10px;
@@ -210,7 +211,7 @@
         padding: 10px;
         background-color : white;
         box-shadow: -5px 5px 3px var(--num5-color);
-        width: 95%;
+        width: 90%;
         /* min-height: 50vh; */
         justify-content: space-around;
         z-index: 6;
