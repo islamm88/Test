@@ -1,6 +1,5 @@
 @media (min-width: 1140px) 
 {
-    
     header
     {
         position: fixed;
@@ -75,12 +74,20 @@
                             
                         }
             
-                    &  .active , a:hover 
+                    &  a:hover 
                         {
                             color: var(--num0-color);
                             cursor: pointer;
                             transform: scale(1.1);
                         }
+
+                    &  a:active
+                        {
+                            color: var(--num0-color);
+                            cursor: pointer;
+                            transform: scale(1.1);
+                        }
+                       
                     }
                 }
 
@@ -167,7 +174,6 @@
         
     }
 } 
-
 
 @media (min-width: 481px) and (max-width: 1139px)
 {
