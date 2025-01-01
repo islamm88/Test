@@ -51,6 +51,7 @@ section
                             border-radius: 5px;
                             background-color: var(--num1-color);
                             height: 30px; 
+                            width:100%
                         } 
                         & .in-email:hover
                         {
@@ -65,6 +66,7 @@ section
                                 border-radius: 5px;
                                 background-color: var(--num1-color);
                                 height: 30px; 
+                                width: 100%;
                             } 
                             & .in-name:hover
                             {
@@ -83,6 +85,7 @@ section
                     {
                         background-color: var(--num1-color);
                         border: 1px solid var(--num5-color);
+                        width:100%
                     }
 
                     & textarea:hover
@@ -159,167 +162,179 @@ section
 @media (min-width: 481px) and (max-width: 1139px) 
 {
     section
-    {
-    margin: 70px auto;
-    width: 95%;
-    flex-direction: column;
-
-
-    & .contact-container
-    {
-        border: 1px solid var(--num1-color);
-        border-radius: 5px;
-        margin: 10px auto;
-        background-color : white;
-        box-shadow: -5px 5px 3px var(--num5-color);
-        width: 95%;
-        min-height: 50vh;
-        flex-direction: column;
-        align-items: center;
-        z-index: 6;
-        & h1{
-            font-size: 1.5em;
-            font-weight: 800;
-            color: var(--num4-color);
-            margin: 10px;
-            text-shadow: -1px 1px 3px var(--num5-color);
-        }
-        & p{
-            letter-spacing: 1px;
-            margin: 0px 50px 10px;
-            font-size: 0.8em;
-            text-align: center;
-        }
-        & form {
-            padding: 10px;
-            flex-direction: column;
-            margin: 5px 0px;
-            & .contact-info {
-                width: 95%;
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 10px;
-                & .email
-                 {
-                        margin: 5px 5px;
+   {
+       padding: 5px ;
+       width: 100%;
+       min-height: 100vh;
+       flex-direction: column;
+   
+        & .contact-container{
+           border: 1px solid var(--num1-color);
+           border-radius: 20px;
+           margin-top: 80px;
+           background-color : white;
+           box-shadow: -5px 5px 3px var(--num5-color);
+           width:95%;
+           min-height: 100vh;
+           flex-direction: column;
+           z-index: 2;
+       }
+   }
+   
+           & h1{
+               font-size: 1.5em;
+               font-weight: 400;
+               color: var(--num4-color);
+               margin: 5px auto;
+               text-shadow: -1px 1px 3px var(--num5-color);
+           }
+           & p{
+               letter-spacing: 1px;
+               margin:5px auto;
+               font-size: 0.8em;
+               text-align: center;
+           }
+           & form {
+               width: 95%;
+               padding: 5px;
+               margin: 5px;
+               flex-direction: column;
+   
+               & .contact-info {
+                   width: 95%;
+                   flex-direction: column;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                   & .email
+                   {
+                       width: 100%;
+                       & label
+                           {
+                           font-size: 1.0em;
+                           }
+                       
                         & .in-email
-                        {   
-                            border: 1px solid var(--num5-color);
-                            border-radius: 5px;
-                            background-color: var(--num1-color);
-                            padding-left: 5px;
-                            height: 30px; 
-                            margin-top: 5px;   
-                        } 
-                        & .in-email:hover
-                        {
-                            background-color: white;
-                        }
-                    }
-                & .name {
-                            margin: 5px 5px;
+                           {   
+                               border: 1px solid var(--num5-color);
+                               border-radius: 5px;
+                               background-color: var(--num1-color);
+                               height: 30px;
+                               width:100% 
+                           }
+   
+                       & .in-email:hover
+                           {
+                           background-color: white;
+                           }
+                   }
+   
+                   & .name { 
+                       width: 100%;
+                           & label
+                               {
+                                   font-size: 1.0em;
+                               }
+                           & .in-name
+                               {   
+                                   border: 1px solid var(--num5-color);
+                                   border-radius: 5px;
+                                   background-color: var(--num1-color);
+                                   height: 30px; 
+                                   width:100%
+                               } 
+                               & .in-name:hover
+                               {
+                                   background-color: white;
+                               }
+                           }
+   
+                   & .textarea
+                   {
+                       width: 100%;
+                       flex-direction: column;
+                       justify-content: flex-start;
+                       align-items: flex-start;
+   
+                       & textarea
+                       {
+                           background-color: var(--num1-color);
+                           border: 1px solid var(--num5-color);
+                           width: 100%;
+                       }
+   
+                       & textarea:hover
+                           {
+                               background-color: white;
+                           }
+                       }
+                   }
+               }
+           
+   
+   .inf 
+   {
+       border: 1px solid rgb(71, 62, 62);
+       width: 100%;
+       border-radius: 20px 20PX 0PX 0PX;
+       height: 300px;
+       margin: -100px auto 0px auto;
+       background-color: var(--num3-color);
+       z-index: 1;
+       display: flex;
+       & .inf-con{
+           width: 100%;
+           margin-top: 120px;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           & .call-con
+               {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               width: 50%;
+               & .calling,
+               & .loc
+                   {
+                   width: 60px;
+                   height: 60px;
+                   background-color:var(--num4-color);
+                   color: white;
+                   border-radius: 100%;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;  
+                   }
+               & p
+                   {
+                   font-size: 0,4em;
+                   font-weight: 400;
+                   color: white;    
+                   }
+               & .p-fir
+                   {
+                       margin-top: 20px;
+                       margin-bottom: 5px;
+                   }
+               & .p-sec
+                   {
+                       font-size: 0,2em;
+                       font-weight: 300;
+                   }
+               & .p-las
+                   {
+                       margin-bottom: 5px;
+                       font-size: 0,2em;
+                       font-weight: 300;
+                       
+                   }
+               }
+       }   
+   }
+   }
 
-                            & .in-name
-                            {   
-                                border: 1px solid var(--num5-color);
-                                border-radius: 5px;
-                                background-color: var(--num1-color);
-                                padding-left: 5px;
-                                height: 30px; 
-                                margin-top: 5px;   
-                            } 
-                            & .in-name:hover
-                            {
-                                background-color: white;
-                            }
-                        }
-            }
-
-            & .Cont-button {
-                
-                }
-
-                & .submit{
-                    color: white;
-                    background-color: var(--num3-color);
-                    width: 150px;
-                    height: 30px;
-                    transition: 0.9s ease;
-                    border-radius: 5px;
-                    border: 1px solid var(--num4-color);
-                    font-size: 0.8em;
-                    
-                }
-                & .submit:hover
-                {
-                    transform: scale(1.05);
-                    background-color: white;
-                    color: var(--num4-color);
-                }
-            }
-        }
-}
-.inf 
+@media (max-width: 480px)
 {
-    width: 100%;
-    border-radius: 10px 10PX 0PX 0PX;
-    height: 300px;
-    margin: -100px auto 0px auto;
-    background-color: var(--num3-color);
-    z-index: 5;
-    display: flex;
-
-    & .inf-con{
-        width: 100%;
-        margin-top: 120px;
-        justify-content: space-around;
-     
-        & .call-con
-            {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            & .calling,
-            & .loc
-                {
-                width: 40px;
-                height: 40px;
-                background-color:var(--num4-color);
-                color: white;
-                border-radius: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;  
-                }
-            & p
-                {
-                color: white;     
-                }
-            & .p-fir
-                {
-                    margin: 20px 0px;
-                    font-size: 12px;
-                    font-weight: 400;
-                    
-                }
-            & .p-sec
-                {
-                    font-size: 12px;
-                    font-weight: 300;
-                }
-            & .p-las
-                {
-                    margin-bottom: 20px;
-                    font-size: 12px;
-                    font-weight: 300;
-                    
-                }
-            }
-        }   
-    }
-}
-
-@media (max-width: 480px){
  section
 {
     padding: 5px ;
@@ -372,12 +387,13 @@ section
                         font-size: 1.0em;
                         }
                     
-                     & .in-email
+                    & .in-email
                         {   
                             border: 1px solid var(--num5-color);
                             border-radius: 5px;
                             background-color: var(--num1-color);
                             height: 30px; 
+                            width: 100%;
                         }
 
                     & .in-email:hover
@@ -386,24 +402,27 @@ section
                         }
                 }
 
-                & .name { 
+                & .name
+                { 
                     width: 100%;
-                        & label
-                            {
-                                font-size: 1.0em;
-                            }
-                        & .in-name
-                            {   
-                                border: 1px solid var(--num5-color);
-                                border-radius: 5px;
-                                background-color: var(--num1-color);
-                                height: 30px; 
-                            } 
-                            & .in-name:hover
-                            {
-                                background-color: white;
-                            }
+                    & label
+                        {
+                        font-size: 1.0em;
                         }
+
+                    & .in-name
+                        {   
+                            border: 1px solid var(--num5-color);
+                            border-radius: 5px;
+                            background-color: var(--num1-color);
+                            height: 30px; 
+                            width: 100%;
+                        } 
+                            & .in-name:hover
+                        {
+                            background-color: white;
+                        }
+                }
 
                 & .textarea
                 {
@@ -416,6 +435,7 @@ section
                     {
                         background-color: var(--num1-color);
                         border: 1px solid var(--num5-color);
+                        width: 100%;
                     }
 
                     & textarea:hover
@@ -425,7 +445,7 @@ section
                     }
                 }
             }
-        }
+        
 
 .inf 
 {
@@ -486,4 +506,5 @@ section
                 }
             }
     }   
+}
 }
