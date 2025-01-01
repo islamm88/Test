@@ -444,6 +444,18 @@
                     background-color: var(--num9-color);
                     backdrop-filter: blur(10px);
                     z-index: 9999;
+
+                    & .closemenubar
+                    {
+                        position: absolute;
+                        top:0;
+                        right: 0;
+                        color: red;
+                        justify-content: flex-end;
+                        padding-inline: 10px;
+                        font-size: 1.5em;
+                        width: 10%;
+                    }
                 }
 
                 & .sidebar li 
@@ -461,6 +473,8 @@
                     color: var(--num4-color);
                     transition: 0.7s ease;
                 }
+
+               
 
                 & .sidebar li a:hover
                 {
