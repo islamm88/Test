@@ -15,6 +15,7 @@
         box-shadow: -5px 5px 3px var(--num5-color);
         border-radius: 10px;
         background-color: var(--num4-color);
+
         & .sec-form1 {
             display: flex;
             flex-direction: column;
@@ -278,18 +279,20 @@
     
     .content {
         width: 100%;
-        margin-top: 50px;
+        margin: 50px 0px;
+        min-height: 100vh;
+        /* border: 10px solid red; */
+        
         
         & .main {
-            min-height: 100%;
-            margin: 10px 0px;
-            width: 95%;
+            width:  95%;
             border: 1px solid var(--num1-color);
             box-shadow: -5px 5px 3px var(--num5-color);
             border-radius: 10px;
             background-color: var(--num4-color);
             flex-direction: column;
-            
+            /* border:1px solid red ; */
+
             & .sec-form1 {
                 display: flex;
                 flex-direction: column;
@@ -298,6 +301,7 @@
                 padding: 10px 0px;
                 width: 100%;
                 height: 50%;
+                /* border:1px solid black ; */
                 & h3
                     {
                         margin-bottom: 20px ;
@@ -390,15 +394,17 @@
                         box-shadow: none;
                     }
                 }
-            .sec-form2 {
+
+            & .sec-form2 {
                 flex-direction: column;
                 justify-content: flex-start;
-                /* padding: 20px 0px; */
+                padding: 20px 0px;
                 height: 50%;
                 width: 100%;
                 padding: 10px 0px;
                 background-color: white;
                 text-align: center;
+                /* border:1px solid green ; */
                 
                 & .SignIn {
                     margin-bottom: 10px;
@@ -551,9 +557,10 @@
     .content {
         width: 100%;
         margin-top: 50px;
+        min-height: 100vh;
         
         & .main {
-            min-height: 100%;
+            height: 100%;
             margin: 10px 0px;
             width: 95%;
             border: 1px solid var(--num1-color);
@@ -810,10 +817,9 @@
                         scale: 0.9;
                         box-shadow: none;
                     }
-                }
-            }
+                    }
                 }
             }
         }
-    
     }
+}
