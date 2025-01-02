@@ -96,100 +96,6 @@
 }
 }
 
-@media (max-width: 480px)
-{
-    main
-{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 100px 0px;
-
-    /* h2 */
-    & .title     
-    {
-    margin-top:  50px;
-    margin-bottom: 20px;
-    font-size: 1.0em;
-    font-weight: 600;
-    color: var(--num4-color);
-    text-shadow: -1px 1px 3px var(--num5-color);
-    }
-
-    & p{
-    margin-inline: 20px;
-    font-size: 0.8em;
-    font-weight: 600;
-    text-align: center;
-    }
-    
-    & .content
-    {
-        width: 90%;
-        padding: 20px 0px;
-        display: flex; 
-        justify-content: space-around;
-        flex-direction: column;
-        flex-wrap: wrap;
-        border: 2px solid var(--num1-color);
-        border-radius: 10px;
-        box-shadow: -5px 5px 3px var(--num5-color);
-        margin-top: 20px;
-
-        /* card  */
-        
-        & .card
-            {
-            width: 90%;
-            height: 300px;
-            border: 2px solid var(--num1-color);
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 10px 0px;
-            margin: 20px auto;
-            transition: 0.7s ease;
-
-                & img
-                {
-                display: inline-block;
-                width: 90%;
-                height: 70%;
-                margin: 10px;
-                }
-
-                & a
-                {
-                    color: var(--num3-color);
-                    font-size: 1.0em;
-                    transition: 0.7s ease;
-                }
-
-                & a:hover {
-                    transform: scale(1.1);
-                    color: var(--num2-color);
-                    cursor: pointer;
-                }
-
-                & .open ,
-                & .download
-                {
-                    font-size: 0.8em;
-                }
-            }
-
-        & .card:hover
-            {
-            box-shadow: -10px 10px 3px var(--num5-color);
-            transform: scale(1.1);
-            background-color: lightgray;
-            }
-    }
-}
-}
 
 @media (min-width: 481px) and (max-width: 1139px) 
 {
@@ -287,4 +193,97 @@
 }
 }
 
+@media (max-width: 480px)
+{
+    main
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0px;
 
+    /* h2 */
+    & .title     
+    {
+    margin-top:  50px;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--num4-color);
+    text-shadow: -1px 1px 3px var(--num5-color);
+    }
+
+    & p{
+    margin-inline: 20px;
+    font-size: 0.6em;
+    font-weight: 600;
+    text-align: center;
+    }
+    
+    & .content
+    {
+        width: 90%;
+        padding: 20px 0px;
+        display: flex; 
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: 2px solid var(--num1-color);
+        border-radius: 10px;
+        box-shadow: -5px 5px 3px var(--num5-color);
+        margin-top: 20px;
+
+        /* card  */
+        
+        & .card
+            {
+            width: 90%;
+            height: 300px;
+            border: 2px solid var(--num1-color);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0px;
+            margin: 20px auto;
+            transition: 0.7s ease;
+
+                & img
+                {
+                display: inline-block;
+                width: 90%;
+                height: 70%;
+                margin: 10px;
+                }
+
+                & a
+                {
+                    color: var(--num3-color);
+                    font-size: 1.0em;
+                    transition: 0.7s ease;
+                }
+
+                & a:hover {
+                    transform: scale(1.1);
+                    color: var(--num2-color);
+                    cursor: pointer;
+                }
+
+                & .open ,
+                & .download
+                {
+                    font-size: 0.8em;
+                }
+            }
+
+        & .card:hover
+            {
+            box-shadow: -10px 10px 3px var(--num5-color);
+            transform: scale(1.1);
+            background-color: lightgray;
+            }
+    }
+}
+}
