@@ -1,6 +1,6 @@
 /* start content  */
 
-@media (min-width: 1240px)
+@media (min-width: 1025px)
 {  
     
 .content {
@@ -42,7 +42,7 @@
                     color: white;
                     background-color: #eb0d1f;
                     margin: 0px auto;
-                    width: 400px;
+                    width: 80%;
                     height: 40px;
                     transition: 0.9s ease;
                     border-radius: 22px;
@@ -67,7 +67,7 @@
                     color: white;
                     background-color: #0b22f3;
                     margin: 0px auto;
-                    width: 400px;
+                    width: 80%;
                     height: 40px;
                     transition: 0.9s ease;
                     border-radius: 22px;
@@ -93,7 +93,7 @@
                     color: white;
                     background-color: #0aedf5;
                     margin: 0px auto;
-                    width: 400px;
+                    width: 80%;
                     height: 40px;
                     transition: 0.9s ease;
                     border-radius: 22px;
@@ -222,19 +222,33 @@
                     & a:hover {
                         color: var(--num2-color);
                     }
+
+                    & .button
+                    {
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 10px;
+                    }
+                }
+
+                & .button
+                {
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 10px;
                 }
                 & .log {
                     color: white;
                     background-color: #0b22f3;
-                    margin: 0px 20px;
-                    width: 400px;
+                    width: 80%;
                     height: 40px;
                     transition: 0.9s ease;
                     border-radius: 22px;
                     border: 1px solid #0b22f3;
                     font-size: 1.2em;
                     display: inline-block;
-                    margin-top: 20px;
                 }
                 & .log:hover {
                     transform: scale(1.05);
@@ -255,7 +269,7 @@
     }
 
 }
-@media (min-width: 481px) and (max-width: 1239px) 
+@media (min-width: 481px) and (max-width: 1024px) 
 {  
     
     .content {
@@ -298,7 +312,7 @@
                         color: white;
                         background-color: #eb0d1f;
                         margin: 0px auto;
-                        width: 80%;
+                        width: 50%;
                         height: 30px;
                         transition: 0.9s ease;
                         border-radius: 22px;
@@ -323,7 +337,7 @@
                         color: white;
                         background-color: #0b22f3;
                         margin: 0px auto;
-                        width: 80%;
+                        width: 50%;
                         height: 30px;
                         transition: 0.9s ease;
                         border-radius: 22px;
@@ -349,7 +363,7 @@
                         color: white;
                         background-color: #0aedf5;
                         margin: 0px auto;
-                        width: 80%;
+                        width: 50%;
                         height: 30px;
                         transition: 0.9s ease;
                         border-radius: 22px;
