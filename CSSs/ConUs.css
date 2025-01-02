@@ -408,9 +408,10 @@ section
                     }
                 & p
                     {
-                    font-size: 0.8em;
+                    font-size: 0.7rem;
                     font-weight: 400;
-                    color: white;    
+                    color: white;
+                      
                     }
                 & .p-fir
                     {
