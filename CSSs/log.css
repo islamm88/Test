@@ -272,7 +272,6 @@
             }
         }
     }
-
 }
 @media (min-width: 481px) and (max-width: 1024px) 
 {  
@@ -311,7 +310,7 @@
                     } 
                 & p {
                     font-size: 0.8em;
-                    text-align: left;
+                    text-align: center;
                     margin: 0px 20px;
                     color: var(--num0-color);
                     }
