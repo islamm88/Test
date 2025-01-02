@@ -543,7 +543,7 @@
                         color: white;
                         background-color: #eb0d1f;
                         margin: 0px auto;
-                        width: 300px;
+                        width: 80%;
                         height: 30px;
                         transition: 0.9s ease;
                         border-radius: 22px;
@@ -568,7 +568,7 @@
                         color: white;
                         background-color: #0b22f3;
                         margin: 0px auto;
-                        width: 300px;
+                        width: 80%;
                         height: 30px;
                         transition: 0.9s ease;
                         border-radius: 22px;
@@ -594,7 +594,7 @@
                         color: white;
                         background-color: #0aedf5;
                         margin: 0px auto;
-                        width: 300px;
+                        width: 80%;
                         height: 30px;
                         transition: 0.9s ease;
                         border-radius: 22px;
