@@ -331,6 +331,12 @@ section
                     flex-direction: column;
                     justify-content: flex-start;
                     align-items: flex-start;
+
+                    & label
+                    {
+                        font-size: 0.8em;
+                    }       
+
                             & .in-email
                                     {   
                                         border: 1px solid var(--num5-color);
