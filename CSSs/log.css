@@ -139,17 +139,21 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
+                /* border:1px solid red; */
+                width: 90%;
                 
                 & .inp
                 {
                     justify-content: flex-start;
                     align-items: flex-start;
                     width: 100%;
+
                     & label {
                         color: var(--num3-color);
                         font-size: 1.0em;
                         font-weight: 400;
                         display: flex;
+                        margin-left: 12%;
                         
                     }
                     & input {
@@ -425,6 +429,7 @@
                             font-size: 0.8em;
                             font-weight: 400;
                             display: flex;
+                            margin-left: 12%;
                             
                         }
                         & input {
@@ -696,6 +701,7 @@
                             font-size: 0.8em;
                             font-weight: 400;
                             display: flex;
+                            margin-left: 12%;
                             
                         }
                         & input {
