@@ -213,7 +213,7 @@
     font-weight: 600;
     color: var(--num4-color);
     text-shadow: -1px 1px 3px var(--num5-color);
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 90%;
     text-align: center;
     }
