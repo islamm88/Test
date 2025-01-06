@@ -459,6 +459,8 @@
                     backdrop-filter: blur(10px);
                     z-index: 9999;
 
+              
+
                     & .closemenubar
                     {
                         position: absolute;
@@ -483,7 +485,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    color: var(--num4-color);
+                    color: var(--num0-color);
                     transition: 0.7s ease;
                 }
 
@@ -491,7 +493,7 @@
 
                 & .sidebar li a:hover
                 {
-                    color: var(--num0-color);
+                    color: var(--num3-color);
                     cursor: pointer;
                     transform: scale(1.0);
                 }
