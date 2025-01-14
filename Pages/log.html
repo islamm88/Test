@@ -117,30 +117,13 @@
         </div>
     </footer>
 </body>
+<script src = "../Jss/Sidebar.js"></script>
 <script>
-    //selectors
-    const sidebarElement = document.querySelector('.sidebar');
-    const menuButtonElement = document.querySelector('.menu-button');
-    const closeSidebarButtonElement = document.querySelector('.closemenubar');
-    // Listener
-    menuButtonElement.addEventListener('click', showsidebar);
-    closeSidebarButtonElement.addEventListener('click', hidesidebar );
-    // function
-    function showsidebar()
-    {
-        sidebarElement.style.display = "flex";
-    }
-    function hidesidebar ()
-    {
-        sidebarElement.style.display = "none";
-    }
-
-    function login_v()
+        function login_v()
     {
         us = document.getElementById("user").value;
         ps = document.getElementById("password").value;
         al = document.getElementById("ale");
-
         if(us == "" && ps == "")
         {
             al.innerHTML= "! Please enter both your username and password.";
@@ -151,7 +134,7 @@
             al.style.fontSize = "0.6em";
             return false;
         }
-        else if (us != "islam"  && ps != "123@abc")
+        else if (us != "islam"  &&  ps != "123@abc")
         {
             al.innerHTML = "! The username or password is incorrect. Please try again.";
             al.style.color = "#cc0000";

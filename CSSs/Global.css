@@ -95,6 +95,7 @@ input[type = "url"]
     height: 30px;
     margin: 5px 0px;
     width: 100%;
+    padding-left: 5px;
 }
 
 
@@ -182,6 +183,5 @@ input[type="file"] {
 html {
     scrollbar-color: var(--num5-color) var(--num1-color);
 }
-
 
 /* End Scrollbar   */

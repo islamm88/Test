@@ -58,14 +58,15 @@
     </header>
     <section class = "flex">
             <h2 class = "tit-reg">Registration</h2>
-            <form method="post" action="">
-    
+            
+            <form method="post" action="" onsubmit = "return CheckPassword()">
                 <div class = "cont flex">
                      <div class = "lab">
                         <label for="user-name"><span>*</span>User Name  :</label>
                     </div>
                     <div class="inp">
-                        <input type="text" name="user-name" id="user-name" required maxlength="50" placeholder="User Name" >
+                        <input type="text" name="user-name" id="user-name" required maxlength="50" placeholder="User Name" autocomplete="username">
+
                     </div>
                 </div>
     
@@ -101,13 +102,14 @@
                 </div>
 
                 <div class = "cont flex">
+                    <p id = "alr" style = "width: 100%;"></p>
                     <div class = "pass">
                         <div class = "lab">
                             <label for="password"><span>*</span> Password  :</label>
                         </div>
                         
                         <div class="inp">
-                            <input type="password" name="password" id="password" required minlength="8" maxlength="20" placeholder="from 8 to 20">
+                            <input type="password" name="password" id="password"  minlength="8" maxlength="20" placeholder="from 8 to 20" autocomplete="new-password">
                         </div>
                     </div>
                     <br>
@@ -116,7 +118,7 @@
                             <label for="Cpassword"><span>*</span>Confirm Password  :</label>
                         </div>
                         <div class="inp">
-                                <input type="password" name="Cpassword" id="Cpassword" required minlength="8" maxlength="20" placeholder="from 8 to 20">
+                                <input type="password" name="Cpassword" id="Cpassword"  minlength="8" maxlength="20" placeholder="from 8 to 20" autocomplete="new-password">
                         </div>  
                     </div> 
                 </div>   
@@ -332,7 +334,7 @@
                     </datalist>
                     <input class = "datalist" list="Country" name="" id="">
                     </div>
-                </div>
+                </div> 
 
                 <div class = "cont flex">
                     <div class = "lab">
@@ -383,7 +385,7 @@
                 <div class ="Cont-button">
                     <input type="submit" value = "Commit" id="submit">
                     <input type="reset"  value = "Reset"  id="reset">
-                </div>
+                </div> 
 
             </form> 
             <p>By creating an account, I agree <a class = "Term-link" href="Terms.html">Terms</a></p>
@@ -411,22 +413,25 @@
         </footer>
  
 </body>
+<script src = "../Jss/Sidebar.js"></script>
 <script>
-    //selectors
-    const sidebarElement = document.querySelector('.sidebar');
-    const menuButtonElement = document.querySelector('.menu-button');
-    const closeSidebarButtonElement = document.querySelector('.closemenubar');
-    // Listener
-    menuButtonElement.addEventListener('click', showsidebar);
-    closeSidebarButtonElement.addEventListener('click', hidesidebar );
-    // function
-    function showsidebar()
+
+    function CheckPassword() 
     {
-        sidebarElement.style.display = "flex";
+    var pass = document.getElementById("password").value;
+    var Cpass = document.getElementById("Cpassword").value;
+    var alr = document.getElementById("alr"); // Corrected from 'alt' to 'alr'
+    if (pass !== Cpass) {
+        alr.innerHTML = "Passwords do not match!";
+        alr.style.color = "#cc0000";
+        alr.style.backgroundColor = "#ffe9bf";
+        alr.style.padding = "5px" ;
+        alr.style.borderRadius = "22px";
+        alr.style.fontSize = "1.0em";
+        alr.style.textAlign = "center";
+        return false;
     }
-    function hidesidebar ()
-    {
-        sidebarElement.style.display = "none";
-    }
+    return true;
+}
 </script>
 </html>
