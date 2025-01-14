@@ -28,7 +28,7 @@ function Track_cer(e) {
 
      // Create button to add certificates
     const button_cer = document.createElement("button");
-    button_cer.classList.add('add-cer');
+    button_cer.className = 'add-cer';
     button_cer.innerHTML = "Certificate <i class='fa-solid fa-square-plus'></i>";
     button_cer.onclick = (e) => cer(e, TrackId);
 

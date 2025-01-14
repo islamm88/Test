@@ -59,14 +59,15 @@
         <main class = "main flex ">
             <section class = "sec-form2 flex" id = "">
                 <h2 class = "SignIn">Sign In Your Account</h2>
-                <form action="" method="post" class = "flex">
+                <form action="" method="post" class = "flex" onsubmit="return login_v()">
+                    <p id = "ale" style="width: 100% ;"></p>
                     <div class = "inp">
                         <label for="user">User Name</label>
-                        <i class="fa-solid fa-user">&nbsp;&nbsp;&nbsp; </i><input required type="text" name="user" id="user" maxlength="50" placeholder="Your User Name" >
+                        <i class="fa-solid fa-user">&nbsp;&nbsp;&nbsp; </i><input  type="text" name="user" id="user" maxlength="50" placeholder="Your User Name" >
                     </div>
                     <div class = "inp">
                         <label for="password">Password</label>
-                        <i class="fa-solid fa-lock"></i>&nbsp;&nbsp;&nbsp;<input required type="password" name="password" id="password" placeholder="Your password" maxlength="20">
+                        <i class="fa-solid fa-lock"></i>&nbsp;&nbsp;&nbsp;<input  type="password" name="password" id="password" placeholder="Your password" maxlength="20">
                     </div>
                     <div class = "rm-for flex">
                         <div class = "checkbox-remember">
@@ -81,7 +82,7 @@
                         <a href="Registration.html">Create New Account</a>
                     </div>
                     <div class = "button flex">
-                        <button class = "log"  value = "" name="log" id="log" height="20px"> <i class="fa-solid fa-right-to-bracket"></i> Sign in </button>
+                        <input type = "submit" class = "log"  value = "Log In" name="log" id="log" height="20px"></button>
                     </div>
                 </form>
             </section> 
@@ -132,6 +133,34 @@
     function hidesidebar ()
     {
         sidebarElement.style.display = "none";
+    }
+
+    function login_v()
+    {
+        us = document.getElementById("user").value;
+        ps = document.getElementById("password").value;
+        al = document.getElementById("ale");
+
+        if(us == "" && ps == "")
+        {
+            al.innerHTML= "! Please enter both your username and password.";
+            al.style.color = "#cc0000";
+            al.style.backgroundColor = "#ffe9bf";
+            al.style.padding = "5px" ;
+            al.style.borderRadius = "22px";
+            al.style.fontSize = "0.6em";
+            return false;
+        }
+        else if (us != "islam"  && ps != "123@abc")
+        {
+            al.innerHTML = "! The username or password is incorrect. Please try again.";
+            al.style.color = "#cc0000";
+            al.style.backgroundColor = "#ffe9bf";
+            al.style.padding = "5px" ;
+            al.style.borderRadius = "22px";
+            al.style.fontSize = "0.6em";
+            return false;
+        }
     }
 </script>
 </html>
