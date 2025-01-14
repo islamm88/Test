@@ -419,7 +419,10 @@
     function CheckPassword() 
     {
     var pass = document.getElementById("password").value;
+    var password = document.getElementById("password");
     var Cpass = document.getElementById("Cpassword").value;
+    var Cpassword = document.getElementById("Cpassword");
+    
     var alr = document.getElementById("alr"); // Corrected from 'alt' to 'alr'
     if (pass !== Cpass) {
         alr.innerHTML = "Passwords do not match!";
@@ -429,6 +432,10 @@
         alr.style.borderRadius = "22px";
         alr.style.fontSize = "1.0em";
         alr.style.textAlign = "center";
+        password.style.backgroundColor ="#ffe9bf" ;        
+        Cpassword.style.backgroundColor ="#ffe9bf" ; 
+        password.value ="";
+        Cpassword.value ="";       
         return false;
     }
     return true;
