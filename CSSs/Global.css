@@ -85,7 +85,7 @@ input[type = "number"],
 input[type = "date"] ,
 input[type = "password"] ,
 input[type = "email"] ,
-input[type = "url"] 
+input[type = "url"]
 {
     all:unset;
     display: inline-block;
@@ -138,13 +138,13 @@ textarea:hover {
 }
 
 datalist {
-    border: 1px solid var(--num5-color);
+    /* border: 1px solid var(--num5-color);
     border-radius: 5px;
     background-color: rgb(238, 237, 237);
     padding-left: 15px;
     height: 30px;
     padding: 5px;
-    height: 30px;
+    height: 30px; */
 }
 
 datalist:hover {
