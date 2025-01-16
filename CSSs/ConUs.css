@@ -6,7 +6,7 @@ section
     width: 100%;
     min-height: 100vh;
     flex-direction: column;
-    & .contact-container{
+    & .ContactContainer{
         border: 1px solid var(--num1-color);
         border-radius: 20px;
         margin-top: 80px;
@@ -35,7 +35,7 @@ section
             padding: 10px;
             margin: 10px;
             flex-direction: column;
-            & .contact-info {
+            & .ContactUs {
                 width: 80%;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -81,7 +81,7 @@ section
             }
         }
 
-.inf 
+.Info 
 {
     border: 1px solid rgb(71, 62, 62);
     width: 90%;
@@ -91,20 +91,21 @@ section
     background-color: var(--num3-color);
     z-index: 1;
     display: flex;
-    & .inf-con{
+    & .InfoContent{
         width: 100%;
         margin-top: 120px;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        & .call-con
+        & .InfoContentCalling,
+        & .InfoContentLocation
             {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 50%;
-            & .calling,
-            & .loc
+            & .Calling,
+            & .Location
                 {
                 width: 60px;
                 height: 60px;
@@ -152,7 +153,7 @@ section
         width: 100%;
         min-height: 100vh;
         flex-direction: column;
-        & .contact-container{
+        & .ContactContainer{
             border: 1px solid var(--num1-color);
             border-radius: 10px;
             margin-top: 80px;
@@ -181,7 +182,7 @@ section
                 padding: 5px;
                 margin: 5px;
                 flex-direction: column;
-                & .contact-info {
+                & .ContactUs {
                     width: 95%;
                     flex-direction: column;
                     justify-content: flex-start;
@@ -227,7 +228,7 @@ section
                 }
             }
     
-    .inf 
+    .Info 
     {
         border: 1px solid rgb(71, 62, 62);
         width: 90%;
@@ -237,20 +238,21 @@ section
         background-color: var(--num3-color);
         z-index: 1;
         display: flex;
-        & .inf-con{
+        & .InfoContent{
             width: 100%;
             margin-top: 120px;
             display: flex;
             justify-content: space-around;
             align-items: center;
-            & .call-con
+            & .InfoContentCalling,
+            & .InfoContentLocation
                 {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 50%;
-                & .calling,
-                & .loc
+                & .Calling,
+                & .Location
                     {
                     width: 60px;
                     height: 60px;
@@ -287,7 +289,7 @@ section
                 }
         }   
     }
-    }
+}
 
 @media (max-width: 480px)
 {
@@ -297,7 +299,7 @@ section
         width: 100%;
         min-height: 100vh;
         flex-direction: column;
-        & .contact-container{
+        & .ContactContainer{
             border: 1px solid var(--num1-color);
             border-radius: 10px;
             margin-top: 80px;
@@ -326,7 +328,7 @@ section
                 padding: 5px;
                 margin: 5px;
                 flex-direction: column;
-                & .contact-info {
+                & .ContactUs {
                     width: 95%;
                     flex-direction: column;
                     justify-content: flex-start;
@@ -378,7 +380,7 @@ section
                 }
             }
     
-    .inf 
+    .Info 
     {
         border: 1px solid rgb(71, 62, 62);
         width: 90%;
@@ -388,20 +390,21 @@ section
         background-color: var(--num3-color);
         z-index: 1;
         display: flex;
-        & .inf-con{
+        & .InfoContent{
             width: 100%;
             margin-top: 120px;
             display: flex;
             justify-content: space-around;
             align-items: center;
-            & .call-con
+            & .InfoContentCalling,
+            & .InfoContentLocation
                 {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 50%;
-                & .calling,
-                & .loc
+                & .Calling,
+                & .Location
                     {
                     width: 60px;
                     height: 60px;
@@ -439,4 +442,4 @@ section
                 }
         }   
     }
-    }
+}

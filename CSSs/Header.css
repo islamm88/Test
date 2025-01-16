@@ -8,7 +8,7 @@
         z-index: 999;
         border-bottom: 1px solid var(--num3-color);
 
-        & .container
+        & .Container
         {
             width: 100%;
             margin-inline: 3%;
@@ -60,7 +60,7 @@
                 justify-content: flex-end;
                 padding: 10px 0px;
 
-                & .main-menu
+                & .MainMenuIcon
                 {
                     
                     & li 
@@ -92,7 +92,7 @@
                     }
                 }
 
-                & .sidebar
+                & .SideBar
                 {
                     display: none;
                     justify-content: flex-start;
@@ -108,13 +108,13 @@
                     z-index: 9999;
                 }
 
-                & .sidebar li 
+                & .SideBar li 
                 {
                     width: 100%;
                     height: 50px;
                 }
 
-                & .sidebar li a
+                & .SideBar li a
                 {
                     height: 100%;
                     display: flex;
@@ -124,7 +124,7 @@
                     transition: 0.7s ease;
                 }
 
-                & .sidebar li a:hover
+                & .SideBar li a:hover
                 {
                     color: var(--num0-color);
                     cursor: pointer;
@@ -138,8 +138,8 @@
                 margin: 0px;
                 padding: 10px 0px;
 
-                & .menu-button ,
-                & .serch-button
+                & .MenuButton ,
+                & .SerchButton
                 {
                 padding: 0px 10px;
                 display: block;
@@ -153,20 +153,20 @@
                 }
                 }
 
-                & .menu-button:hover ,
-                & .serch-button:hover
+                & .MenuButton:hover ,
+                & .SerchButton:hover
                 {
                     color: var(--num0-color);
                     cursor: pointer;
-                    transform: scale(1.1);
+                    transform: scale(1.0);
                 }
 
-                & .serch-button
+                & .SerchButton
                 {
                     border-left : 1px solid black;
                 }
 
-                & .menu-button
+                & .MenuButton
                 {
                     display: none;
                 }
@@ -186,7 +186,7 @@
         z-index: 999;
         border-bottom: 1px solid var(--num3-color);
 
-        & .container
+        & .Container
         {
             width: 100%;
             margin-inline: 3%;
@@ -237,7 +237,7 @@
             {
                 justify-content: flex-end;
 
-                & .main-menu
+                & .MainMenuIcon
                 {
                     display: none;
                     & li 
@@ -261,7 +261,7 @@
                     }
                 }
 
-                & .sidebar
+                & .SideBar
                 {
                     display: none;
                     justify-content: flex-start;
@@ -276,7 +276,7 @@
                     backdrop-filter: blur(10px);
                     z-index: 9999;
 
-                    & .closemenubar
+                    & .CloseMenuIcon
                     {
                         position: absolute;
                         top:0;
@@ -290,13 +290,13 @@
 
                
 
-                & .sidebar li 
+                & .SideBar li 
                 {
                     width: 100%;
                     height: 50px;
                 }
 
-                & .sidebar li a
+                & .SideBar li a
                 {
                     height: 100%;
                     display: flex;
@@ -306,7 +306,7 @@
                     transition: 0.7s ease;
                 }
 
-                & .sidebar li a:hover
+                & .SideBar li a:hover
                 {
                     color: var(--num3-color);
                     cursor: pointer;
@@ -320,8 +320,8 @@
                 margin: 0px;
                 padding: 0px;
 
-                & .menu-button ,
-                & .serch-button
+                & .MenuButton ,
+                & .SerchButton
                 {
                 padding: 0px 10px;
                 display: block;
@@ -335,20 +335,20 @@
                 }
                 }
 
-                & .menu-button:hover ,
-                & .serch-button:hover
+                & .MenuButton:hover ,
+                & .SerchButton:hover
                 {
                     color: var(--num0-color);
                     cursor: pointer;
-                    transform: scale(1.1);
+                    transform: scale(1.0);
                 }
 
-                & .serch-button
+                & .SerchButton
                 {
                     border-left : 1px solid black;
                 }
 
-                & .menu-button
+                & .MenuButton
                 {
                     display: block;
                 }
@@ -369,7 +369,7 @@
         z-index: 999;
         border-bottom: 1px solid var(--num3-color);
 
-        & .container
+        & .Container
         {
             width: 100%;
             margin-inline: 3%;
@@ -420,7 +420,7 @@
             {
                 justify-content: flex-end;
 
-                & .main-menu
+                & .MainMenuIcon
                 {
                     display: none;
                     & li 
@@ -444,7 +444,7 @@
                     }
                 }
 
-                & .sidebar
+                & .SideBar
                 {
                     display: none;
                     justify-content: flex-start;
@@ -461,7 +461,7 @@
 
               
 
-                    & .closemenubar
+                    & .CloseMenuIcon
                     {
                         position: absolute;
                         top:0;
@@ -473,13 +473,13 @@
                     }
                 }
 
-                & .sidebar li 
+                & .SideBar li 
                 {
                     width: 100%;
                     height: 50px;
                 }
 
-                & .sidebar li a
+                & .SideBar li a
                 {
                     height: 100%;
                     display: flex;
@@ -491,7 +491,7 @@
 
                
 
-                & .sidebar li a:hover
+                & .SideBar li a:hover
                 {
                     color: var(--num3-color);
                     cursor: pointer;
@@ -505,8 +505,8 @@
                 margin: 0px;
                 padding: 0px;
 
-                & .menu-button ,
-                & .serch-button
+                & .MenuButton ,
+                & .SerchButton
                 {
                 padding: 0px 10px;
                 display: block;
@@ -520,20 +520,20 @@
                 }
                 }
 
-                & .menu-button:hover ,
-                & .serch-button:hover
+                & .MenuButton:hover ,
+                & .SerchButton:hover
                 {
                     color: var(--num0-color);
                     cursor: pointer;
-                    transform: scale(1.1);
+                    transform: scale(1.0);
                 }
 
-                & .serch-button
+                & .SerchButton
                 {
                     border-left : 1px solid black;
                 }
 
-                & .menu-button
+                & .MenuButton
                 {
                     display: block;
                 }

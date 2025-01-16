@@ -9,7 +9,7 @@
     /* border: 1px solid red;   */
     margin-top: 89px;
 
-    & .contact-container{
+    & .ContactContainer{
         border: 1px solid var(--num1-color);
         border-radius: 10px;
         margin: 80px auto 40px auto;
@@ -24,7 +24,7 @@
         z-index: 6;
         /* border: 1px solid red ; */
 
-    & .info
+    & .Information
     {
         /* border: 1px solid red ; */
         width: 60%;
@@ -44,7 +44,7 @@
             font-size: 1.1em;
         }
 
-        & .social-icons a .fa-brands{
+        & .SocialIcons a .fa-brands{
             display: inline-block;
             color: var(--num3-color);
             font-weight: 500;
@@ -53,27 +53,27 @@
             transition: 0.7s ease;
         }
 
-        & .social-icons a .fa-brands:hover
+        & .SocialIcons a .fa-brands:hover
         {
             cursor: pointer;
             transform: scale(1.1);
         }
 
-        & .social-icons .youtube .fa-brands:hover
+        & .SocialIcons .youtube .fa-brands:hover
         {
             color:red;
         }
-        & .social-icons .github .fa-brands:hover
+        & .SocialIcons .github .fa-brands:hover
         {
             color:black;
         }
-        & .social-icons .linkedin .fa-brands:hover
+        & .SocialIcons .linkedin .fa-brands:hover
         {
             color: #0077b5; 
         }
     }
 
-    & .photo
+    & .Photo
     {
         /* border: 1px solid red ; */
         width: 20%;
@@ -106,7 +106,7 @@
     /* border: 1px solid red;   */
     margin-top: 50px;
 
-    & .contact-container{
+    & .ContactContainer{
         flex-direction: column;
         border: 1px solid var(--num1-color);
         border-radius: 10px;
@@ -120,7 +120,7 @@
         z-index: 6;
         /* border: 1px solid red ; */
 
-    & .info
+    & .Information
     {
         /* border: 1px solid red ; */
         width: 90%;
@@ -139,7 +139,7 @@
             font-size: 0.8em;
         }
 
-        & .social-icons a .fa-brands{
+        & .SocialIcons a .fa-brands{
             display: inline-block;
             color: var(--num3-color);
             font-weight: 500;
@@ -148,27 +148,27 @@
             transition: 0.7s ease;
         }
 
-        & .social-icons a .fa-brands:hover
+        & .SocialIcons a .fa-brands:hover
         {
             cursor: pointer;
             transform: scale(1.1);
         }
 
-        & .social-icons .youtube .fa-brands:hover
+        & .SocialIcons .youtube .fa-brands:hover
         {
             color:red;
         }
-        & .social-icons .github .fa-brands:hover
+        & .SocialIcons .github .fa-brands:hover
         {
             color:black;
         }
-        & .social-icons .linkedin .fa-brands:hover
+        & .SocialIcons .linkedin .fa-brands:hover
         {
             color: #0077b5; 
         }
     }
 
-    & .photo
+    & .Photo
     {
         /* border: 1px solid red ; */
         width: 80%;
@@ -203,7 +203,7 @@
     /* border: 1px solid red;   */
     margin-top: 50px;
 
-    & .contact-container{
+    & .ContactContainer{
         flex-direction: column;
         border: 1px solid var(--num1-color);
         border-radius: 10px;
@@ -217,7 +217,7 @@
         z-index: 6;
         /* border: 1px solid red ; */
 
-    & .info
+    & .Information
     {
         /* border: 1px solid red ; */
         width: 90%;
@@ -236,7 +236,7 @@
             font-size: 0.8em;
         }
 
-        & .social-icons a .fa-brands{
+        & .SocialIcons a .fa-brands{
             display: inline-block;
             color: var(--num3-color);
             font-weight: 500;
@@ -245,27 +245,27 @@
             transition: 0.7s ease;
         }
 
-        & .social-icons a .fa-brands:hover
+        & .SocialIcons a .fa-brands:hover
         {
             cursor: pointer;
             transform: scale(1.1);
         }
 
-        & .social-icons .youtube .fa-brands:hover
+        & .SocialIcons .youtube .fa-brands:hover
         {
             color:red;
         }
-        & .social-icons .github .fa-brands:hover
+        & .SocialIcons .github .fa-brands:hover
         {
             color:black;
         }
-        & .social-icons .linkedin .fa-brands:hover
+        & .SocialIcons .linkedin .fa-brands:hover
         {
             color: #0077b5; 
         }
     }
 
-    & .photo
+    & .Photo
     {
         /* border: 1px solid red ; */
         width: 80%;

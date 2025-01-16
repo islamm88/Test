@@ -8,7 +8,7 @@
         flex-direction: column;
         /* margin-top:100px  ; */
     
-        & .footer-content {
+        & .FooterContent {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
@@ -20,7 +20,7 @@
                 color: va(--num0-color);
             }
     
-            & .footer-nav a {
+            & .FooterNav a {
                 margin: 0 5px;
                 font-size: 14px;
                 padding: 0px;
@@ -33,22 +33,22 @@
                 transform: scale(1.1);
             }
     
-            & .footer-social a {
+            & .FooterSocial a {
                 margin: 20px 10px 0px;
                 color: var(--num5-color);
                 font-size: 18px;
                 display: inline-block;
             }
     
-            & .footer-social #youtube:hover
+            & .FooterSocial #youtube:hover
             {
                 color:red;
             }
-            & .footer-social #github:hover
+            & .FooterSocial #github:hover
             {
                 color:black;
             }
-            & .footer-social #linkedin:hover
+            & .FooterSocial #linkedin:hover
             {
                 color: #0077b5;
             }
@@ -64,7 +64,7 @@
         padding: 5px 5px;
         margin-top: 50px;
 
-        & .footer-content {
+        & .FooterContent {
             width: 100%;
             margin: 0 auto;
             display: flex;
@@ -86,13 +86,13 @@
                 font-size: 0.5em;
             }
     
-            & .footer-nav a {
+            & .FooterNav a {
                 margin: 0px 3px;
-                font-size: 0.4em;
+                font-size: 0.6em;
                 transition: 0.7s ease;
                 /* width: %; */
                 /* display: flex;
-                justify-content: center; */
+                justify-Content: center; */
             }
     
             & nav a:hover {
@@ -101,22 +101,22 @@
                 transform: scale(1.1);
             }
     
-            & .footer-social a {
+            & .FooterSocial a {
                 margin: 20px 10px 0px;
                 color: var(--num5-color);
                 font-size: 1.em;
                 display: inline-block;
             }
     
-            & .footer-social #youtube:hover
+            & .FooterSocial #youtube:hover
             {
                 color:red;
             }
-            & .footer-social #github:hover
+            & .FooterSocial #github:hover
             {
                 color:black;
             }
-            & .footer-social #linkedin:hover
+            & .FooterSocial #linkedin:hover
             {
                 color: #0077b5;
             }
@@ -134,7 +134,7 @@
         padding: 5px 5px;
         margin-top: 50px;
     
-        & .footer-content {
+        & .FooterContent {
             width: 100%;
             margin: 0 auto;
             display: flex;
@@ -154,13 +154,13 @@
     
             }
     
-            & .footer-nav a {
+            & .FooterNav a {
                 margin: 0px 3px;
-                font-size: 0.4em;
+                font-size: 0.6em;
                 transition: 0.7s ease;
                 width: 40%;
                 display: flex;
-                justify-content: center;
+                justify-Content: center;
                 
             }
     
@@ -170,7 +170,7 @@
                 transform: scale(1.1);
             }
     
-            & .footer-social a {
+            & .FooterSocial a {
                 margin: 20px 10px 0px;
                 color: var(--num5-color);
                 font-size: 1.em;
@@ -178,15 +178,15 @@
             
             }
     
-            & .footer-social #youtube:hover
+            & .FooterSocial #youtube:hover
             {
                 color:red;
             }
-            & .footer-social #github:hover
+            & .FooterSocial #github:hover
             {
                 color:black;
             }
-            & .footer-social #linkedin:hover
+            & .FooterSocial #linkedin:hover
             {
                 color: #0077b5;
             }

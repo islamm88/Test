@@ -130,6 +130,7 @@ textarea {
     border: 1px solid var(--num5-color);
     border-radius: 5px;
     background-color: rgb(238, 237, 237);
+    padding: 5px;
 }
 
 input:hover,
