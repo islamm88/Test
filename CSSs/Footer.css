@@ -1,0 +1,210 @@
+@media (min-width: 1140px) 
+{
+    footer {
+        border-top: 1px solid var(--num3-color);
+        background-color: var(--num1-color);
+        width: 100%;
+        padding: 30px 200px;
+        flex-direction: column;
+        /* margin-top:100px  ; */
+    
+        & .FooterContent {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+
+            & p {
+                margin-bottom: 30px;
+                color: va(--num0-color);
+            }
+    
+            & .FooterNav a {
+                margin: 0 5px;
+                font-size: 14px;
+                padding: 0px;
+                transition: 0.7s ease;
+            }
+    
+            & nav a:hover {
+                color: var(--num0-color);
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+    
+            & .FooterSocial a {
+                margin: 20px 10px 0px;
+                color: var(--num5-color);
+                font-size: 18px;
+                display: inline-block;
+            }
+    
+            & .FooterSocial #youtube:hover
+            {
+                color:red;
+            }
+            & .FooterSocial #github:hover
+            {
+                color:black;
+            }
+            & .FooterSocial #linkedin:hover
+            {
+                color: #0077b5;
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1139px) 
+{
+    footer {
+        background-color: var(--num1-color);
+        width: 100%;
+        padding: 5px 5px;
+        margin-top: 50px;
+
+        & .FooterContent {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            /* & nav
+            {
+                width: 90% ;
+                flex-wrap: wrap ;
+                border:1px solid red
+            } */
+
+            
+
+            & p {
+                margin-bottom: 5px;
+                color: va(--num0-color);
+                font-size: 0.5em;
+            }
+    
+            & .FooterNav a {
+                margin: 0px 3px;
+                font-size: 0.6em;
+                transition: 0.7s ease;
+                /* width: %; */
+                /* display: flex;
+                justify-Content: center; */
+            }
+    
+            & nav a:hover {
+                color: var(--num2-color);
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+    
+            & .FooterSocial a {
+                margin: 20px 10px 0px;
+                color: var(--num5-color);
+                font-size: 1.em;
+                display: inline-block;
+            }
+    
+            & .FooterSocial #youtube:hover
+            {
+                color:red;
+            }
+            & .FooterSocial #github:hover
+            {
+                color:black;
+            }
+            & .FooterSocial #linkedin:hover
+            {
+                color: #0077b5;
+            }
+                    
+        }
+    }
+
+}
+
+@media (max-width: 480px)
+{
+    footer {
+        background-color: var(--num1-color);
+        width: 100%;
+        padding: 5px 5px;
+        margin-top: 50px;
+    
+        & .FooterContent {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            & nav
+            {
+                width: 90% ;
+                flex-wrap: wrap ;
+            }
+    
+            & p {
+                margin-bottom: 5px;
+                color: va(--num0-color);
+                font-size: 0.5em;
+    
+            }
+    
+            & .FooterNav a {
+                margin: 0px 3px;
+                font-size: 0.6em;
+                transition: 0.7s ease;
+                width: 40%;
+                display: flex;
+                justify-Content: center;
+                
+            }
+    
+            & nav a:hover {
+                color: var(--num2-color);
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+    
+            & .FooterSocial a {
+                margin: 20px 10px 0px;
+                color: var(--num5-color);
+                font-size: 1.em;
+                display: inline-block;
+            
+            }
+    
+            & .FooterSocial #youtube:hover
+            {
+                color:red;
+            }
+            & .FooterSocial #github:hover
+            {
+                color:black;
+            }
+            & .FooterSocial #linkedin:hover
+            {
+                color: #0077b5;
+            }
+                    
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
