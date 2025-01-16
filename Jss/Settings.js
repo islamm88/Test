@@ -1,5 +1,5 @@
 // selector
-const Form_Track_Cer = document.querySelector('.Form_Track_Cer');
+const CertificatForm = document.querySelector('.CertificatForm');
 const AddTrack = document.querySelector('.add_track');
 //event listeners 
 AddTrack.addEventListener('click' , Track_cer);
@@ -32,7 +32,7 @@ function Track_cer(e) {
     button_cer.innerHTML = "Certificate <i class='fa-solid fa-square-plus'></i>";
     button_cer.onclick = (e) => cer(e, TrackId);
 
-    Form_Track_Cer.appendChild(Div_Track_create);
+    CertificatForm.appendChild(Div_Track_create);
     Div_Track_create.append(label_Track , input_track , button_cer);
     
 }

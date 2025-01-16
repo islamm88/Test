@@ -61,35 +61,34 @@
         <h2>Settings</h2>
         <p>you can add sittinges of your profile from this page add your profile name , photo , Certificates
         CV , projects </p>
-        <form class = "main-info flex" method = "post" action="">
-            <div class = "cont flex">
-                    <label for="pro-name"><span>*</span>Profile Name  :</label>
-                    <input type="text" name="pro-name" id="pro-name"  maxlength="30" placeholder="  Profile Name" size="50" required>
+        <form class = "MainForm flex" method = "post" action="">
+            <div class = "Content flex">
+                    <label for="ProfileName"><span>*</span>Profile Name  :</label>
+                    <input type="text" name="ProfileName" id="ProfileName"  maxlength="30" placeholder="  Profile Name" size="50" required>
             </div>
-            <div class = "cont flex">
+            <div class = "Content flex">
                     <label for="photo">Your photo  :</label>
                     <input type="file" name="photo" id="photo" >
             </div>
-            <div class = "cont flex">
-                    <label for="CV-file"><span>*</span>Your CV File  :</label>
-                    <input type="file" name="CV-file" id="CV-file" >
+            <div class = "Content flex">
+                    <label for="CVFle"><span>*</span>Your CV File  :</label>
+                    <input type="file" name="CVFle" id="CVFle" >
             </div>
-            <div class = "cont flex" >
-                    <label for="LN_URL">LinkedIn URL</label>
-                    <input type="url" name="LN_URL" id="LN_URL"  maxlength="30" placeholder="  Add your LinkedIn URL" size="50">
-                    <label for="YT_URL">Youtube URL</label>
-                    <input type="url" name="YT_URL" id="YT_URL" maxlength="30"  placeholder="  Add your Youtube URL" size="50">
-                    <label for="GH_URL">Github URL</label>
-                    <input type="url" name="GH_URL" id="GH_URL"  maxlength="30" placeholder="  Add your Github URL" size="50">
+            <div class = "Content flex" >
+                    <label for="LinkedInURL">LinkedIn URL</label>
+                    <input type="url" name="LinkedInURL" id="LinkedInURL"  maxlength="30" placeholder="  Add your LinkedIn URL" size="50">
+                    <label for="YouTubeURL">Youtube URL</label>
+                    <input type="url" name="YouTubeURL" id="YouTubeURL" maxlength="30"  placeholder="  Add your Youtube URL" size="50">
+                    <label for="GitHubURL">Github URL</label>
+                    <input type="url" name="GitHubURL" id="GitHubURL"  maxlength="30" placeholder="  Add your Github URL" size="50">
             </div>
-            <div class = "cont_button flex">
+            <div class = "ContentButtonflex">
                 <input  type = "submit" value = "Commit">
                 <input  type = "reset" value = "Reset">
             </div>
             
         </form>
-        <!-- Start Track_Certificates  -->
-        <form action="#" method="post" class = "Form_Track_Cer flex" id = "Form_Track_Cer">
+        <form action="#" method="post" class = "CertificatForm flex" id = "CertificatForm">
             <h2>Trackes_Certificates</h2>
             <button class = "add_track">
                 Add Track <i class="fa-solid fa-square-plus"></i>
@@ -97,7 +96,7 @@
            <div class = "modify">         
                <button type = "submit" title = "Save" class = "cer_sec_save"  name="cer_sec_save" id="cer_sec_save"><i class="fa-solid fa-floppy-disk"></i></button>
                <button type = "reset" title = "reset" class = "cer_sec_res"  name="cer_sec_res" id="cer_sec_res"><i class="fa-solid fa-trash-arrow-up"></i></button>
-               <button type = "" title = "modify" class = "cer_sec_mod"  name="cer_sec_mod" id="cer_sec_mod"><i class="fa-solid fa-pen-to-square"></i></button>
+               <button type = "" title = "Edit" class = "cer_sec_mod"  name="cer_sec_mod" id="cer_sec_mod"><i class="fa-solid fa-pen-to-square"></i></button>
            </div>
         </form>   
         <!-- Start Projects  -->
@@ -106,12 +105,12 @@
             <button class = "add-sec-pro">
                 Add Track <i class="fa-solid fa-square-plus"></i>
             </button>
-            <div class = "cont pro">
+            <div class = "Content pro">
                 <div class = "lab">
-                    <label for="pro-name"><span>*</span>Field Name  :</label>
+                    <label for="ProfileName"><span>*</span>Field Name  :</label>
                 </div>
                 <div class="inp">
-                    <input type="text" name="pro-name" id="pro-name"  maxlength="30" placeholder="Profile Name" size="50">
+                    <input type="text" name="ProfileName" id="ProfileName"  maxlength="30" placeholder="Profile Name" size="50">
                 </div>
                 <button class = "add-cer">
                     Add Project <i class="fa-solid fa-square-plus"></i>
@@ -120,7 +119,7 @@
                     <label for="">Title :</label>
                     <input type="text" name="" id="" maxlength="200">
                     <label for="">Image</label>
-                    <div class = "cont img">
+                    <div class = "Content img">
                         <div class="inp-file">
                             <input title = "pleas select image"  class = "img-pro" type="file" name="img1" id="img1"  placeholder="img2" size="50">
                         </div>
@@ -137,7 +136,7 @@
                     <label for="">Summary</label>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                     <label for="">Attache file</label>
-                    <div class="cont att">
+                    <div class="Content att">
                         <input title = "pleas select image" class = "img-pro" type="file" name="img4" id="img4"  maxlength="30" placeholder="img4">
                     </div>
                     
@@ -161,7 +160,7 @@
                 <a href="Registration.html">Register</a>
                 <a href="LogIn.html">Login</a>
             </nav>
-            <div class="FooterSocial">
+            <div class="FooterSocialIcons">
                 <a id ="linkedin" href="https://linkedin.com/in/islam-mustafa-755a49235" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a id ="youtube" href="https://www.youtube.com/@islammustafa9245" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                 <a id ="github" href="https://github.com/islamm88" target="_blank"><i class="fa-brands fa-github"></i></a>

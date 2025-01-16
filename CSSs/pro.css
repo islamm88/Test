@@ -41,7 +41,8 @@
             align-items: center;
             padding: 10px;
             background-color: white;
-            & .cont
+
+            & .Content
             {
                 border: 1px solid var(--num1-color);
                 border-radius: 10px;
@@ -167,7 +168,7 @@
             border-radius: 5px;
             margin: 5px;
             flex-direction: column;
-            & .cont
+            & .Content
             {
                 border: 1px solid var(--num1-color);
                 border-radius: 5px;
@@ -288,7 +289,7 @@
             border-radius: 5px;
             margin: 5px;
             flex-direction: column;
-            & .cont
+            & .Content
             {
                 border: 1px solid var(--num1-color);
                 border-radius: 5px;

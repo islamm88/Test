@@ -57,20 +57,19 @@
         </div>
     </header>
     <section class = "flex">
-            <h2 class = "tit-reg">Registration</h2>
-            
+            <h2 class = "Title">Registration</h2>
             <form method="post" action="" onsubmit = "return CheckPassword()">
-                <div class = "cont flex">
+                <div class = "Content flex">
                      <div class = "lab">
-                        <label for="user-name"><span>*</span>User Name  :</label>
+                        <label for="UserName"><span>*</span>User Name  :</label>
                     </div>
                     <div class="inp">
-                        <input type="text" name="user-name" id="user-name" required maxlength="50" placeholder="User Name" autocomplete="username">
+                        <input type="text" name="UserName" id="UserName" required maxlength="50" placeholder="User Name" autocomplete="UserName">
 
                     </div>
                 </div>
     
-                <div class = "cont flex">
+                <div class = "Content flex">
                     <div class = "lab">
                        <label for="age"><span>*</span>Age  :</label>
                    </div>
@@ -79,7 +78,7 @@
                    </div>
                 </div>
     
-                <div class = "cont flex">
+                <div class = "Content flex">
                     <div class = "lab">
                        <label for="birthdate"><span>*</span>Birthdate  :</label>
                    </div>
@@ -89,7 +88,7 @@
     
                 </div>
 
-                <div class = "cont flex">
+                <div class = "Content flex">
                     <div class = "lab">
                         <label for="gender"><span>*</span>Gender  :</label>
                     </div>
@@ -101,13 +100,12 @@
                     </div>
                 </div>
 
-                <div class = "cont flex">
-                    <p id = "alr" style = "width: 100%;"></p>
-                    <div class = "pass">
+                <div class = "Content flex">
+                    <p id = "Alert" style = "width: 100%;"></p>
+                    <div class = "password">
                         <div class = "lab">
                             <label for="password"><span>*</span> Password  :</label>
                         </div>
-                        
                         <div class="inp">
                             <input type="password" name="password" id="password"  minlength="8" maxlength="20" placeholder="from 8 to 20" autocomplete="new-password">
                         </div>
@@ -115,15 +113,15 @@
                     <br>
                     <div class = "cpass">
                         <div class = "lab">
-                            <label for="Cpassword"><span>*</span>Confirm Password  :</label>
+                            <label for="ConfirmPassword"><span>*</span>Confirm Password  :</label>
                         </div>
                         <div class="inp">
-                                <input type="password" name="Cpassword" id="Cpassword"  minlength="8" maxlength="20" placeholder="from 8 to 20" autocomplete="new-password">
+                                <input type="password" name="Cpassword" id="ConfirmPassword"  minlength="8" maxlength="20" placeholder="from 8 to 20" autocomplete="new-password">
                         </div>  
                     </div> 
                 </div>   
 
-                <div class = "cont flex" >
+                <div class = "Content flex" >
                     <div class = "lab">
                         <label for="email"><span>*</span>Email  :</label>
                     </div>
@@ -132,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class = "cont flex">
+                <div class = "Content flex">
                     <div class = "lab">
                         <label for="mobile"><span>*</span>Mobile  :</label>
                     </div>
@@ -141,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class = "cont flex">
+                <div class = "Content flex">
                     <div class = "lab">
                        <label for="address"><span>*</span>Address  :</label>
                    </div>
@@ -150,7 +148,7 @@
                    </div>
                 </div>
 
-                <div class = "cont flex">
+                <div class = "Content flex">
                     <div class = "lab">
                         <label for="Country"><span>*</span>Country  :</label>
                     </div>
@@ -337,7 +335,7 @@
                     </div>
                 </div> 
 
-                <div class = "cont flex">
+                <div class = "Content flex">
                     <div class = "lab">
                         <label for="computer-fields"><span>*</span>Computer-fields  :</label>
                     </div>
@@ -383,7 +381,7 @@
                     </div>
                 </div>
 
-                <div class ="Cont-button">
+                <div class ="ContentButton flex">
                     <input type="submit" value = "Commit" id="submit">
                     <input type="reset"  value = "Reset"  id="reset">
                 </div> 
@@ -405,7 +403,7 @@
                     <a href="Registration.html">Register</a>
                     <a href="LogIn.html">Login</a>
                 </nav>
-                <div class="FooterSocial">
+                <div class="FooterSocialIcons">
                     <a id ="linkedin" href="https://linkedin.com/in/islam-mustafa-755a49235" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a id ="youtube" href="https://www.youtube.com/@islammustafa9245" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                     <a id ="github" href="#"><i class="fa-brands fa-github"></i></a>
@@ -414,33 +412,31 @@
         </footer>
         <script src = "../Jss/SideBar.js"></script>
         <script>
-        
             function CheckPassword() 
             {
-            var pass = document.getElementById("password").value;
-            var password = document.getElementById("password");
-            var Cpass = document.getElementById("Cpassword").value;
-            var Cpassword = document.getElementById("Cpassword");
+            var PasswordValue = document.getElementById("password").value;
+            var PasswordInput = document.getElementById("password");
+            var ConfirmPasswordValue = document.getElementById("ConfirmPassword").value;
+            var ConfirmPasswordInput = document.getElementById("ConfirmPassword");
             
-            var alr = document.getElementById("alr"); // Corrected from 'alt' to 'alr'
-            if (pass !== Cpass) {
-                alr.innerHTML = "Passwords do not match!";
-                alr.style.color = "#cc0000";
-                alr.style.backgroundColor = "#ffe9bf";
-                alr.style.padding = "5px" ;
-                alr.style.borderRadius = "22px";
-                alr.style.fontSize = "1.0em";
-                alr.style.textAlign = "center";
-                password.style.backgroundColor ="#ffe9bf" ;        
-                Cpassword.style.backgroundColor ="#ffe9bf" ; 
-                password.value ="";
-                Cpassword.value ="";       
+            var Alert = document.getElementById("Alert"); // Corrected from 'alt' to 'alr'
+            if (PasswordValue !== ConfirmPasswordValue) {
+                Alert.innerHTML = "Passwords do not match!";
+                Alert.style.color = "#cc0000";
+                Alert.style.backgroundColor = "#ffe9bf";
+                Alert.style.padding = "5px" ;
+                Alert.style.borderRadius = "22px";
+                Alert.style.fontSize = "1.0em";
+                Alert.style.textAlign = "center";
+                PasswordInput.style.backgroundColor ="#ffe9bf" ;        
+                ConfirmPasswordInput.style.backgroundColor ="#ffe9bf" ; 
+                PasswordInput.value ="";
+                ConfirmPasswordInput.value ="";       
                 return false;
             }
             return true;
         }
         </script>
- 
 </body>
 
 </html>

@@ -11,7 +11,7 @@
         align-items: center;
        
     
-        & .tit-reg {
+        & .Title {
             margin-bottom: 20px;
             margin-top: 20px;
             font-size: 2.8em;
@@ -30,7 +30,7 @@
             flex-direction: column;
             background-color: white;
     
-            & .cont {
+            & .Content {
                 border: 1px solid var(--num1-color);
                 border-radius: 10px;
                 margin: 15px;
@@ -40,7 +40,7 @@
                 /* border: 1px solid red; */
 
                 & .inp ,
-                & .pass ,
+                & .password ,
                 & .cpass
                 {
                     width: 100%;
@@ -90,7 +90,7 @@
             }
         }
     
-        /* & .contpass {
+        /* & .Contentpass {
             border: 1px solid var(--num1-color);
             border-radius: 10px;
             margin: 15px;
@@ -121,9 +121,7 @@
             }
         } */
     
-        & .Cont-button {
-            display: flex;
-            justify-content: center;
+        & .ContentButton {
             padding: 20px;
     
             & .submit,
@@ -178,7 +176,7 @@
         flex-direction: column;
         /* border: 1px solid green; */
     
-        & .tit-reg {
+        & .Title {
             margin: 10px 0px;
             font-size: 1.8em;
             font-weight: 400;
@@ -198,7 +196,7 @@
             background-color: white;
             
     
-            & .cont {
+            & .Content {
                 border: 1px solid var(--num1-color);
                 border-radius: 10px;
                 margin: 15px;
@@ -258,9 +256,9 @@
             }
         }
     
-        & .Cont-button {
+        & .Content-button {
             display: flex;
-            justify-content: center;
+            justify-Contentent: center;
             padding: 20px;
     
             & .submit,
@@ -315,7 +313,7 @@
         flex-direction: column;
         /* border: 1px solid green; */
     
-        & .tit-reg {
+        & .Title {
             margin: 10px 0px;
             font-size: 1.2em;
             font-weight: 400;
@@ -335,7 +333,7 @@
             background-color: white;
             
     
-            & .cont {
+            & .Content {
                 border: 1px solid var(--num1-color);
                 border-radius: 10px;
                 margin: 5px;
@@ -391,9 +389,9 @@
             }
         }
     
-        & .Cont-button {
+        & .Content-button {
             display: flex;
-            justify-content: center;
+            justify-Contentent: center;
             padding: 20px;
     
             & .submit,

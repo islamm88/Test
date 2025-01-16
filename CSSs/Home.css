@@ -1,7 +1,7 @@
 @media (min-width: 1140px) 
 {
     
-    .LandingBaner
+    .LandingBanner
     {
         min-height: 100vh;
         background-color: #0077b5;
@@ -227,7 +227,7 @@
 
 @media (min-width: 481px) and (max-width: 1139px)
 {
-    .LandingBaner
+    .LandingBanner
     {
         min-height: 100vh;
         background-color: #0077b5;
@@ -442,7 +442,7 @@
 
 @media (max-width: 480px)
 {
-    .LandingBaner
+    .LandingBanner
     {
         min-height: 100vh;
         background-color: #0077b5;

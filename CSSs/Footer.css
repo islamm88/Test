@@ -33,22 +33,22 @@
                 transform: scale(1.1);
             }
     
-            & .FooterSocial a {
+            & .FooterSocialIcons a {
                 margin: 20px 10px 0px;
                 color: var(--num5-color);
                 font-size: 18px;
                 display: inline-block;
             }
     
-            & .FooterSocial #youtube:hover
+            & .FooterSocialIcons #youtube:hover
             {
                 color:red;
             }
-            & .FooterSocial #github:hover
+            & .FooterSocialIcons #github:hover
             {
                 color:black;
             }
-            & .FooterSocial #linkedin:hover
+            & .FooterSocialIcons #linkedin:hover
             {
                 color: #0077b5;
             }
@@ -101,22 +101,22 @@
                 transform: scale(1.1);
             }
     
-            & .FooterSocial a {
+            & .FooterSocialIcons a {
                 margin: 20px 10px 0px;
                 color: var(--num5-color);
                 font-size: 1.em;
                 display: inline-block;
             }
     
-            & .FooterSocial #youtube:hover
+            & .FooterSocialIcons #youtube:hover
             {
                 color:red;
             }
-            & .FooterSocial #github:hover
+            & .FooterSocialIcons #github:hover
             {
                 color:black;
             }
-            & .FooterSocial #linkedin:hover
+            & .FooterSocialIcons #linkedin:hover
             {
                 color: #0077b5;
             }
@@ -170,7 +170,7 @@
                 transform: scale(1.1);
             }
     
-            & .FooterSocial a {
+            & .FooterSocialIcons a {
                 margin: 20px 10px 0px;
                 color: var(--num5-color);
                 font-size: 1.em;
@@ -178,15 +178,15 @@
             
             }
     
-            & .FooterSocial #youtube:hover
+            & .FooterSocialIcons #youtube:hover
             {
                 color:red;
             }
-            & .FooterSocial #github:hover
+            & .FooterSocialIcons #github:hover
             {
                 color:black;
             }
-            & .FooterSocial #linkedin:hover
+            & .FooterSocialIcons #linkedin:hover
             {
                 color: #0077b5;
             }
