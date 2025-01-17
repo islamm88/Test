@@ -48,9 +48,28 @@ ul
 }
 
 button {
-    all: unset;
     text-align: center;
+    background-color: var(--num4-color);
+    color: var(--num0-color);
+    width: 250px;
+    height: 30px;
+    border-radius: 22px;
+    margin: 20px;
+    border: var(--num4-color);
+    font-weight: 400;
+    text-align: center;
+    transition: 0.7s ease;
 
+}
+
+button:hover
+ {
+    transform: scale(1.1);
+    background-color: var(--num1-color);
+    color: var(--num4-color);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px var(--num5-color);
 }
 
 body {

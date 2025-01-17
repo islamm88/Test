@@ -141,10 +141,11 @@
                 & .MenuButton ,
                 & .SerchButton
                 {
-                padding: 0px 10px;
-                display: block;
-                color: var(--num3-color);
-                transition: 0.7s ease;
+                    all: unset;
+                    padding: 0px 10px;
+                    display: block;
+                    color: var(--num3-color);
+                    transition: 0.7s ease;
                 
                 & .fa-bars,
                 & .fa-search
@@ -156,6 +157,7 @@
                 & .MenuButton:hover ,
                 & .SerchButton:hover
                 {
+                    
                     color: var(--num0-color);
                     cursor: pointer;
                     transform: scale(1.0);
@@ -323,10 +325,11 @@
                 & .MenuButton ,
                 & .SerchButton
                 {
-                padding: 0px 10px;
-                display: block;
-                color: var(--num3-color);
-                transition: 0.7s ease;
+                    all: unset;
+                    padding: 0px 10px;
+                    display: block;
+                    color: var(--num3-color);
+                    transition: 0.7s ease;
                 
                 & .fa-bars,
                 & .fa-search
@@ -508,10 +511,11 @@
                 & .MenuButton ,
                 & .SerchButton
                 {
-                padding: 0px 10px;
-                display: block;
-                color: var(--num3-color);
-                transition: 0.7s ease;
+                    all: unset;
+                    padding: 0px 10px;
+                    display: block;
+                    color: var(--num3-color);
+                    transition: 0.7s ease;
                 
                 & .fa-bars,
                 & .fa-search
