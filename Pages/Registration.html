@@ -74,7 +74,7 @@
                        <label for="age"><span>*</span>Age  :</label>
                    </div>
                    <div class="inp">
-                       <input type="number" name="age" id="age" required  max = "100" min="18" size ="50">
+                       <input type="number" name="age" id="age" required  max = "100" min="18" size ="50" placeholder="your age">
                    </div>
                 </div>
     
@@ -83,7 +83,7 @@
                        <label for="birthdate"><span>*</span>Birthdate  :</label>
                    </div>
                    <div class="inp">
-                       <input type="date" name="birthdate" id="birthdate" required  placeholder="Birthdate">
+                       <input type="date" name="birthdate" id="birthdate" required >
                 </div>
     
                 </div>
@@ -107,7 +107,7 @@
                             <label for="password"><span>*</span> Password  :</label>
                         </div>
                         <div class="inp">
-                            <input type="password" name="password" id="password"  minlength="8" maxlength="20" placeholder="from 8 to 20" autocomplete="new-password">
+                            <input type="password" name="password" id="Password"  minlength="8" maxlength="20" placeholder="from 8 to 20" autocomplete="new-password">
                         </div>
                     </div>
                     <br>
@@ -153,8 +153,7 @@
                         <label for="Country"><span>*</span>Country  :</label>
                     </div>
                     <div class="inp">
-                    <datalist name="Country" id="Country">
-                        <select onchange="$('#datalistcon').val(this.value)"></select>
+                    <select name="Country" id="Country">
                         <option value="" selected ></option>
                         <option value="Afghanistan">Afghanistan</option>
                         <option value="Albania">Albania</option>
@@ -330,8 +329,7 @@
                         <option value="Tanzania">Tanzania</option>
                         <option value="Thailand">Thailand</option>
                         <option value="Timor-Leste">Timor-Leste</option>
-                    </datalist>
-                    <input type = "text" class = "datalist" list="Country" name="" id="datalistcon">
+                    </select>
                     </div>
                 </div> 
 
@@ -340,44 +338,43 @@
                         <label for="computer-fields"><span>*</span>Computer-fields  :</label>
                     </div>
                     <div class="inp">
-                        <datalist name="Computer-fields" id="Computer-fields">
+                        <select name="Computer-fields" id="Computer-fields">
                             <option value=""></option>
-                            <option value="Software-Development"></option>
-                            <option value="Web-Development"></option>
-                            <option value="Mobile-Development"></option>
-                            <option value="Desktop-Application-Development"></option>
-                            <option value="Game-Development"></option>
-                            <option value="Data-Science"></option>
-                            <option value="Big-Data"></option>
-                            <option value="Data-Analysis"></option>
-                            <option value="Database-Management"></option>
-                            <option value="Network-Administration"></option>
-                            <option value="Network-security"></option>
-                            <option value="Cloud-Networking"></option>
-                            <option value="Information-Security"></option>
-                            <option value="Ethical-hacking"></option>
-                            <option value="Cyber-Forensics"></option>
-                            <option value="Help-Desk-Support"></option>
-                            <option value="System-Administration"></option>
-                            <option value="Technical-Support"></option>
-                            <option value="Cloud-Infrastructure"></option>
-                            <option value="Cloud-Application-Development"></option>
-                            <option value="Devops"></option>
-                            <option value="AI-Development"></option>
-                            <option value="Machine-Learning"></option>
-                            <option value="Natural-Language-Processing"></option>
-                            <option value="Web-Design"></option>
-                            <option value="UI-UX-Design"></option>
-                            <option value="IT-Consulting"></option>
-                            <option value="Project-Management"></option>
-                            <option value="Hardware-Engineering"></option>
-                            <option value="IT-Infrastructure-Management"></option>
-                            <option value="Blockchain-Development"></option>
-                            <option value="IoT"></option>
-                            <option value="Quantum-Computing"></option>
-                            <option value="Technical-Writing"></option>
-                        </datalist>
-                        <input type = "text" class = "datalist" list ="Computer-fields" name="" id="datalistfields">
+                            <option value="Software-Development">Software-Development</option>
+                            <option value="Web-Development">Web-Development</option>
+                            <option value="Mobile-Development">Mobile-Development</option>
+                            <option value="Desktop-Application-Development">Desktop-Application-Development</option>
+                            <option value="Game-Development">Game-Development</option>
+                            <option value="Data-Science">Data-Science</option>
+                            <option value="Big-Data">Big-Data</option>
+                            <option value="Data-Analysis">Data-Analysis</option>
+                            <option value="Database-Management">Database-Management</option>
+                            <option value="Network-Administration">etwork-Administration</option>
+                            <option value="Network-security">Network-security</option>
+                            <option value="Cloud-Networking">Cloud-Networking</option>
+                            <option value="Information-Security">nformation-Security</option>
+                            <option value="Ethical-hacking">Ethical-hacking</option>
+                            <option value="Cyber-Forensics">Cyber-Forensics</option>
+                            <option value="Help-Desk-Support">Help-Desk-Support</option>
+                            <option value="System-Administration">System-Administration</option>
+                            <option value="Technical-Support">Technical-Support</option>
+                            <option value="Cloud-Infrastructure">Cloud-Infrastructure</option>
+                            <option value="Cloud-Application-Development">Cloud-Application-Development</option>
+                            <option value="Devops">Devops</option>
+                            <option value="AI-Development">AI-Development</option>
+                            <option value="Machine-Learning">Machine-Learning</option>
+                            <option value="Natural-Language-Processing">Natural-Language-Processing</option>
+                            <option value="Web-Design">Web-Design</option>
+                            <option value="UI-UX-Design">UI-UX-Design</option>
+                            <option value="IT-Consulting">IT-Consulting"</option>
+                            <option value="Project-Management">Project-Management</option>
+                            <option value="Hardware-Engineering">Hardware-Engineering</option>
+                            <option value="IT-Infrastructure-Management">IT-Infrastructure-Management</option>
+                            <option value="Blockchain-Development">Blockchain-Development"</option>
+                            <option value="IoT">IoT</option>
+                            <option value="Quantum-Computing">Quantum-Computing</option>
+                            <option value="Technical-Writing">Technical-Writing</option>
+                        </select>
                     </div>
                 </div>
 

@@ -63,11 +63,12 @@
                     <p id = "Alert" style="width: 100% ;"></p>
                     <div class = "inputContaint">
                         <label for="user">User Name</label>
-                        <i class="fa-solid fa-user">&nbsp;&nbsp;&nbsp; </i><input  type="text" name="user" id="user" maxlength="50" placeholder="Your User Name" >
+                        <i class="fa-solid fa-user">&nbsp;&nbsp;&nbsp; </i>
+                        <input  type="text" name="user" id="user" maxlength="50" placeholder="Type Your UserName" >
                     </div>
                     <div class = "inputContaint">
                         <label for="password">Password</label>
-                        <i class="fa-solid fa-lock"></i>&nbsp;&nbsp;&nbsp;<input  type="password" name="password" id="password" placeholder="Your password" maxlength="20">
+                        <i class="fa-solid fa-lock"></i>&nbsp;&nbsp;&nbsp;<input  type="password" name="password" id="password" placeholder="Type Your Password" maxlength="20">
                     </div>
                     <div class = "RememberForget flex">
                         <div class = "CheckboxRemember">
@@ -122,7 +123,6 @@
             const User = document.getElementById("user").value;
             const Password = document.getElementById("password").value;
             const Alert = document.getElementById("Alert");
-
             // Function to set error message
             function setError(message) {
                 Alert.innerHTML = message;
@@ -139,7 +139,6 @@
             } else if (User !== "islam" || Password !== "123@abc") {
                 return setError("! The username or password is incorrect. Please try again.");
             }
-
             return true;
 }
     </script>

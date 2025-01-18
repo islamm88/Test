@@ -150,29 +150,17 @@
                 
                 & .inputContaint
                 {
-                    justify-Content: flex-start;
                     align-items: flex-start;
+                    flex-direction: column;
                     width: 100%;
+                    padding: 0% 10%;
 
                     & label {
                         color: var(--num3-color);
-                        font-size: 1.0em;
+                        font-size: 1.0rem;
                         font-weight: 400;
-                        display: flex;
-                        margin-left: 12%;
+                        margin-left: 5px;
                         
-                    }
-                    & input {
-                        border-radius: 5px;
-                        background-color: var(--num1-color);
-                        padding: 5px;
-                        height: 20px;
-                        margin-top: 5px;
-                        border: 1px solid var(--num5-color);
-                        width: 80%;
-                    }
-                    & input:hover {
-                        background-color: white;
                     }
                 }
                 & .RememberForget {
@@ -420,33 +408,18 @@
                   
                     & .inputContaint
                     {
-                        
-                        justify-Content: flex-start;
                         align-items: flex-start;
+                        flex-direction: column;
                         width: 100%;
-
+                        padding: 0% 10%;
+    
                         & label {
                             color: var(--num3-color);
-                            font-size: 0.8em;
+                            font-size: 1.0rem;
                             font-weight: 400;
-                            display: flex;
-                            margin-left: 12%;
+                            margin-left: 5px;
                             
                         }
-                        & input {
-                            border-radius: 5px;
-                            background-color: var(--num1-color);
-                            padding: 5px;
-                            height: 20px;
-                            margin-top: 5px;
-                            border: 1px solid var(--num5-color);
-                            width: 80%;
-                        }
-                        & input:hover {
-                            background-color: white;
-                        }
-
-
                     }
                     & .RememberForget {
                         display: flex;
@@ -688,33 +661,18 @@
                   
                     & .inputContaint
                     {
-                        
-                        justify-Content: flex-start;
                         align-items: flex-start;
+                        flex-direction: column;
                         width: 100%;
-
+                        padding: 0% 10%;
+    
                         & label {
                             color: var(--num3-color);
-                            font-size: 0.8em;
+                            font-size: 1.0rem;
                             font-weight: 400;
-                            display: flex;
-                            margin-left: 12%;
+                            margin-left: 5px;
                             
                         }
-                        & input {
-                            border-radius: 5px;
-                            background-color: var(--num1-color);
-                            padding: 5px;
-                            height: 20px;
-                            margin-top: 5px;
-                            border: 1px solid var(--num5-color);
-                            width: 80%;
-                        }
-                        & input:hover {
-                            background-color: white;
-                        }
-
-
                     }
                     & .RememberForget {
                         display: flex;

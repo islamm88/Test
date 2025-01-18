@@ -32,19 +32,19 @@
     
             & .Content {
                 border: 1px solid var(--num1-color);
-                border-radius: 10px;
+                border-radius: 0.25rem;
                 margin: 15px;
                 padding: 10px;
                 flex-direction: column;
                 align-items: flex-start;
                 /* border: 1px solid red; */
 
+               
                 & .inp ,
                 & .password ,
                 & .cpass
                 {
                     width: 100%;
-                    padding-inline: 10px;
                 }
     
                 & label {
@@ -89,37 +89,6 @@
                 }
             }
         }
-    
-        /* & .Contentpass {
-            border: 1px solid var(--num1-color);
-            border-radius: 10px;
-            margin: 15px;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-    
-            & .pass,
-            & .cpass {
-                display: flex;
-                flex-direction: row;
-    
-                & label {
-                    display: inline-block;
-                    width: 10em;
-                    color: var(--num3-color);
-                    font-size: 1.2em;
-                    font-weight: 400;
-    
-                    & span {
-                        color: red;
-                    }
-                }
-            }
-    
-            & .cpass {
-                margin-top: 10px;
-            }
-        } */
     
         & .ContentButton {
             padding: 20px;
@@ -172,13 +141,11 @@
         margin: 50px 0px;
         padding: 5px 5px;
         width: 100%;
-        min-height: 100vh;
         flex-direction: column;
-        /* border: 1px solid green; */
     
         & .Title {
             margin: 10px 0px;
-            font-size: 1.8em;
+            font-size: 1.2em;
             font-weight: 400;
             color: var(--num4-color);
             text-shadow: -1px 1px 3px var(--num5-color);
@@ -198,19 +165,18 @@
     
             & .Content {
                 border: 1px solid var(--num1-color);
-                border-radius: 10px;
-                margin: 15px;
+                border-radius: 0.25rem;
+                margin: 5px;
                 padding: 10px;
                 flex-direction: column;
                 align-items: flex-start;
-                /* border: 1px solid red; */
 
+               
                 & .inp ,
-                & .pass ,
+                & .password ,
                 & .cpass
                 {
                     width: 100%;
-                    padding-inline: 10px;
                 }
     
                 & label {
@@ -228,19 +194,16 @@
                 & .datalist
                 {
                     all:unset;
-                    display: inline-block;
                     border-bottom: 2px solid var(--num5-color);
                     border-radius: 5px;
                     background-color: rgb(238, 237, 237);
-                    padding-left: 15px;
                     height: 30px;
-                    margin: 5px 0px;
-                    width: 90%;
+                    width: 100%; 
+                    padding-left: 5px;
                 }
             }
     
             & .radio-group {
-                /* border: 1px solid green; */
                 width: 100%;
                 padding: 5px;
                 gap: 5px;
@@ -256,11 +219,8 @@
             }
         }
     
-        & .Content-button {
-            display: flex;
-            justify-Contentent: center;
+        & .ContentButton {
             padding: 20px;
-    
             & .submit,
             & .reset {
                 all:unset;
@@ -302,6 +262,7 @@
 }
 
 
+
 @media (max-width: 480px)
 {
     
@@ -309,9 +270,7 @@
         margin: 50px 0px;
         padding: 5px 5px;
         width: 100%;
-        /* min-height: 100vh; */
         flex-direction: column;
-        /* border: 1px solid green; */
     
         & .Title {
             margin: 10px 0px;
@@ -335,14 +294,14 @@
     
             & .Content {
                 border: 1px solid var(--num1-color);
-                border-radius: 10px;
+                border-radius: 0.25rem;
                 margin: 5px;
                 padding: 10px;
                 flex-direction: column;
                 align-items: flex-start;
 
                 & .inp ,
-                & .pass ,
+                & .password ,
                 & .cpass
                 {
                     width: 100%;
@@ -373,7 +332,6 @@
             }
     
             & .radio-group {
-                /* border: 1px solid green; */
                 width: 100%;
                 padding: 5px;
                 gap: 5px;
@@ -389,11 +347,8 @@
             }
         }
     
-        & .Content-button {
-            display: flex;
-            justify-Contentent: center;
+        & .ContentButton {
             padding: 20px;
-    
             & .submit,
             & .reset {
                 all:unset;

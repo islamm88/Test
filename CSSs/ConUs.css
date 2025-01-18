@@ -35,47 +35,12 @@ section
             padding: 10px;
             margin: 10px;
             flex-direction: column;
+
             & .ContactUs {
                 width: 80%;
                 flex-direction: column;
                 justify-content: flex-start;
-                align-items: flex-start;
-                        & .in-email
-                                {   
-                                    border: 1px solid var(--num5-color);
-                                    border-radius: 5px;
-                                    background-color: var(--num1-color);
-                                    height: 30px; 
-                                    width:100%
-                                } 
-                        & .in-email:hover
-                                {
-                                background-color: white;
-                                }
-                        & .in-name
-                                {   
-                                    border: 1px solid var(--num5-color);
-                                    border-radius: 5px;
-                                    background-color: var(--num1-color);
-                                    height: 30px; 
-                                    width: 100%;
-                                } 
-                                & .in-name:hover
-                                {
-                                    background-color: white;
-                                }
-
-                                & textarea
-                                    {
-                                        background-color: var(--num1-color);
-                                        border: 1px solid var(--num5-color);
-                                        width:100%
-                                    }
-                
-                                    & textarea:hover
-                                    {
-                                        background-color: white;
-                                    }
+                align-items: flex-start;         
                     }
                 }
             }
@@ -187,42 +152,6 @@ section
                     flex-direction: column;
                     justify-content: flex-start;
                     align-items: flex-start;
-                            & .in-email
-                                    {   
-                                        border: 1px solid var(--num5-color);
-                                        border-radius: 5px;
-                                        background-color: var(--num1-color);
-                                        height: 30px; 
-                                        width:100%
-                                    } 
-                            & .in-email:hover
-                                    {
-                                    background-color: white;
-                                    }
-                            & .in-name
-                                    {   
-                                        border: 1px solid var(--num5-color);
-                                        border-radius: 5px;
-                                        background-color: var(--num1-color);
-                                        height: 30px; 
-                                        width: 100%;
-                                    } 
-                                    & .in-name:hover
-                                    {
-                                        background-color: white;
-                                    }
-    
-                                    & textarea
-                                        {
-                                            background-color: var(--num1-color);
-                                            border: 1px solid var(--num5-color);
-                                            width:100%
-                                        }
-                    
-                                        & textarea:hover
-                                        {
-                                            background-color: white;
-                                        }
                         }
                     }
                 }
@@ -338,47 +267,10 @@ section
                     {
                         font-size: 0.8em;
                     }       
-
-                            & .in-email
-                                    {   
-                                        border: 1px solid var(--num5-color);
-                                        border-radius: 5px;
-                                        background-color: var(--num1-color);
-                                        height: 30px; 
-                                        width:100%
-                                    } 
-                            & .in-email:hover
-                                    {
-                                    background-color: white;
-                                    }
-                            & .in-name
-                                    {   
-                                        border: 1px solid var(--num5-color);
-                                        border-radius: 5px;
-                                        background-color: var(--num1-color);
-                                        height: 30px; 
-                                        width: 100%;
-                                    } 
-                                    & .in-name:hover
-                                    {
-                                        background-color: white;
-                                    }
-    
-                                    & textarea
-                                        {
-                                            background-color: var(--num1-color);
-                                            border: 1px solid var(--num5-color);
-                                            width:100%
-                                        }
-                    
-                                        & textarea:hover
-                                        {
-                                            background-color: white;
-                                        }
-                        }
-                    }
                 }
             }
+        }
+    }
     
     .Info 
     {
